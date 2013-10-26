@@ -4,3 +4,18 @@
     text-align: center;
     line-height: 2.5em;
 }
+.makapenL {
+    font-family: "Open Sans", san-serif;
+    font-size: 6em;
+    color: #3399cc;
+}
+.slashL {
+  font-family: "Open Sans", san-serif;
+    font-size: 6em;  
+    color: black;
+}
+.coL{
+     font-family: "Open Sans", san-serif;
+    font-size: 5em;
+    color: black;
+}
