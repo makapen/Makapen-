@@ -2,10 +2,5 @@
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-}
-.logo {
-    background-image: url("images/mklogo.png"); 
-    width: 80%;
-    height:200px;
-
+    font-weight: 100;
 }
