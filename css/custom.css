@@ -19,3 +19,8 @@
     font-size: 5em;
     color: black;
 }
+.mainText1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    padding: 1em;
+}
