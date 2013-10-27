@@ -34,24 +34,22 @@
     height:200px;
 }
 
+
 #portfolio .image #origami-logo {
     width: 200px;
-    top:35px;
     position: relative;
+    top: 35px;
     left: 50%;
     margin-left: -100px;
-    margin-top: 25px;
-
 }
 
 #portfolio .image #rentcast-logo {
     width: 300px;
     top: 50%;
-    margin-top: -35px;
     position: relative;
+    margin-top: -35px;
     left: 50%;
     margin-left: -150px;
-    margin-top: 25px;
 
 }
 
