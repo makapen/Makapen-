@@ -50,3 +50,8 @@
     margin-top: 25px;
 
 }
+
+#portfolio article .description {
+  min-height: 140px;
+
+}
