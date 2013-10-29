@@ -14,6 +14,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -91,29 +92,21 @@
 					<div>
 						<div class="row">
 							<div class="12u">
-								<form method="post" action="#">
+								<form method="post" action="#" ng-app>
 									<div>
 										<div class="row half">
-											<div class="6u">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="6u">
-												<input type="text" name="email" id="email" placeholder="Email" />
+											<div class="12u">
+												<input type="text" name="subject" id="subject" ng-model="subject" placeholder="Subject" />
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row half">
-											<div class="12u">
-												<textarea name="message" id="message" placeholder="Message"></textarea>
+												<textarea name="message" id="message" ng-model="message" placeholder="Message"></textarea>
 											</div>
 										</div>
 										<div class="row">
 											<div class="12u">
-												<a href="#" class="button form-button-submit">Send Message</a>
+												<a href="mailto:ewelina%40makapen.co?subject={{subject}}&body={{message}}" class="button form-button-submit">Send Message</a>
 												<a href="#" class="button button-alt form-button-reset">Clear Form</a>
 											</div>
 										</div>
