@@ -4,25 +4,7 @@
     text-align: center;
     line-height: 2.5em;
 }
-.logo{
-    padding: 1em;
-    padding-top: 10%;
-}
-.makapenL {
-    font-family: "Norwester", "Open Sans", san-serif;
-    font-size: 6em;
-    color: #3399cc;
-}
-.slashL {
-  font-family: "Norwester", "Open Sans", san-serif;
-    font-size: 6em;  
-    color: black;
-}
-.coL{
-     font-family: "Norwester","Open Sans", san-serif;
-    font-size: 5em;
-    color: black;
-}
+
 .mainText1 {
     font-size: 3em;
     line-height: 1.2em;
@@ -44,12 +26,15 @@
 }
 
 #portfolio .image #rentcast-logo {
-    width: 300px;
+    max-width: 300px;
     top: 50%;
     position: relative;
     margin-top: -35px;
     left: 50%;
-    margin-left: -150px;
+    width: 90%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 
 }
 

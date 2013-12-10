@@ -152,6 +152,30 @@
 		}
 
 /*********************************************************************************/
+/* Logo                                                          */
+/*********************************************************************************/
+
+.logo{
+    padding-top: 10%;
+    font-size: 50px;
+}
+.makapenL {
+    font-family: "Norwester", "Open Sans", san-serif;
+    font-size: 1em;
+    color: #3399cc;
+}
+.slashL {
+    font-family: "Norwester", "Open Sans", san-serif;
+    font-size: 1.1em;
+    color: black;
+}
+.coL{
+    font-family: "Norwester","Open Sans", san-serif;
+    font-size: .9em;
+    color: black;
+}
+
+/*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
 
