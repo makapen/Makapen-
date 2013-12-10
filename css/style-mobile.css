@@ -143,6 +143,8 @@
 		.wrapper-first
 		{
 			padding-top: 5em;
+            min-height: 50vh;
+            height: auto;
 		}
 	
 		.wrapper-style4 .row-special
@@ -173,6 +175,12 @@
     font-family: "Norwester","Open Sans", san-serif;
     font-size: .9em;
     color: black;
+}
+
+.mainText1 {
+    font-size: 25px;
+    line-height: 1.2em;
+    padding: 1em;
 }
 
 /*********************************************************************************/

@@ -178,6 +178,12 @@
     font-size: .9em;
     color: black;
 }
+
+.mainText1 {
+    font-size: 80px;
+    line-height: 1.2em;
+    padding: 1em;
+}
 		
 /*********************************************************************************/
 /* Articles                                                                      */
