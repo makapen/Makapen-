@@ -52,6 +52,15 @@
     padding-top: 10%;
     font-size: 80px;
 }
+
+.makapenIntro {
+    height: auto;
+    margin-top: 15%;
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
 .makapenL {
     font-family: "Norwester", "Open Sans", san-serif;
     font-size: 1em;
