@@ -158,7 +158,6 @@
 /*********************************************************************************/
 
 .logo{
-    padding-top: 10%;
     font-size: 50px;
 }
 .makapenL {
@@ -182,6 +181,14 @@
     line-height: 1.2em;
     padding: 1em;
 }
+.makapenIntro {
+    height: 80vh;
+    padding-top: 20%;
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+
 
 /*********************************************************************************/
 /* Nav                                                                           */
