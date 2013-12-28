@@ -1,6 +1,13 @@
 
 
-
+#portfolio-subtitle {
+    color: #bbb;
+    text-shadow: 1px 1px 0px #444;
+}
+.portfolio-item-title a{
+    color: #333;
+    font-weight: 400;
+}
 #portfolio .image {
     height:200px;
 }
@@ -29,5 +36,11 @@
 
 #portfolio article .description {
   min-height: 140px;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: none;
 
 }
+
+ul.social li.github	{ 
+    background-color: #ddd; }
