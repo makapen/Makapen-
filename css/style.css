@@ -253,6 +253,7 @@
 	
 	.button
 	{
+        padding-bottom: 4px;    
 		position: relative;
 		display: inline-block;
 		color: #3e3e3e;
@@ -288,7 +289,6 @@
 			color: #3e3e3e !important;
 		}
 		
-		
 	
 		.button-alt
 		{
@@ -301,14 +301,7 @@
 				background-color: #aaa;
 			}
 			
-			.button-alt:active
-			{
-				
-			}
-	
-		.button-big
-		{
-		}
+
 
 	ul.social
 	{
