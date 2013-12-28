@@ -1,5 +1,6 @@
 .makapenIntro {
-  width: 80%;
+  padding-top: auto;
+    width: 80%;
   margin: auto;
   position: absolute;
   top: 50%; left: 50%;
