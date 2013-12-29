@@ -31,3 +31,13 @@
   min-height: 140px;
 
 }
+
+.reveal-modal
+{
+    text-align:center;
+}
+
+.reveal-modal a {
+    text-decoration: none;
+
+}
