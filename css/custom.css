@@ -29,7 +29,14 @@
 
 #portfolio article .description {
   min-height: 140px;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: none;
 
+}
+
+ul.social li.github	{ 
+    background-color: #ddd; 
 }
 
 .reveal-modal
