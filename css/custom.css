@@ -15,8 +15,9 @@
     bottom: 0;
 }
 #portfolio-item-blix,#portfolio-item-pawzii,#portfolio-item-restrepo {
-    background: url(images/coming-soon.png);
-    background-size: cover;
+    background-color: #FFF;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 400px;
      overflow: hidden;
 }
@@ -25,10 +26,23 @@
     background-size: cover;
   height: 400px;
 }
+
+
 #portfolio .box {
     padding: 0;
     overflow: hidden;
 }
+#portfolio .box h2.banner
+{
+ position:absolute;
+    top: 50%;
+    text-align:center;
+    height: 20px;
+    margin-top: -47px;
+    color: #333;
+    width:100%;
+}
+
 #portfolio .description.box {
     padding:20px;
   min-height: 140px;
@@ -42,7 +56,7 @@
     position: absolute;
     padding: 1.5em;
     height: 100%;
-    width: 100%;
+    width: 101%;
     transition: top 0.4s ease-in-out;
 }
 #portfolio .description.box.disappear {
