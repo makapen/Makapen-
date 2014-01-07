@@ -25,12 +25,11 @@
     background-size: cover;
   height: 400px;
 }
-#portfolio .box {
+.box {
     padding: 0;
     overflow: hidden;
 }
-#portfolio .description.box {
-    padding:20px;
+.description {
   min-height: 140px;
     text-align: left;
     font-weight: 100;
@@ -44,7 +43,7 @@
     height: 100%;
     transition: top 0.4s ease-in-out;
 }
-#portfolio .description.box.disappear {
+.box.disappear {
     top: 328px;
 }
 

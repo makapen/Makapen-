@@ -26,16 +26,14 @@ jQuery(function() {
 		_window = jQuery(window),
 		_nav = jQuery('#nav');
 
-	// Forms
-		if (jQuery.browser.msie && jQuery.browser.version <= 9)
-			jQuery('form').n33_formerize();
-
-		jQuery('form .form-button-submit').click(function(e) { e.preventDefault(); jQuery(this).closest('form').submit(); });
-		jQuery('form .form-button-reset').click(function(e) { e.preventDefault(); jQuery(this).closest('form')[0].reset(); });
 	
 	// Links
 		jQuery('a').click(function(e) {
 			var t = jQuery(this), h = t.attr('href'), article;
+
+            if (typeof h === 'undefined') {
+                return false;
+            }
 
 			if (h.charAt(0) == '#' && h.length > 1 && (article = jQuery('article#' + h.substring(1))).length > 0)
 			{

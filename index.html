@@ -23,8 +23,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/skel.min.js"></script>
-    <link rel="stylesheet" href="css/custom.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <!-- Google Analytics -->
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -44,9 +42,15 @@
     </script>
     <!-- End Google Analytics -->
 
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-    <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/ie8.css"/><![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/ie7.css"/><![endif]-->
+    <link rel="stylesheet" href="css/reveal.css" />
+
 </head>
 
 <body>
@@ -98,22 +102,25 @@
                 </div>
                 <div class="row">
                     <div class="6u">
-                        <article class="box box-style2">
-                            <div id="portfolio-item-jimini"><div class="description box disappear">
-                                <h3 class="portfolio-item-title">
-                                    <a href="http://jimini.co">Jimini</a>
-                                </h3>
-                                We helped launch the web's first OAAS platform (Oragami as a service). Use Jimini to send personalized oragami gifts.</div>
+                        <article class="box">
+                            <div id="portfolio-item-jimini">
+                                <div class="description box disappear">
+                                    <h3 class="portfolio-item-title">
+                                        <a href="http://jimini.co">Jimini</a>
+                                    </h3>
+                                    We helped launch the web's first OAAS platform (Oragami as a service). Use Jimini to send personalized oragami gifts.</div>
                             </div>
                         </article>
                     </div>
                     <div class="6u">
-                        <article class="box box-style2">
-                            <div id="portfolio-item-stonesoup"> <div class="description box disappear">
-                            <h3 class="portfolio-item-title">
-                                <a href="http://stso.co">Stone Soup</a>
-                            </h3>
-                           Helped build branding and launch page for StoneSoup, a Startup Weekend startup connecting chefs to the local community for amazing social meals.</div></div>
+                        <article class="box">
+                            <div id="portfolio-item-stonesoup">
+                                <div class="description box disappear">
+                                    <h3 class="portfolio-item-title">
+                                        <a href="http://stso.co">Stone Soup</a>
+                                    </h3>
+                                    Helped build branding and launch page for StoneSoup, a Startup Weekend startup connecting chefs to the local community for amazing social meals.</div>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -131,26 +138,54 @@
             <div>
                 <div class="row">
                     <div class="12u">
-                        <form method="post" action="#" ng-app>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                        <form action="https://docs.google.com/a/makapen.co/forms/d/1bJvXsyPbE493paWU6slonqNpmR97CCLZnT9DiZnGTYI/formResponse" method="POST" target="hidden_iframe">
                             <div>
                                 <div class="row half">
                                     <div class="12u">
-                                        <input type="text" name="subject" id="subject" ng-model="subject" placeholder="Subject" />
+                                        <input type="text" name="entry.896889779" value="" class="ss-q-short" id="entry_896889779" dir="auto" placeholder="Name" aria-label="Name Please provide your name of the name of the company you represent " aria-required="true" required="" title="">
+                                    </div>
+                                    <div class="12u">
+                                        <input type="email" name="entry.327695594" value="" class="ss-q-short" id="entry_327695594" dir="auto" placeholder="Email" aria-label="Email Please provide the email you&#39;d like us to contact you with Please provide a valid email" aria-required="true" required="" title="Please provide a valid email">
                                     </div>
                                 </div>
                                 <div class="row half">
                                     <div class="12u">
-                                        <textarea name="message" id="message" ng-model="message" placeholder="Message"></textarea>
+                                        <textarea name="entry.1112831279" rows="8" cols="0" class="ss-q-long" id="entry_1112831279" dir="auto" placeholder="Please provide us a description of your project idea." aria-label="Please provide us a description of your project idea.  " aria-required="true" required=""></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="12u">
-                                        <a href="mailto:ewelina@makapen.co?subject={{subject}}&body={{message}}" class="button">Send Message</a>
+                                        <input type="submit" class="button" value="Send Message" />
                                         <a href="#" class="button button-alt form-button-reset">Clear Form</a>
                                     </div>
                                 </div>
                             </div>
                         </form>
+
+                        <script>
+                            $(document).ready(function() {
+                                $("#contact form").submit(function(event) {
+                                    var postDest = event.target.action;
+
+                                    $("#hidden_iframe").load(function(event) {
+                                        $("#hidden_iframe").unbind("load");
+                                        $("#contact form")[0].reset();
+
+                                        $('#form_modal').reveal({
+                                            animation: 'fadeAndPop', //fade, fadeAndPop, none
+                                            animationspeed: 300, //how fast animtions are
+                                            closeonbackgroundclick: true, //if you click background will modal close?
+                                            dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+                                        });
+
+                                    });
+
+                                    return true;
+                                });
+
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="row row-special">
@@ -168,21 +203,21 @@
                                 </a>
                             </li>
                             <!--
-									<li class="facebook"><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
-									<li class="dribbble"><a href="http://dribbble.com/n33" class="icon icon-dribbble"><span>Dribbble</span></a></li>
-									<li class="linkedin"><a href="#" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
-									<li class="tumblr"><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
-									<li class="googleplus"><a href="#" class="icon icon-google-plus"><span>Google+</span></a></li>
-									<li class="rss"><a href="#" class="icon icon-rss"><span>RSS</span></a></li>
-									<li class="instagram"><a href="#" class="icon icon-instagram"><span>Instagram</span></a></li>
-									<li class="foursquare"><a href="#" class="icon icon-foursquare"><span>Foursquare</span></a></li>
-									<li class="skype"><a href="#" class="icon icon-skype"><span>Skype</span></a></li>
-									<li class="soundcloud"><a href="#" class="icon icon-soundcloud"><span>Soundcloud</span></a></li>
-									<li class="youtube"><a href="#" class="icon icon-youtube"><span>YouTube</span></a></li>
-									<li class="blogger"><a href="#" class="icon icon-blogger"><span>Blogger</span></a></li>
-									<li class="flickr"><a href="#" class="icon icon-flickr"><span>Flickr</span></a></li>
-									<li class="vimeo"><a href="#" class="icon icon-vimeo"><span>Vimeo</span></a></li>
-									-->
+                        <li class="facebook"><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+                        <li class="dribbble"><a href="http://dribbble.com/n33" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+                        <li class="linkedin"><a href="#" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+                        <li class="tumblr"><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
+                        <li class="googleplus"><a href="#" class="icon icon-google-plus"><span>Google+</span></a></li>
+                        <li class="rss"><a href="#" class="icon icon-rss"><span>RSS</span></a></li>
+                        <li class="instagram"><a href="#" class="icon icon-instagram"><span>Instagram</span></a></li>
+                        <li class="foursquare"><a href="#" class="icon icon-foursquare"><span>Foursquare</span></a></li>
+                        <li class="skype"><a href="#" class="icon icon-skype"><span>Skype</span></a></li>
+                        <li class="soundcloud"><a href="#" class="icon icon-soundcloud"><span>Soundcloud</span></a></li>
+                        <li class="youtube"><a href="#" class="icon icon-youtube"><span>YouTube</span></a></li>
+                        <li class="blogger"><a href="#" class="icon icon-blogger"><span>Blogger</span></a></li>
+                        <li class="flickr"><a href="#" class="icon icon-flickr"><span>Flickr</span></a></li>
+                        <li class="vimeo"><a href="#" class="icon icon-vimeo"><span>Vimeo</span></a></li>
+                        -->
                         </ul>
                     </div>
                 </div>
@@ -195,16 +230,22 @@
             </footer>
         </article>
     </div>
-<script>
-    var handlerIn=function(){
-     $(this).find(".description").removeClass("disappear");
-    }
-     var handlerOut=function(){
-     $(this).find(".description").addClass("disappear");
-    }
-    $("#portfolio article.box").hover(handlerIn, handlerOut)
-  </script>
+    <div id="form_modal" class="reveal-modal">
+        <h1>Thanks!</h1>
 
+        <p>We will contact you shortly.</p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <script src="js/jquery.reveal.js"></script>
+    <script>
+        var handlerIn = function() {
+            $(this).find(".description").removeClass("disappear");
+        }
+        var handlerOut = function() {
+            $(this).find(".description").addClass("disappear");
+        }
+        $("#portfolio article.box").hover(handlerIn, handlerOut)
+    </script>
 </body>
 
 </html>
