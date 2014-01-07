@@ -1,46 +1,52 @@
 
-
+/*-------portfolio page--------*/
 #portfolio-subtitle {
     color: #bbb;
     text-shadow: 1px 1px 0px #444;
 }
+.portfolio-item-title {
+    padding-bottom: 30px;
+    text-align: left;
+}
 .portfolio-item-title a{
-    color: #333;
+    color: #fff;
     font-weight: 400;
+    font-size: 1em;
+    bottom: 0;
 }
-#portfolio .image {
-    height:200px;
+#portfolio-item-jimini {
+    background: url(images/cricket.png) no-repeat center;
+    background-size: contain;
+    height: 400px;
+     overflow: hidden;
 }
-
-
-#portfolio .image #origami-logo {
-    width: 200px;
-    position: relative;
-    top: 35px;
-    left: 50%;
-    margin-left: -100px;
+#portfolio-item-stonesoup {
+    background: url(images/gather-2-01.jpg) no-repeat center;
+    background-size: cover;
+  height: 400px;
 }
-
-#portfolio .image #rentcast-logo {
-    max-width: 300px;
-    top: 50%;
-    position: relative;
-    margin-top: -35px;
-    left: 50%;
-    width: 90%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-
+.box {
+    padding: 0;
+    overflow: hidden;
 }
-
-#portfolio article .description {
+.description {
   min-height: 140px;
-    font-weight: 400;
+    text-align: left;
+    font-weight: 100;
     font-size: 1.2em;
     text-shadow: none;
-
+    background-color: rgba(51, 153, 204,  0.95);
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    padding: 1.5em;
+    height: 100%;
+    transition: top 0.4s ease-in-out;
+}
+.box.disappear {
+    top: 328px;
 }
 
+/*--------footer-------*/
 ul.social li.github	{ 
     background-color: #ddd; }
