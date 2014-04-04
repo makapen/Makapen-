@@ -14,7 +14,7 @@
     font-size: 1em;
     bottom: 0;
 }
-#portfolio-item-blix,#portfolio-item-pawzii,#portfolio-item-restrepo {
+#portfolio-item-blix {
     background-color: #FFF;
     background-size: contain;
     background-repeat: no-repeat;
@@ -26,7 +26,16 @@
     background-size: cover;
   height: 400px;
 }
-
+#portfolio-item-restrepo {
+background: url(images/home-slide-1.jpg) no-repeat center;
+    background-size: cover;
+  height: 400px;
+}
+#portfolio-item-pawzii{
+background: url(images/pawziidog.png) no-repeat center;
+    background-size: cover;
+  height: 400px;
+}
 
 #portfolio .box {
     padding: 0;
