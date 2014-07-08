@@ -22,7 +22,9 @@
   $wideGutterWidth: 3.7% !default;
 
   // Defining colors
-  $colorBlue: #3372df !default;
+  // Primary accent colors
+  $colorBlue: #3399CC !default;
+  $colorDarkBlue: #13394C !default;
   $colorBlueSecondary: lighten($colorBlue, 30%) !default;
   $colorGreen: #0f9d58 !default;
   $colorGreenSecondary: lighten($colorGreen, 30%) !default;
@@ -30,8 +32,6 @@
   $colorRedSecondary: lighten($colorRed, 30%) !default;
   $colorYellow: #f4b400 !default;
   $colorYellowSecondary: lighten($colorYellow, 20%) !default;
-
-  $colorRemember: #09829a !default;
   $colorLearning: #da2e75 !default;
 
   $colorGrayBackground: #f0f0f0 !default;
@@ -39,6 +39,13 @@
   $colorGray: #737373 !default;
   $colorGrayLight: #eeeeee !default;
   $colorGrayDark: #404040 !default;
+
+  // Grey-scales
+  $colorBlack: #111111 !default;
+  $colorLightGrey: #9D9D9D !default;
+  $colorDarkGrey: #333333 !default;
+  $colorWhite: #fff !default;
+  $colorRemember: #09829a !default;
 
   $colorText: $colorGrayDark !default;
   $colorHighlight: $colorBlue !default;
@@ -56,8 +63,9 @@
   $colorPerformanceSecondary: lighten($colorPerformance, 30%) !default;
 
   // Defining font family
-  $fontDefault: Helvetica, Arial, sans-serif !default;
-  $fontHighlight: "Roboto Condensed", Helvetica, sans-serif !default;
+  $fontDefault: 'Open-sans', sans-serif !default;
+  $fontHighlight: "Open-sans", Helvetica, sans-serif !default;
+  $fontLogo: 'norwester', Helvetica, sans-serif !default;
   $fontIcon: "icons" !default;
 
   // Defining font sizes
