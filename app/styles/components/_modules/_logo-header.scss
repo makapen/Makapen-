@@ -6,7 +6,11 @@
 
 .logo-main {
   @include center;
-  min-height: 100%;
-  display: table-cell;
-  vertical-align: center;
+  @include cf();
+
+  height: 100%;
+}
+
+#makapen {
+  color: $colorBlue;
 }
