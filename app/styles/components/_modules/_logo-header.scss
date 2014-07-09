@@ -1,0 +1,12 @@
+/**
+*
+* Logo header styling
+*
+**/
+
+.logo-main {
+  @include center;
+  min-height: 100%;
+  display: table-cell;
+  vertical-align: center;
+}
