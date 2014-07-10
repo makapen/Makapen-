@@ -4,7 +4,19 @@
 }
 
 .portfolio__work {
-  background-color: $colorBlue;
+  @include col(1/2);
+}
 
-  @include col(1/4, $cycle: 4);
+.portfolio__work-pawzii {
+  height: 400px;
+  background: url('../../../images/portfolio/pawziidog.png')
+                no-repeat scroll center center / cover transparent;
+}
+
+.portfolio__work-about {
+  display: none;
+  &:hover {
+    display: block;
+    opacity: 80%;
+  }
 }
