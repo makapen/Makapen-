@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Makapen Co is a website and web applications development agency that works with startups on new build-outs and rapid prototyping projects. We aim to create simple but powerful solutions that are well designed.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <title>Makapen Co | Web Development agency for Startups </title>
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -41,13 +41,13 @@
       </ul>
     </nav>
 
-    <div id="logo-main">
+    <div id="logo-main" class="col">
       <div class="centered vert-align-text">
         <h1><span id="makapen">MAKAPEN</span>  \ co</h1>
       </div>
     </div>
 
-    <div id="portfolio">
+    <div id="portfolio" class="col">
       <div class="portfolio__work">
         Testing
       </div>
@@ -65,14 +65,21 @@
       </div>
     </div>
 
-    <div id="contact">
-      <div class="centered vert-align-text">
-        <span>Contact us!</span>
-      </div>
-      <form>
-        <label>
-          <input>
+    <div class="col">
+      <section id="about">
+        <h4 class="centered">About us!</h4>
+        <span>Makapen is a Seattle based web development company interested in building beautifully responsive websites using the forefront of web technologies.</span>
+      </section>
 
+      <section id="contact">
+          <h4 class="centered">Contact us!</h4>
+          <form>
+            <label>
+              <input type="text"placeholder="Name" />
+            </label>
+            <button class="button--primary" type="submit">Submit</button>
+          </form>
+      </section>
     </div>
 
     <footer>Makapen.co &copy2014</footer>
