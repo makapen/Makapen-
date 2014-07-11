@@ -11,7 +11,7 @@
 }
 
 .logo__content {
-  @include center($pad: $wideGutterWidth);
+  @include center();
 
   span {
     font-size: 1.5rem;
@@ -29,5 +29,6 @@
   display:block;
   margin: auto;
   width: auto;
-  max-width: 100%;
+  max-width: 60%;
+  max-height: 10%;
 }
