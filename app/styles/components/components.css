@@ -2630,48 +2630,23 @@ footer {
   padding-bottom: 50px;
 }
 
-#contact {
+.contact__content {
   *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 3%;
 }
-#contact:before, #contact:after {
+.contact__content:before, .contact__content:after {
   content: '';
   display: table;
 }
-#contact:after {
+.contact__content:after {
   clear: both;
-}
-#contact:last-child {
-  margin-right: 0%;
-}
-
-#about {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 48.5%;
-  margin-left: 0%;
-  margin-right: 3%;
-}
-#about:before, #about:after {
-  content: '';
-  display: table;
-}
-#about:after {
-  clear: both;
-}
-#about:last-child {
-  margin-right: 0%;
 }
 
 #services {
