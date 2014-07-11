@@ -2511,28 +2511,100 @@ cf()
 }
 
 .portfolio__work-pawzii {
+  position: relative;
   height: 400px;
+  overflow: hidden;
   background: url("../../../images/portfolio/pawziidog.png") no-repeat scroll center center/cover transparent;
 }
 
-.portfolio__work-about {
-  opacity: 0;
+.portfolio__work-mask {
+  position: absolute;
+  top: 100%;
+  left: 0;
   height: 100%;
-  max-width: 100%;
-  position: relative;
-  -webkit-transition: 0.5s ease-in;
-          transition: 0.5s ease-in;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out 0.5s;
+          transition: all 0.3s ease-in-out 0.5s;
+  -webkit-animation: slidein 0.9s linear;
+          animation: slidein 0.9s linear;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.portfolio__work-pawzii:hover .portfolio__work-about {
+.portfolio__work-pawzii:hover .portfolio__work-mask {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  top: 0;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-animation: slidein 0.9s ease-in-out;
+          animation: slidein 0.9s ease-in-out;
 }
 
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+
+  20% {
+    -webkit-transform: translateY(-12%);
+            transform: translateY(-12%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+
+@keyframes slidein {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+
+  20% {
+    -webkit-transform: translateY(-12%);
+            transform: translateY(-12%);
+  }
+
+  40% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
 footer {
   background-color: #9d9d9d;
   text-align: center;
