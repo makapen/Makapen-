@@ -2408,42 +2408,80 @@ cf()
 * Logo header styling
 *
 **/
-#logo-main {
+#logo__main {
   *zoom: 1;
   height: 100%;
 }
-#logo-main:before, #logo-main:after {
+#logo__main:before, #logo__main:after {
   content: '';
   display: table;
 }
-#logo-main:after {
+#logo__main:after {
   clear: both;
 }
 
-#makapen {
-  color: #3399cc;
+.logo__content {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3.7%;
+  padding-right: 3.7%;
+}
+.logo__content:before, .logo__content:after {
+  content: '';
+  display: table;
+}
+.logo__content:after {
+  clear: both;
+}
+.logo__content span {
+  font-size: 1.5rem;
+}
+
+.logo__content-wrapper {
+  display: block;
+  padding-top: 25px;
+}
+
+.logo__image {
+  *zoom: 1;
+  display: block;
+  margin: auto;
+  width: auto;
+  max-width: 100%;
+}
+.logo__image:before, .logo__image:after {
+  content: '';
+  display: table;
+}
+.logo__image:after {
+  clear: both;
 }
 
 #nav-bar {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding-bottom: 5px;
 }
 
 .nav-bar__ul li {
   float: right;
-  padding-right: 25px;
+  padding-top: 10px;
+  padding-right: 35px;
   list-style: none;
 }
 
 .nav-bar__li a {
   text-decoration: none;
-  color: #111111;
+  color: #9d9d9d;
 }
 
 .nav-bar__li a:visited, :focus {
-  color: #111111;
+  color: #9d9d9d;
 }
 
 .nav-bar__li a:hover {
@@ -2478,16 +2516,28 @@ cf()
 }
 
 .portfolio__work-about {
-  display: none;
+  opacity: 0;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: 0.5s ease-in;
+          transition: 0.5s ease-in;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
 }
-.portfolio__work-about:hover {
-  display: block;
-  opacity: 80%;
+
+.portfolio__work-pawzii:hover .portfolio__work-about {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 footer {
+  background-color: #9d9d9d;
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 #contact {
@@ -2607,7 +2657,7 @@ footer {
   color: #111111;
 }
 .font-awesome:hover {
-  color: #737373;
+  color: #333333;
 }
 
 /**
