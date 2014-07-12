@@ -1,11 +1,11 @@
-
-#portfolio {
-
-}
+/**
+*
+* Portfolio styling
+*
+**/
 
 .portfolio__work {
   @include col(1/2);
-
   margin-bottom: 10%;
 }
 
@@ -24,7 +24,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: all 0.3s ease-in-out 0.5s;
+  transition: all 0.3s ease-in-out 0.2s;
   animation: slidein 0.9s ease-in-out;
   background-color: rgba(255, 255, 255, 0.7);
 }

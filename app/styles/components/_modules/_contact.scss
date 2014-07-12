@@ -1,4 +1,24 @@
+/**
+*
+* Contact styling
+*
+**/
 
 .contact__content {
   @include center();
+}
+
+.contact__form {
+
+  input {
+    display: block;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    display: block;
+
+    height: auto;
+    width: 100%;
+  }
 }

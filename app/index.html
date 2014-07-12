@@ -35,12 +35,16 @@
 
     <nav id="nav-bar">
       <ul class="nav-bar__ul">
-        <li class="nav-bar__li"><a href="#contact">contact</a></li>
-        <li class="nav-bar__li"><a href="#portfolio">portfolio</a></li>
-        <li class="nav-bar__li"><a href="#services">services</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#services">services</a></li>
       </ul>
     </nav>
     <!-- Navbar -->
+    <div id="nav-icon" class="nav-bar__icon">
+      <i class="fa fa-align-justify fa-2x"></i>
+    </div>
+
 
     <div id="logo__main" class="col">
       <div class="logo__content centered vert-align-text">
@@ -102,11 +106,15 @@
 
     <div id="contact" class="col">
       <section class="contact__content">
-          <h4 class="centered">Contact us!</h4>
-          <form>
+          <h2 class="centered">Contact us!</h2>
+          <form class="contact__form">
             <label>
-              <input type="text"placeholder="Name" />
+              <input type="text" placeholder="Name" name="name" />
             </label>
+            <label>
+              <input type="text" placeholder="Email" name="email" />
+            </label>
+            <textarea name="message"></textarea>
             <button class="button--primary" type="submit">Submit</button>
           </form>
       </section>
@@ -114,6 +122,9 @@
     <!-- Contact -->
 
     <footer>Makapen Inc. &copy2014</footer>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.js"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
