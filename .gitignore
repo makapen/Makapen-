@@ -3,4 +3,6 @@ node_modules/
 .DS_Store
 .sass-cache/
 dist/
-.tmp/
+
+#important! do not remove
+aws_config.json
