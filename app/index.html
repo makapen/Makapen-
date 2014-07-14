@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body class="debug">
+  <body>
 
     <nav id="nav-bar">
       <ul class="nav-bar__ul">
@@ -121,7 +121,17 @@
     </div>
     <!-- Contact -->
 
-    <footer>Makapen Inc. &copy2014</footer>
+    <footer class="col">
+      <div class="footer__content">
+        <span><strong>Get to know us better!</strong></span>
+        <ul class="footer__ul">
+          <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        </ul>
+        <span>Makapen Inc. &copy2014</span>
+      </div>
+    </footer>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.js"></script>
@@ -129,6 +139,17 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
+    <script>
+      var logoMain = $('#contact');
+      var navBar = document.getElementById('nav-bar');
+      var navIcon = document.getElementById('nav-icon');
+
+      logoMain.waypoint(function() {
+        navBar.style.display = "none";
+        navIcon.style.display = "block";
+        console.log('ran');
+      }, {context: window, offset: 1000});
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -14,15 +14,15 @@ $(function() {
     });
   }
 
-  var logoMain = $('services');
+  var logoMain = $('#portfolio');
   var navBar = document.getElementById('nav-bar');
   var navIcon = document.getElementById('nav-icon');
 
   logoMain.waypoint(function() {
     navBar.style.display = "none";
     navIcon.style.display = "block";
-    console.log('ran')
-  }, {offset: 1000});
+    console.log('ran');
+  }, {context: window, offset: 1000});
 
   scroll();
 });

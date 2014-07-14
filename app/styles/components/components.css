@@ -2483,8 +2483,8 @@ cf()
   color: #9d9d9d;
 }
 
-.nav-icon {
-  position: fixed;
+.nav-bar__icon {
+  position: static;
   top: 20px;
   right: 30px;
   display: none;
@@ -2634,6 +2634,53 @@ footer {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
+}
+
+.footer__content {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer__content:before, .footer__content:after {
+  content: '';
+  display: table;
+}
+.footer__content:after {
+  clear: both;
+}
+.footer__content span {
+  display: block;
+  text-align: center;
+}
+
+.footer__ul {
+  *zoom: 1;
+  display: inline-block;
+  padding-left: 0;
+}
+.footer__ul:before, .footer__ul:after {
+  content: '';
+  display: table;
+}
+.footer__ul:after {
+  clear: both;
+}
+.footer__ul li {
+  float: left;
+  list-style: none;
+  margin: auto;
+}
+.footer__ul li a {
+  color: #111111;
+}
+.footer__ul li a:visited, .footer__ul li a:hover, .footer__ul li a:focus {
+  color: #111111;
 }
 
 /**
