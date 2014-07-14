@@ -21,10 +21,10 @@
   }
 }
 
-#nav-icon {
-  position: fixed;
-  top: 20px;
-  right: 30px;
+.nav-bar__icon {
+  position: absolute;
+  top: -9999px !important;
+  right: -9999px !important;
 
-  display: none;
+  visibility: hidden;
 }

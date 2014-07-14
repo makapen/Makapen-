@@ -14,15 +14,5 @@ $(function() {
     });
   }
 
-  var logoMain = $('services');
-  var navBar = document.getElementById('nav-bar');
-  var navIcon = document.getElementById('nav-icon');
-
-  logoMain.waypoint(function() {
-    navBar.style.display = "none";
-    navIcon.style.display = "block";
-    console.log('ran')
-  }, {offset: 1000});
-
   scroll();
 });
