@@ -2484,10 +2484,10 @@ cf()
 }
 
 .nav-bar__icon {
-  position: static;
-  top: 20px;
-  right: 30px;
-  display: none;
+  position: absolute;
+  top: -9999px !important;
+  right: -9999px !important;
+  visibility: hidden;
 }
 
 /**
