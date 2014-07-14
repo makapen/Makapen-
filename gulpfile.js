@@ -25,6 +25,8 @@ var $ = require('gulp-load-plugins')();
 var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
+var awspublish = require('gulp-awspublish');
+var awsConfig = require('./aws_config.json');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
 
@@ -126,8 +128,7 @@ gulp.task('html', function () {
     // the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/index.html',
-        'app/styleguide/index.html'
+        'app/index.html'
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [
@@ -175,6 +176,31 @@ gulp.task('serve:dist', ['default'], function () {
       baseDir: 'dist'
     }
   });
+});
+
+gulp.task('publish-staging', function() {
+
+  // create a new publisher
+  var publisher = awspublish.create({
+     key: awsConfig.aws_key ,
+     secret: awsConfig.aws_secret,
+     bucket: awsConfig.aws_bucket,
+     region: awsConfig.aws_region});
+
+  // define custom headers
+  var headers = {
+     'Cache-Control': 'no-cache'
+   };
+
+  return gulp.src('./dist/**')
+
+    .pipe(publisher.publish(headers))
+  .pipe(publisher.sync())
+  .pipe(awspublish.reporter({
+      states: ['create', 'update', 'delete']
+    }))
+
+    .on('error', function(err) { console.error('failed to publish err code: ', err.statusCode); } )
 });
 
 // Build Production Files, the Default Task

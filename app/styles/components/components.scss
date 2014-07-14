@@ -12,7 +12,10 @@
 @import "_components/_icons";
 
 // Jeet grid system
-@import "_libs/jeet/index";
+@import '_components/jeet/_settings';
+@import '_components/jeet/_functions';
+@import '_components/jeet/_grid';
+
 
 // Modules
 @import "_modules/_highlight";

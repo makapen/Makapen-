@@ -11,7 +11,7 @@
 /*==========  VARIABLES  ==========*/
 /*==========  FUNCTIONS  ==========*/
 /*==========  MIXINS  ==========*/
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -661,19 +661,6 @@ pre {
   content: "\e018";
 }
 
-/* Syntax Quick Reference
---------------------------
-column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
-span($ratio: 1, $offset: 0)
-shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
-unshift()
-edit()
-center($max_width: 1410px, $pad: 0)
-stack($pad: 0, $align: false)
-unstack()
-align($direction: both)
-cf()
-*/
 /**
 *
 * Highlight
