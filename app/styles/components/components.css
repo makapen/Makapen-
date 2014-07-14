@@ -2483,7 +2483,7 @@ cf()
   color: #9d9d9d;
 }
 
-.nav-icon {
+#nav-icon {
   position: fixed;
   top: 20px;
   right: 30px;
