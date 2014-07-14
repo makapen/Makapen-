@@ -2675,6 +2675,7 @@ footer {
   float: left;
   list-style: none;
   margin: auto;
+  padding: 5px;
 }
 .footer__ul li a {
   color: #111111;

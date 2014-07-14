@@ -24,10 +24,12 @@ footer {
   li {
     float: left;
     list-style: none;
+
     margin: auto;
+    padding: 5px;
   }
 
-  li a{
+  li a {
     color: $colorBlack;
   }
 
