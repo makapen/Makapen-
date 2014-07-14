@@ -4,9 +4,31 @@
 *
 **/
 
-.logo-main {
-  @include center;
-  min-height: 100%;
-  display: table-cell;
-  vertical-align: center;
+#logo__main {
+  @include cf();
+
+  height: 100%;
+}
+
+.logo__content {
+  @include center();
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.logo__content-wrapper {
+  display: block;
+  padding-top: 25px;
+}
+
+.logo__image {
+  @include cf();
+
+  display:block;
+  margin: auto;
+  width: auto;
+  max-width: 60%;
+  max-height: 10%;
 }

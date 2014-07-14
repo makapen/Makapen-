@@ -1,0 +1,10 @@
+.font-awesome {
+  color: $colorBlack;
+  transition: 0.1s ease-in;
+  &:visited {
+    color: $colorBlack;
+  }
+  &:hover {
+    color: $colorDarkGrey;
+  }
+}

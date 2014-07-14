@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Makapen Co is a website and web applications development agency that works with startups on new build-outs and rapid prototyping projects. We aim to create simple but powerful solutions that are well designed.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <title>Makapen Co | Web Development agency for Startups </title>
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -32,31 +32,99 @@
     <!-- endbuild -->
   </head>
   <body class="debug">
-    <header class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">Web Starter Kit</h1>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        </section>
-      </div>
-    </header>
 
-    <nav class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#get-started">Get Started</a></li>
-        <li><a href="styleguide/index.html">Style Guide</a></li>
+    <nav id="nav-bar">
+      <ul class="nav-bar__ul">
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#services">services</a></li>
       </ul>
     </nav>
+    <!-- Navbar -->
+    <div id="nav-icon" class="nav-bar__icon">
+      <i class="fa fa-align-justify fa-2x"></i>
+    </div>
 
-    <main>
-      <div class="logo-main centered">
-        <h1>MAKAPEN - staging</h1>
+
+    <div id="logo__main" class="col">
+      <div class="logo__content centered vert-align-text">
+        <img class="logo__image" src="./images/mklogo.png" alt="MAKAPEN \ co">
+        <span>We make <strong>websites</strong> and <strong>web applications</strong> that are <strong>smart, simple, </strong>and <strong>delightful.</strong></span>
+        <div class="logo__content-wrapper"><a class="font-awesome" href="#services"><i id="down" class="fa fa-angle-down fa-3x"></i></a></div>
       </div>
-    </main>
+    </div>
+    <!-- logo main -->
 
+    <div id="services" class="col">
+      <section class="services__content">
+        <h3>Our Capabilities</h3>
+        <ul>
+          <li>Rapid prototyping</li>
+          <li>Complex applications</li>
+          <li>Ecommerce</li>
+          <li>Hybrid mobile apps</li>
+        </ul>
+      </section>
+
+      <section class="services__content">
+        <h3>Our Strategy</h3>
+        <ul>
+          <li>Short sprints</li>
+          <li>Constant feedback</li>
+          <li>Predictable price</li>
+        </ul>
+      </section>
+
+      <section class="services__content">
+        <h3>Our Tools</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Ember.js</li>
+          <li>Phonegap</li>
+          <li>Shopify</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Services -->
+
+    <div id="portfolio" class="col">
+      <div class="portfolio__work portfolio__work-pawzii">
+        <div class="portfolio__work-mask centered">
+          <h2>PAWZII</h2>
+          <p>This is some text</p>
+        </div>
+      </div>
+      <div class="portfolio__work portfolio__work-pawzii">
+        <div class="portfolio__work-mask centered">
+          <h2>PAWZII</h2>
+          <p>This is some text</p>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+
+    <div id="contact" class="col">
+      <section class="contact__content">
+          <h2 class="centered">Contact us!</h2>
+          <form class="contact__form">
+            <label>
+              <input type="text" placeholder="Name" name="name" />
+            </label>
+            <label>
+              <input type="text" placeholder="Email" name="email" />
+            </label>
+            <textarea name="message"></textarea>
+            <button class="button--primary" type="submit">Submit</button>
+          </form>
+      </section>
+    </div>
+    <!-- Contact -->
+
+    <footer>Makapen Inc. &copy2014</footer>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.js"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

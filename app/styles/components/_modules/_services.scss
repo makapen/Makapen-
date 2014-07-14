@@ -1,0 +1,36 @@
+/**
+*
+* Services styling
+*
+**/
+
+#services {
+  padding-bottom: 10%;
+}
+
+.services__content {
+  @include col(1/3);
+  font-size: $fontMedium;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li {
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .services__content {
+    @include stack();
+
+    font-size: $fontBase;
+    text-align: center;
+
+    padding-bottom: 30px;
+
+    ul {
+      margin: auto;
+    }
+  }
+}
