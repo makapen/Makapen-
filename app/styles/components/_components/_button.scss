@@ -21,7 +21,7 @@
 
   transition: none;
 
-  &:hover {
+  &:hover, &:focus {
     background: #4d4d4d;
     color: #ffffff;
     border: 1px solid #4d4d4d;
@@ -30,27 +30,33 @@
 }
 
 // Mixin to create buttons
-@mixin style-button($color, $textColor, $isInverted: false) {
+@mixin style-button($color, $textColor, $hover, $isInverted: false) {
 
   background: $color;
   color: $textColor;
   border: 1px solid darken($color, 10%);
+  border-radius: 4px;
 
+  transition: 0.1s ease-in-out;
+
+  &:hover, &:focus {
+    background: $hover;
+  }
   @if $isInverted { border-color: transparent;}
 }
 
 
 .button--primary {
   @extend .button;
-  @include style-button(#4285f4, #ffffff);
+  @include style-button($color: $colorBlue, $textColor: #ffffff, $hover: darken($colorBlue, 10%));
 }
 
 .button--secondary {
   @extend .button;
-  @include style-button(#ffffff, $colorBlue);
+  @include style-button(#ffffff, $colorBlue, $colorBlue);
 }
 
 .button--secondary-variation {
   @extend .button;
-  @include style-button(#ffffff, $colorBlue, true);
+  @include style-button(#ffffff, $colorBlue, $colorBlue, true);
 }

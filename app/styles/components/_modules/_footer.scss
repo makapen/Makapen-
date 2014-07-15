@@ -30,10 +30,14 @@ footer {
   }
 
   li a {
-    color: $colorBlack;
+    color: $colorBlue;
   }
 
   li a:visited, li a:hover, li a:focus {
-    color: $colorBlack;
+    color: lighten($colorBlue, 5%);
   }
+}
+
+.fa-twitter-outline {
+  color: $colorBlack;
 }

@@ -2483,11 +2483,21 @@ cf()
   color: #9d9d9d;
 }
 
-.nav-bar__icon {
+#nav-icon {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-icon__content {
   position: absolute;
   top: -9999px !important;
   right: -9999px !important;
-  visibility: hidden;
+}
+
+.stuck {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 /**
@@ -2520,8 +2530,8 @@ cf()
 
 .portfolio__work-pawzii {
   position: relative;
-  height: 400px;
   overflow: hidden;
+  height: 400px;
   background: url("../../../images/portfolio/pawziidog.png") no-repeat scroll center center/cover transparent;
 }
 
@@ -2536,7 +2546,7 @@ cf()
           transition: all 0.3s ease-in-out 0.2s;
   -webkit-animation: slidein 0.9s ease-in-out;
           animation: slidein 0.9s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -2678,9 +2688,13 @@ footer {
   padding: 5px;
 }
 .footer__ul li a {
-  color: #111111;
+  color: #3399cc;
 }
 .footer__ul li a:visited, .footer__ul li a:hover, .footer__ul li a:focus {
+  color: #47a3d1;
+}
+
+.fa-twitter-outline {
   color: #111111;
 }
 
@@ -2708,14 +2722,31 @@ footer {
   clear: both;
 }
 
+.contact__form {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.3em;
+}
 .contact__form input {
   display: block;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #111111;
+}
+.contact__form input:focus, .contact__form input:active {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #111111;
 }
 .contact__form textarea {
   box-sizing: border-box;
   display: block;
-  height: auto;
   width: 100%;
+  height: 250px;
+  resize: none;
+}
+.contact__form textarea:focus, .contact__form textarea:active {
+  outline: none;
 }
 
 /**
@@ -2795,7 +2826,7 @@ footer {
   -webkit-transition: none;
           transition: none;
 }
-.button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover {
+.button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover, .button:focus, .button--primary:focus, .button--secondary:focus, .button--secondary-variation:focus {
   background: #4d4d4d;
   color: #ffffff;
   border: 1px solid #4d4d4d;
@@ -2803,22 +2834,40 @@ footer {
 }
 
 .button--primary {
-  background: #4285f4;
+  background: #3399cc;
   color: white;
-  border: 1px solid #1266f1;
+  border: 1px solid #297aa3;
+  border-radius: 4px;
+  -webkit-transition: 0.1s ease-in-out;
+          transition: 0.1s ease-in-out;
+}
+.button--primary:hover, .button--primary:focus {
+  background: #297aa3;
 }
 
 .button--secondary {
   background: white;
   color: #3399cc;
   border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  -webkit-transition: 0.1s ease-in-out;
+          transition: 0.1s ease-in-out;
+}
+.button--secondary:hover, .button--secondary:focus {
+  background: #3399cc;
 }
 
 .button--secondary-variation {
   background: white;
   color: #3399cc;
   border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  -webkit-transition: 0.1s ease-in-out;
+          transition: 0.1s ease-in-out;
   border-color: transparent;
+}
+.button--secondary-variation:hover, .button--secondary-variation:focus {
+  background: #3399cc;
 }
 
 .col {

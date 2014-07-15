@@ -9,16 +9,36 @@
 }
 
 .contact__form {
+  max-width: 800px;
+  margin: auto;
+
+  font-size: 1.3em;
 
   input {
     display: block;
+
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid $colorBlack;
+
+    &:focus, &:active {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $colorBlack;
+    }
   }
 
   textarea {
     box-sizing: border-box;
     display: block;
 
-    height: auto;
     width: 100%;
+    height: 250px;
+    resize: none;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
   }
 }

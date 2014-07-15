@@ -11,8 +11,9 @@
 
 .portfolio__work-pawzii {
   position: relative;
-  height: 400px;
   overflow: hidden;
+
+  height: 400px;
   background: url('../../../images/portfolio/pawziidog.png')
                 no-repeat scroll center center / cover transparent;
 }
@@ -21,12 +22,13 @@
   position: absolute;
   top: 100%;
   left: 0;
+
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: all 0.3s ease-in-out 0.2s;
   animation: slidein 0.9s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -35,7 +37,6 @@
   transition-delay: 0;
   transform: translateY(0%);
   animation: slidein 0.9s ease-in-out;
-
 }
 
 @keyframes slidein {

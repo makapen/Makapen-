@@ -41,8 +41,10 @@
       </ul>
     </nav>
     <!-- Navbar -->
-    <div id="nav-icon" class="nav-bar__icon">
-      <i class="fa fa-align-justify fa-2x"></i>
+    <div id="nav-icon">
+      <div class="nav-icon__content">
+        <i class="fa fa-align-justify fa-2x"></i>
+      </div>
     </div>
 
 
@@ -55,7 +57,6 @@
     </div>
     <!-- logo main -->
 
-    <div id="box" style="display: block; width: 500px; height: 500px; background-color: black;"></div>
     <div id="services" class="col">
       <section class="services__content">
         <h3>Our Capabilities</h3>
@@ -108,7 +109,7 @@
 
     <div id="contact" class="col">
       <section class="contact__content">
-          <h2 class="centered">Contact us!</h2>
+          <h2 class="centered">Contact us</h2>
           <form class="contact__form">
             <label>
               <input type="text" placeholder="Name" name="name" />
@@ -116,7 +117,7 @@
             <label>
               <input type="text" placeholder="Email" name="email" />
             </label>
-            <textarea name="message"></textarea>
+            <textarea type="text" placeholder="Your message" name="message"></textarea>
             <button class="button--primary" type="submit">Submit</button>
           </form>
       </section>
@@ -125,7 +126,7 @@
 
     <footer class="col">
       <div class="footer__content">
-        <span><strong>Get to know us better!</strong></span>
+        <span><strong>Get to know us better</strong></span>
         <ul class="footer__ul">
           <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
           <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
@@ -137,27 +138,32 @@
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints-sticky.js"></script>
+
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
     <script>
       $(document).ready(function() {
-        var test = function() {
-          var logoMain = $('#box');
-          var nav_bar = $('#nav-bar');
+        var logoMain = $('#services');
+        var nav_bar = document.querySelector('#nav-bar');
+        var nav_icon = document.querySelectorAll('.nav-icon__content')[0];
 
-          logoMain.waypoint({offset: '20%', handler: function(direction) {
+        $('#services').waypoint({
+          offset: '0%',
+          handler: function(direction) {
             if (direction === "down") {
-                console.log(logoMain.offset().top);
-                console.log('waypoint hit');
-                nav_bar.css('display', 'none');
-              }
+              console.log('removed nav bar');
+              nav_icon.style.position = "relative";
+              nav_icon.style.top = '20px !important';
+              nav_icon.style.right = '20px !important';
             }
-          });
-        }
-
-        test()
+            if (direction === "up") {
+              console.log('added nav bar');
+            }
+          }
+        });
       });
     </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
