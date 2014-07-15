@@ -402,11 +402,6 @@ unstack()
 align($direction: both)
 cf()
 **/
-* {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
-}
-
 /*!
  *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2532,6 +2527,8 @@ cf()
   position: relative;
   overflow: hidden;
   height: 400px;
+  box-shadow: inset 0 0 5px white;
+  border-radius: 2px;
   background: url("../../../images/portfolio/pawziidog.png") no-repeat scroll center center/cover transparent;
 }
 
@@ -2567,23 +2564,23 @@ cf()
   }
 
   20% {
-    -webkit-transform: translateY(-12%);
-            transform: translateY(-12%);
-  }
-
-  40% {
     -webkit-transform: translateY(-25%);
             transform: translateY(-25%);
   }
 
-  60% {
+  40% {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
 
-  80% {
+  60% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
   }
 
   100% {
@@ -2599,23 +2596,23 @@ cf()
   }
 
   20% {
-    -webkit-transform: translateY(-12%);
-            transform: translateY(-12%);
-  }
-
-  40% {
     -webkit-transform: translateY(-25%);
             transform: translateY(-25%);
   }
 
-  60% {
+  40% {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
 
-  80% {
+  60% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+
+  80% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
   }
 
   100% {
@@ -2687,7 +2684,10 @@ footer {
   margin: auto;
   padding: 5px;
 }
-.footer__ul li a {
+.footer__ul li a .fa-stack {
+  color: white;
+}
+.footer__ul li a .fa-stack .fa-stack-1x {
   color: #3399cc;
 }
 .footer__ul li a:visited, .footer__ul li a:hover, .footer__ul li a:focus {
@@ -2729,7 +2729,7 @@ footer {
 }
 .contact__form input {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: none;
   border-bottom: 1px solid #111111;
 }
@@ -2822,9 +2822,14 @@ footer {
   font-family: "Open-sans", Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   outline: 0;
   -webkit-transition: none;
           transition: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover, .button:focus, .button--primary:focus, .button--secondary:focus, .button--secondary-variation:focus {
   background: #4d4d4d;
@@ -2832,42 +2837,57 @@ footer {
   border: 1px solid #4d4d4d;
   text-decoration: none;
 }
+.button:active, .button--primary:active, .button--secondary:active, .button--secondary-variation:active {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
 
 .button--primary {
   background: #3399cc;
   color: white;
   border: 1px solid #297aa3;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-transition: 0.1s ease-in-out;
           transition: 0.1s ease-in-out;
 }
 .button--primary:hover, .button--primary:focus {
   background: #297aa3;
+  border: 1px solid #297aa3;
+}
+.button--primary:active {
+  border: 1px solid #1f5c7a;
 }
 
 .button--secondary {
   background: white;
   color: #3399cc;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-transition: 0.1s ease-in-out;
           transition: 0.1s ease-in-out;
 }
 .button--secondary:hover, .button--secondary:focus {
   background: #3399cc;
+  border: 1px solid #3399cc;
+}
+.button--secondary:active {
+  border: 1px solid #297aa3;
 }
 
 .button--secondary-variation {
   background: white;
   color: #3399cc;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-transition: 0.1s ease-in-out;
           transition: 0.1s ease-in-out;
   border-color: transparent;
 }
 .button--secondary-variation:hover, .button--secondary-variation:focus {
   background: #3399cc;
+  border: 1px solid #3399cc;
+}
+.button--secondary-variation:active {
+  border: 1px solid #297aa3;
 }
 
 .col {
