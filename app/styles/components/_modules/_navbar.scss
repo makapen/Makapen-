@@ -22,8 +22,9 @@
 }
 
 #nav-icon {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  z-index: 9999;
 }
 
 .nav-icon__content {
@@ -32,9 +33,46 @@
   right: -9999px !important;
 }
 
-.stuck {
+.nav-icon__drawer {
+  display: block;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  z-index: 1000;
+
+  top: 0 !important;
+  right: 0 !important;
+
+  width: 40%;
+  height: 100%;
+  background-color: $colorWhite;
+  border: 1px solid $colorBlack;
+}
+
+.nav-icon__ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 20px 0 15px 10px;
+    list-style: none;
+
+    border-bottom: 1px solid $colorLightGrey;
+
+    a {
+      text-decoration:none;
+      color: $colorLightGrey;
+    }
+
+    &:focus, &:visited, &:hover {
+      color: $colorLightGrey;
+    }
+  }
+}
+
+.sticky {
+  position: fixed !important;
+  top: 5% !important;
+  right: 5% !important;
+
+  overflow: visible !important;
 
 }
