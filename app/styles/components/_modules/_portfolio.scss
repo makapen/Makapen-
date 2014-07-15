@@ -4,6 +4,9 @@
 *
 **/
 
+#portfolio {
+  padding-top: 15px;
+}
 .portfolio__work {
   @include col(1/2);
   margin-bottom: 10%;

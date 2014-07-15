@@ -2500,6 +2500,10 @@ cf()
 * Portfolio styling
 *
 **/
+#portfolio {
+  padding-top: 15px;
+}
+
 .portfolio__work {
   *zoom: 1;
   float: left;
@@ -2637,10 +2641,11 @@ cf()
   }
 }
 footer {
-  background-color: #9d9d9d;
-  text-align: center;
+  max-width: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
+  background-color: #9d9d9d;
+  text-align: center;
 }
 
 .footer__content {
@@ -2685,17 +2690,18 @@ footer {
   padding: 5px;
 }
 .footer__ul li a .fa-stack {
-  color: white;
+  color: #3399cc;
+  -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+}
+.footer__ul li a .fa-stack:visited, .footer__ul li a .fa-stack:hover, .footer__ul li a .fa-stack:focus, .footer__ul li a .fa-stack:active {
+  color: #cc6633;
 }
 .footer__ul li a .fa-stack .fa-stack-1x {
-  color: #3399cc;
+  color: white;
 }
-.footer__ul li a:visited, .footer__ul li a:hover, .footer__ul li a:focus {
-  color: #47a3d1;
-}
-
-.fa-twitter-outline {
-  color: #111111;
+.footer__ul li a .fa-stack .fa-stack-1x:visited, .footer__ul li a .fa-stack .fa-stack-1x:hover, .footer__ul li a .fa-stack .fa-stack-1x:focus {
+  color: white;
 }
 
 /**
@@ -2755,7 +2761,9 @@ footer {
 *
 **/
 #services {
-  padding-bottom: 10%;
+  max-width: 100%;
+  padding-bottom: 15px;
+  background-color: #3399cc;
 }
 
 .services__content {
@@ -2769,6 +2777,7 @@ footer {
   margin-left: 0%;
   margin-right: 3%;
   font-size: 20px;
+  color: white;
 }
 .services__content:before, .services__content:after {
   content: '';
@@ -2779,6 +2788,10 @@ footer {
 }
 .services__content:last-child {
   margin-right: 0%;
+}
+.services__content hr {
+  margin: 0;
+  padding: 0;
 }
 .services__content ul {
   list-style: none;

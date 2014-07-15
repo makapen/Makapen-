@@ -1,9 +1,12 @@
 
 footer {
-  background-color: $colorLightGrey;
-  text-align: center;
+  max-width: 100%;
+  
   padding-top: 100px;
   padding-bottom: 50px;
+
+  background-color: $colorLightGrey;
+  text-align: center;
 }
 
 .footer__content {
@@ -30,18 +33,19 @@ footer {
   }
 
   li a .fa-stack {
-    color: $colorWhite;
+    color: $colorBlue;
+    transition: 0.2s ease-in-out;
+
+    &:visited, &:hover, &:focus, &:active {
+      color: invert($colorBlue);
+    }
 
     .fa-stack-1x {
-      color: $colorBlue;
+      color: $colorWhite;
+
+      &:visited, &:hover, &:focus {
+        color: $colorWhite;
+      }
     }
   }
-
-  li a:visited, li a:hover, li a:focus {
-    color: lighten($colorBlue, 5%);
-  }
-}
-
-.fa-twitter-outline {
-  color: $colorBlack;
 }
