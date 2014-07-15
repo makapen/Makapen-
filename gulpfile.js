@@ -106,7 +106,7 @@ gulp.task('styles:scss', function () {
     .pipe($.rubySass({
       style: 'expanded',
       precision: 10,
-      loadPath: ['app/styles']
+      loadPath: ['app/styles/**/*']
     }))
     .on('error', console.error.bind(console))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))

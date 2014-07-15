@@ -1,9 +1,9 @@
 $(function() {
   'use strict';
 
-  var app = app || {};
+  var fn = fn || {};
 
-  app.scroll = function() {
+  fn.scroll = function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -18,13 +18,12 @@ $(function() {
     });
   };
 
-  app.nav = function() {
+  fn.nav = function() {
     var logoMain = $('#services');
     var nav_bar = document.querySelector('#nav-bar');
     var nav_icon = document.querySelectorAll('.nav-icon__content')[0];
 
     $('#services').waypoint({
-      offset: '0%',
       handler: function(direction) {
         if (direction === "down") {
           console.log('removed nav bar');
@@ -39,10 +38,10 @@ $(function() {
     });
   };
 
-  app.init = function() {
-    app.scroll();
-    app.nav();
+  fn.init = function() {
+    fn.scroll();
+    fn.nav();
   };
 
-  app.init();
+  fn.init();
 });
