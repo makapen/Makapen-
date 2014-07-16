@@ -20,20 +20,35 @@ $(function() {
 
   fn.nav = function() {
     var logoMain = $('#services');
-    var nav_bar = document.querySelector('#nav-bar');
-    var nav_icon = document.querySelectorAll('.nav-icon__content')[0];
+    var nav_bar = $('#nav-bar');
+    var nav_icon = $('.nav-icon__image');
 
-    $('#services').waypoint({
+    logoMain.waypoint({
+      offset: '40%',
       handler: function(direction) {
         if (direction === "down") {
           console.log('removed nav bar');
-          nav_icon.style.position = "relative";
-          nav_icon.style.top = '20px !important';
-          nav_icon.style.right = '20px !important';
+          // nav_bar.css({ height: nav_icon.outerHeight()});
+          nav_icon.addClass('sticky');
         }
         if (direction === "up") {
           console.log('added nav bar');
+          nav_icon.removeClass('sticky');
         }
+      }
+    });
+  };
+
+  fn.drawer = function() {
+    var nav_icon = $('.nav-icon__image');
+    var nav_drawer = $('.nav-icon__drawer');
+    nav_icon.on('click', function(e) {
+      console.log('drawer hit');
+      if (nav_drawer.hasClass('nav-icon__drawer-active')) {
+        nav_drawer.removeClass('nav-icon__drawer-active');
+      }
+      else {
+        nav_drawer.addClass('nav-icon__drawer-active');
       }
     });
   };
@@ -41,6 +56,7 @@ $(function() {
   fn.init = function() {
     fn.scroll();
     fn.nav();
+    fn.drawer();
   };
 
   fn.init();

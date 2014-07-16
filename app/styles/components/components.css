@@ -2479,20 +2479,56 @@ cf()
 }
 
 #nav-icon {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  z-index: 9999;
 }
 
-.nav-icon__content {
+.nav-icon__image {
   position: absolute;
   top: -9999px !important;
   right: -9999px !important;
+  cursor: pointer;
 }
 
-.stuck {
+.nav-icon__drawer {
+  display: block;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  z-index: 1000;
+  top: 0 !important;
+  right: -50%;
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #111111;
+}
+
+.nav-icon__drawer-active {
+  right: 0 !important;
+}
+
+.nav-icon__ul {
+  padding: 0;
+  margin: 0;
+}
+.nav-icon__ul li {
+  padding: 5% 0 5% 5%;
+  list-style: none;
+  border-bottom: 1px solid #9d9d9d;
+}
+.nav-icon__ul li a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+.nav-icon__ul li:focus, .nav-icon__ul li:visited, .nav-icon__ul li:hover {
+  color: #9d9d9d;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 3% !important;
+  right: 3% !important;
+  overflow: visible !important;
 }
 
 /**
@@ -2778,6 +2814,7 @@ footer {
   margin-right: 3%;
   font-size: 20px;
   color: white;
+  text-align: center;
 }
 .services__content:before, .services__content:after {
   content: '';
@@ -2790,8 +2827,13 @@ footer {
   margin-right: 0%;
 }
 .services__content hr {
-  margin: 0;
-  padding: 0;
+  height: 1%;
+  max-width: 300px;
+  margin: 0 auto 5px auto;
+  padding: auto;
+  border: none;
+  border: 1px solid white;
+  background-color: white;
 }
 .services__content ul {
   list-style: none;
@@ -2815,6 +2857,9 @@ footer {
   }
   .services__content:last-child {
     margin-right: auto;
+  }
+  .services__content hr {
+    margin: 0 auto 5px auto;
   }
   .services__content ul {
     margin: auto;
@@ -2903,6 +2948,18 @@ footer {
   border: 1px solid #297aa3;
 }
 
+.font-awesome {
+  color: #111111;
+  -webkit-transition: 0.1s ease-in;
+          transition: 0.1s ease-in;
+}
+.font-awesome:visited {
+  color: #111111;
+}
+.font-awesome:hover {
+  color: #333333;
+}
+
 .col {
   *zoom: 1;
   width: auto;
@@ -2920,18 +2977,6 @@ footer {
 }
 .col:after {
   clear: both;
-}
-
-.font-awesome {
-  color: #111111;
-  -webkit-transition: 0.1s ease-in;
-          transition: 0.1s ease-in;
-}
-.font-awesome:visited {
-  color: #111111;
-}
-.font-awesome:hover {
-  color: #333333;
 }
 
 /**

@@ -27,10 +27,12 @@
   z-index: 9999;
 }
 
-.nav-icon__content {
+.nav-icon__image {
   position: absolute;
   top: -9999px !important;
   right: -9999px !important;
+
+  cursor: pointer;
 }
 
 .nav-icon__drawer {
@@ -39,12 +41,16 @@
   z-index: 1000;
 
   top: 0 !important;
-  right: 0 !important;
+  right: -50%;
 
-  width: 40%;
+  width: 45%;
   height: 100%;
   background-color: $colorWhite;
   border: 1px solid $colorBlack;
+}
+
+.nav-icon__drawer-active {
+  right: 0 !important;
 }
 
 .nav-icon__ul {
@@ -52,7 +58,7 @@
   margin: 0;
 
   li {
-    padding: 20px 0 15px 10px;
+    padding: 5% 0 5% 5%;
     list-style: none;
 
     border-bottom: 1px solid $colorLightGrey;
@@ -70,8 +76,8 @@
 
 .sticky {
   position: fixed !important;
-  top: 5% !important;
-  right: 5% !important;
+  top: 3% !important;
+  right: 3% !important;
 
   overflow: visible !important;
 

@@ -14,7 +14,7 @@
 // Jeet grid system
 @import "_libs/jeet/_index";
 // Font awesome
-@import "_libs/font-awesome/scss/font-awesome";
+@import "_libs/font-awesome/scss/_font-awesome";
 
 // Modules
 // @import "_modules/_highlight";
@@ -42,8 +42,9 @@
 // Components
 // @import "_components/_typography";
 @import "_components/_button";
-@import "_components/_column-list";
 @import "_components/_font-awesome";
+@import "_components/_grid-jeet";
+
 // @import "_components/_list";
 // @import "_components/_link";
 // @import "_components/_table";

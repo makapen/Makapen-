@@ -16,9 +16,18 @@
   font-size: $fontMedium;
   color: $colorWhite;
 
+  text-align: center;
+
   hr {
-    margin: 0;
-    padding: 0;
+    height: 1%;
+    max-width: 300px;
+
+    margin: 0 auto 5px auto;
+    padding: auto;
+
+    border: none;
+    border: 1px solid $colorWhite;
+    background-color: $colorWhite;
   }
   ul {
     list-style: none;
@@ -34,6 +43,10 @@
     text-align: center;
 
     padding-bottom: 30px;
+
+    hr {
+      margin: 0 auto 5px auto;
+    }
 
     ul {
       margin: auto;
