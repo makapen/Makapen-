@@ -1,3 +1,8 @@
+/**
+*
+* Nav styling
+*
+**/
 
 #nav-bar {
   position: absolute;
@@ -5,7 +10,7 @@
   right: 0px;
 }
 
-.nav-bar__ul li {
+.nav-bar__list li {
   float: right;
   padding-top: 10px;
   padding-right: 35px;
@@ -21,39 +26,61 @@
   }
 }
 
-#nav-icon {
+#nav-ham {
   position: relative;
-  overflow: hidden;
   z-index: 9999;
 }
 
-.nav-icon__image {
+.nav-ham__icon {
   position: absolute;
   top: -9999px !important;
   right: -9999px !important;
 
+  overflow: hidden;
   cursor: pointer;
+
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
-.nav-icon__drawer {
+.nav-ham__icon--sticky {
+  position: fixed !important;
+  top: 3% !important;
+  right: 3% !important;
+
+  overflow: visible;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+
+}
+
+.nav-drawer {
   display: block;
   position: fixed;
   z-index: 1000;
 
-  top: 0 !important;
-  right: -50%;
+  top: -100%;
+  right: 0;
+  opacity: 0;
 
   width: 45%;
-  height: 100%;
+  height: auto;
   background-color: $colorWhite;
-  border: 1px solid $colorBlack;
+  border-left: 1px solid $colorBlack;
+
+  transition: all 0.6s ease-in-out;
+}
+.fade {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
 }
 
-.nav-icon__drawer-active {
-  right: 0 !important;
+.nav-drawer--active {
+  top: 0 ;
+  opacity: 1;
 }
 
-.nav-icon__ul {
+.nav-drawer__list {
   padding: 0;
   margin: 0;
 
@@ -72,13 +99,4 @@
       color: $colorLightGrey;
     }
   }
-}
-
-.sticky {
-  position: fixed !important;
-  top: 3% !important;
-  right: 3% !important;
-
-  overflow: visible !important;
-
 }

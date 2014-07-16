@@ -19,36 +19,41 @@ $(function() {
   };
 
   fn.nav = function() {
-    var logoMain = $('#services');
+    var services = $('#services');
+    var logo = $('#logo');
     var nav_bar = $('#nav-bar');
-    var nav_icon = $('.nav-icon__image');
-
-    logoMain.waypoint({
-      offset: '40%',
+    var nav_ham = $('.nav-ham__icon');
+    var nav_drawer = $('.nav-drawer');
+    console.log(nav_bar.height());
+    logo.waypoint({
+      offset: function() {
+        return -nav_bar.height();
+      },
       handler: function(direction) {
         if (direction === "down") {
-          console.log('removed nav bar');
-          // nav_bar.css({ height: nav_icon.outerHeight()});
-          nav_icon.addClass('sticky');
+          nav_ham.addClass('nav-ham__icon--sticky');
         }
-        if (direction === "up") {
-          console.log('added nav bar');
-          nav_icon.removeClass('sticky');
+        else if (direction === "up" && nav_drawer.hasClass('nav-drawer')) {
+          nav_ham.removeClass('nav-ham__icon--sticky');
+          nav_drawer.removeClass('nav-drawer--active');
+        }
+        else if (direction === "up") {
+          nav_ham.removeClass('nav-ham__icon--sticky');
         }
       }
     });
   };
 
   fn.drawer = function() {
-    var nav_icon = $('.nav-icon__image');
-    var nav_drawer = $('.nav-icon__drawer');
-    nav_icon.on('click', function(e) {
-      console.log('drawer hit');
-      if (nav_drawer.hasClass('nav-icon__drawer-active')) {
-        nav_drawer.removeClass('nav-icon__drawer-active');
+    var nav_ham = $('.nav-ham__icon');
+    var nav_drawer = $('.nav-drawer');
+
+    nav_ham.on('click', function(e) {
+      if (nav_drawer.hasClass('nav-drawer--active')) {
+        nav_drawer.removeClass('nav-drawer--active');
       }
       else {
-        nav_drawer.addClass('nav-icon__drawer-active');
+        nav_drawer.addClass('nav-drawer--active');
       }
     });
   };
