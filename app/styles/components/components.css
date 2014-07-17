@@ -2465,8 +2465,8 @@ cf()
 **/
 #nav-bar {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
 
 .nav-bar__list li {
@@ -2485,7 +2485,8 @@ cf()
 
 #nav-ham {
   position: relative;
-  z-index: 9999;
+  top: 0;
+  right: 0;
 }
 
 .nav-ham__icon {
@@ -2494,6 +2495,7 @@ cf()
   right: -9999px !important;
   overflow: hidden;
   cursor: pointer;
+  z-index: 9999;
   -webkit-transition: opacity 1s ease-in-out;
           transition: opacity 1s ease-in-out;
   opacity: 0;
@@ -2524,15 +2526,11 @@ cf()
           transition: all 0.6s ease-in-out;
 }
 
-.fade {
-  opacity: 1;
-  -webkit-transition: all 0.6s ease-in-out;
-          transition: all 0.6s ease-in-out;
-}
-
 .nav-drawer--active {
   top: 0;
   opacity: 1;
+  -webkit-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
 }
 
 .nav-drawer__list {

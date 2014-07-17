@@ -6,8 +6,8 @@
 
 #nav-bar {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
 
 .nav-bar__list li {
@@ -28,7 +28,8 @@
 
 #nav-ham {
   position: relative;
-  z-index: 9999;
+  top: 0;
+  right: 0;
 }
 
 .nav-ham__icon {
@@ -38,11 +39,16 @@
 
   overflow: hidden;
   cursor: pointer;
+  z-index: 9999;
 
   transition: opacity 1s ease-in-out;
   opacity: 0;
+
 }
 
+.fade {
+
+}
 .nav-ham__icon--sticky {
   position: fixed !important;
   top: 3% !important;
@@ -70,14 +76,11 @@
 
   transition: all 0.6s ease-in-out;
 }
-.fade {
-  opacity: 1;
-  transition: all 0.6s ease-in-out;
-}
 
 .nav-drawer--active {
   top: 0 ;
   opacity: 1;
+  transition: all 0.6s ease-in-out;
 }
 
 .nav-drawer__list {
