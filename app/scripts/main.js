@@ -36,7 +36,8 @@ $(function() {
           $nav_ham.removeClass('nav-ham__icon--sticky');
           $nav_drawer.removeClass('nav-drawer--active');
         }
-        else if (direction === "up") {
+        // Scrolled up
+        else {
           $nav_ham.removeClass('nav-ham__icon--sticky');
         }
       }

@@ -132,8 +132,8 @@ gulp.task('html', function () {
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [
-        '.navdrawer-container.open',
-        /.app-bar.open/
+        '.nav-ham__icon--sticky',
+        '.nav-drawer--active'
       ]
     })))
     // Concatenate And Minify Styles

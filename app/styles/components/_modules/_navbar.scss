@@ -46,17 +46,14 @@
 
 }
 
-.fade {
-
-}
 .nav-ham__icon--sticky {
   position: fixed !important;
   top: 3% !important;
   right: 3% !important;
 
-  overflow: visible;
+  overflow: visible !important;
+  opacity: 1 !important;
   transition: opacity 1s ease-in-out;
-  opacity: 1;
 
 }
 

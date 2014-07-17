@@ -2505,10 +2505,10 @@ cf()
   position: fixed !important;
   top: 3% !important;
   right: 3% !important;
-  overflow: visible;
+  overflow: visible !important;
+  opacity: 1 !important;
   -webkit-transition: opacity 1s ease-in-out;
           transition: opacity 1s ease-in-out;
-  opacity: 1;
 }
 
 .nav-drawer {
