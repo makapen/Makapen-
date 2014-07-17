@@ -5,7 +5,8 @@
 **/
 
 #portfolio {
-  padding-top: 20px;
+  padding-top: $padding;
+  padding-bottom: $padding;
 }
 .portfolio__work {
   @include col(1/2);
@@ -34,7 +35,7 @@
   opacity: 0;
   transition: all 0.4s ease-in-out;
   // animation: slidein 0.9s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: $colorLightGrey;
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {

@@ -16,13 +16,15 @@
   padding-right: 35px;
   list-style: none;
 
-  a {
+  a, a:visited {
     text-decoration:none;
-    color: $colorLightGrey;
-  }
+    color: $colorDarkGrey;
+    transition: all 0.2s ease-in-out;
 
-  &:focus, &:visited, &:hover {
-    color: $colorLightGrey;
+    &:focus, &:hover {
+      color: $colorBlack;
+      transition: all 0.2s ease-in-out
+    }
   }
 }
 
@@ -90,13 +92,13 @@
 
     border-bottom: 1px solid $colorLightGrey;
 
-    a {
+    a, a:visited {
       text-decoration:none;
-      color: $colorLightGrey;
-    }
+      color: $colorDarkGrey;
 
-    &:focus, &:visited, &:hover {
-      color: $colorLightGrey;
+      &:focus, &:hover {
+        color: $colorBlack;
+      }
     }
   }
 }

@@ -2475,12 +2475,16 @@ cf()
   padding-right: 35px;
   list-style: none;
 }
-.nav-bar__list li a {
+.nav-bar__list li a, .nav-bar__list li a:visited {
   text-decoration: none;
   color: #9d9d9d;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
-.nav-bar__list li:focus, .nav-bar__list li:visited, .nav-bar__list li:hover {
-  color: #9d9d9d;
+.nav-bar__list li a:focus, .nav-bar__list li a:hover, .nav-bar__list li a:visited:focus, .nav-bar__list li a:visited:hover {
+  color: #111111;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
 
 #nav-ham {
@@ -2540,14 +2544,14 @@ cf()
 .nav-drawer__list li {
   padding: 5% 0 5% 5%;
   list-style: none;
-  border-bottom: 1px solid #9d9d9d;
+  border-bottom: 1px solid #cfd0cc;
 }
-.nav-drawer__list li a {
+.nav-drawer__list li a, .nav-drawer__list li a:visited {
   text-decoration: none;
   color: #9d9d9d;
 }
-.nav-drawer__list li:focus, .nav-drawer__list li:visited, .nav-drawer__list li:hover {
-  color: #9d9d9d;
+.nav-drawer__list li a:focus, .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:focus, .nav-drawer__list li a:visited:hover {
+  color: #111111;
 }
 
 /**
@@ -2556,7 +2560,8 @@ cf()
 *
 **/
 #portfolio {
-  padding-top: 20px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .portfolio__work {
@@ -2599,7 +2604,7 @@ cf()
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #cfd0cc;
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -2634,7 +2639,7 @@ footer {
   max-width: 100%;
   padding-top: 30px;
   padding-bottom: 50px;
-  background-color: #9d9d9d;
+  background-color: #cfd0cc;
   text-align: center;
 }
 
@@ -2756,8 +2761,9 @@ footer {
 **/
 #services {
   min-width: 100%;
-  padding-bottom: 15px;
-  background-color: #3399cc;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #cfd0cc;
 }
 
 .services__content {
@@ -2771,7 +2777,6 @@ footer {
   margin-left: 0%;
   margin-right: 3%;
   font-size: 20px;
-  color: white;
   text-align: center;
 }
 .services__content:before, .services__content:after {
@@ -2790,8 +2795,8 @@ footer {
   margin: 0 auto 5px auto;
   padding: auto;
   border: none;
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid #111111;
+  background-color: #111111;
 }
 .services__content ul {
   list-style: none;
@@ -2915,7 +2920,7 @@ footer {
   color: #111111;
 }
 .font-awesome:hover {
-  color: #333333;
+  color: #9d9d9d;
 }
 
 .col {
