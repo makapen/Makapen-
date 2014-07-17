@@ -10,7 +10,7 @@
 }
 .portfolio__work {
   @include col(1/2);
-  margin-bottom: 10%;
+  margin-top: $padding;
 }
 
 .portfolio__work-pawzii {
@@ -66,5 +66,6 @@
 @media only screen and (max-width: $medium) {
   .portfolio__work {
     @include stack();
+    margin-bottom: $padding;
   }
 }

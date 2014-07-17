@@ -28,10 +28,39 @@
   }
 }
 
-#nav-ham {
+#nav-dropdown {
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
+}
+
+.nav-mk__icon {
+  position: absolute;
+  top: -9999px !important;
+  left: -9999px !important;
+
+  height: 30px;
+  width: 70px;
+
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 9999;
+
+  background: url('../../images/mklogo-small.png') no-repeat top left;
+  background-size: 70px 30px;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.nav-mk__icon--sticky {
+  position: fixed !important;
+  top: 0.75em !important;
+  left: 1em !important;
+
+  overflow: visible !important;
+  opacity: 1 !important;
+  transition: opacity 1s ease-in-out;
 }
 
 .nav-ham__icon {
@@ -43,6 +72,9 @@
   cursor: pointer;
   z-index: 9999;
 
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/hamburger.svg');
   transition: opacity 1s ease-in-out;
   opacity: 0;
 
@@ -50,13 +82,12 @@
 
 .nav-ham__icon--sticky {
   position: fixed !important;
-  top: 3% !important;
-  right: 3% !important;
+  top: 0.7em !important;
+  right: 1em !important;
 
   overflow: visible !important;
   opacity: 1 !important;
   transition: opacity 1s ease-in-out;
-
 }
 
 .nav-drawer {
@@ -68,11 +99,11 @@
   right: 0;
   opacity: 0;
 
-  width: 45%;
+  width: 300px;
   height: auto;
   background-color: $colorWhite;
   border-left: 1px solid $colorBlack;
-
+  border-bottom: 1px solid $colorBlack;
   transition: all 0.6s ease-in-out;
 }
 
@@ -92,6 +123,9 @@
 
     border-bottom: 1px solid $colorLightGrey;
 
+    &:last-child {
+      border-bottom: none;
+    }
     a, a:visited {
       text-decoration:none;
       color: $colorDarkGrey;
@@ -100,5 +134,14 @@
         color: $colorBlack;
       }
     }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  #nav-bar {
+    display: none;
+  }
+  .nav-drawer {
+    min-width: 100%;
   }
 }
