@@ -5,12 +5,12 @@
 **/
 
 #portfolio {
-  padding-top: $padding;
-  padding-bottom: $padding;
+  padding-top: $padding-section;
+  padding-bottom: $padding-section;
 }
 .portfolio__work {
   @include col(1/2);
-  margin-top: $padding;
+  margin-top: $padding-section;
 }
 
 .portfolio__work-pawzii {
@@ -35,7 +35,7 @@
   opacity: 0;
   transition: all 0.4s ease-in-out;
   // animation: slidein 0.9s ease-in-out;
-  background-color: $colorLightGrey;
+  background-color: $colorGrayLight;
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -66,6 +66,6 @@
 @media only screen and (max-width: $medium) {
   .portfolio__work {
     @include stack();
-    margin-bottom: $padding;
+    margin-bottom: $padding-section;
   }
 }

@@ -2472,7 +2472,7 @@ cf()
 }
 .nav-bar__list li a, .nav-bar__list li a:visited {
   text-decoration: none;
-  color: #9d9d9d;
+  color: #404040;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
@@ -2597,14 +2597,14 @@ cf()
 .nav-drawer__list li {
   padding: 5% 0 5% 5%;
   list-style: none;
-  border-bottom: 1px solid #cfd0cc;
+  border-bottom: 1px solid #eeeeee;
 }
 .nav-drawer__list li:last-child {
   border-bottom: none;
 }
 .nav-drawer__list li a, .nav-drawer__list li a:visited {
   text-decoration: none;
-  color: #9d9d9d;
+  color: #404040;
 }
 .nav-drawer__list li a:focus, .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:focus, .nav-drawer__list li a:visited:hover {
   color: #111111;
@@ -2625,8 +2625,8 @@ cf()
 *
 **/
 #portfolio {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .portfolio__work {
@@ -2639,7 +2639,7 @@ cf()
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  margin-top: 2em;
+  margin-top: 6em;
 }
 .portfolio__work:before, .portfolio__work:after {
   content: '';
@@ -2669,7 +2669,7 @@ cf()
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
-  background-color: #cfd0cc;
+  background-color: #eeeeee;
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -2687,7 +2687,7 @@ cf()
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
   }
   .portfolio__work:first-child {
     margin-left: auto;
@@ -2705,7 +2705,7 @@ footer {
   max-width: 100%;
   padding-top: 30px;
   padding-bottom: 50px;
-  background-color: #cfd0cc;
+  background-color: #eeeeee;
   text-align: center;
 }
 
@@ -2827,9 +2827,9 @@ footer {
 **/
 #services {
   min-width: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #cfd0cc;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: #eeeeee;
 }
 
 .services__content {
@@ -2986,7 +2986,7 @@ footer {
   color: #111111;
 }
 .font-awesome:hover {
-  color: #9d9d9d;
+  color: #404040;
 }
 
 .col {
