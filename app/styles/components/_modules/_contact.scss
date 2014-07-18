@@ -6,6 +6,11 @@
 
 #contact {
   margin-bottom: 20px;
+  h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+  }
 }
 .contact__content {
   @include center();

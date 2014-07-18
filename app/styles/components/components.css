@@ -2629,6 +2629,11 @@ cf()
   padding-top: 6em;
   padding-bottom: 6em;
 }
+#portfolio h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: italic;
+}
 
 .portfolio__work {
   *zoom: 1;
@@ -2637,14 +2642,14 @@ cf()
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 48.5%;
+  width: 31.3333333333%;
   margin-left: 0%;
   margin-right: 3%;
-  margin-top: 6em;
+  margin-top: 3em;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 300px;
 }
 .portfolio__work:before, .portfolio__work:after {
   content: '';
@@ -2669,16 +2674,32 @@ cf()
   background: url("../../../images/portfolio/productivity.jpg") no-repeat scroll center center/cover transparent;
 }
 
+.portfolio__item-title {
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+
 .portfolio__work-mask {
   position: absolute;
   top: 100%;
   left: 0;
+  text-align: left;
   height: 100%;
   width: 100%;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
   background-color: #eeeeee;
+}
+.portfolio__work-mask h2 {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.portfolio__work-mask p {
+  padding: 1.5em;
 }
 
 .portfolio__work:hover .portfolio__work-mask {
@@ -2782,6 +2803,11 @@ footer {
 #contact {
   margin-bottom: 20px;
 }
+#contact h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: italic;
+}
 
 .contact__content {
   *zoom: 1;
@@ -2840,6 +2866,11 @@ footer {
   padding-bottom: 6em;
   background-color: #eeeeee;
 }
+#services h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: italic;
+}
 
 .services__content {
   *zoom: 1;
@@ -2852,7 +2883,7 @@ footer {
   margin-left: 0%;
   margin-right: 3%;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 .services__content:before, .services__content:after {
   content: '';
@@ -2864,14 +2895,8 @@ footer {
 .services__content:last-child {
   margin-right: 0%;
 }
-.services__content hr {
-  height: 1%;
-  max-width: 300px;
-  margin: 0 auto 5px auto;
-  padding: auto;
-  border: none;
-  border: 1px solid #111111;
-  background-color: #111111;
+.services__content h3 {
+  border-bottom: 2px solid #111111;
 }
 .services__content ul {
   list-style: none;
