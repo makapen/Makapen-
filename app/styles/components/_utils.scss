@@ -6,6 +6,9 @@
 
 /*==========  VARIABLES  ==========*/
 
+  //Fonts
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
+
   // Defining breakpoints
   $medium: 620px !default;
   $wide: 800px !default;
@@ -68,9 +71,9 @@
   $colorPerformanceSecondary: lighten($colorPerformance, 30%) !default;
 
   // Defining font family
-  $fontDefault: 'Open-sans', sans-serif !default;
-  $fontHighlight: "Open-sans", Helvetica, sans-serif !default;
-  $fontLogo: 'norwester', Helvetica, sans-serif !default;
+  $fontDefault: 'Open Sans', sans-serif !default;
+  $fontHighlight: "Open Sans", sans-serif !default;
+  $fontLogo: 'norwester', sans-serif !default;
   $fontIcon: "icons" !default;
 
   // Defining font sizes

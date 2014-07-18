@@ -9,6 +9,7 @@
 *
 **/
 /*==========  VARIABLES  ==========*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
 /*==========  FUNCTIONS  ==========*/
 /*==========  MIXINS  ==========*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -2878,7 +2879,7 @@ footer {
   margin-top: 13px;
   min-height: 26px;
   text-align: center;
-  font-family: "Open-sans", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-decoration: none;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -2999,7 +3000,7 @@ footer {
   /* 26px */
   padding-top: 2.0000em;
   padding-bottom: 0;
-  font-family: "Open-sans", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
