@@ -19,63 +19,63 @@ $(function() {
   };
 
   // Show nav icons using waypoints
-  fn.nav = function() {
-    var $logo = $('#logo');
-    var $nav_bar = $('#nav-bar');
-    var $nav_ham = $('.nav-ham__icon');
-    var $nav_drawer = $('.nav-drawer');
-    var $nav_mk = $('.nav-mk__icon');
-
-    // If mobile, show nav icons off the bat, hack
-    if (window.innerWidth > 480) {
-      $logo.waypoint({
-        offset: function() {
-          return -$nav_bar.height();
-        },
-        handler: function(direction) {
-          if (direction === "down") {
-            $nav_ham.addClass('nav-ham__icon--sticky');
-            $nav_mk.addClass('nav-mk__icon--sticky');
-            // $nav_bar.css('visibility', 'hidden');
-          }
-          // Close the drawer if it's open and your moving up
-          else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
-            $nav_ham.removeClass('nav-ham__icon--sticky');
-            $nav_mk.removeClass('nav-mk__icon--sticky');
-            $nav_drawer.removeClass('nav-drawer--active');
-            // $nav_bar.css('visibility', 'visible');
-          }
-          // Scrolled up
-          else {
-            $nav_ham.removeClass('nav-ham__icon--sticky');
-            $nav_mk.removeClass('nav-mk__icon--sticky');
-            // $nav_bar.css('visibility', 'visible');
-          }
-        }
-      });
-    }
-    else {
-      $nav_ham.addClass('nav-ham__icon--sticky');
-    }
-  };
+  // fn.nav = function() {
+  //   var $logo = $('#logo');
+  //   var $nav_bar = $('#nav-bar');
+  //   var $nav_ham = $('.nav-ham__icon');
+  //   var $nav_drawer = $('.nav-drawer');
+  //   var $nav_mk = $('.nav-mk__icon');
+  //
+  //   // If mobile, show nav icons off the bat, hack
+  //   if (window.innerWidth > 480) {
+  //     $logo.waypoint({
+  //       offset: function() {
+  //         return -$nav_bar.height();
+  //       },
+  //       handler: function(direction) {
+  //         if (direction === "down") {
+  //           $nav_ham.addClass('nav-ham__icon--sticky');
+  //           $nav_mk.addClass('nav-mk__icon--sticky');
+  //           // $nav_bar.css('visibility', 'hidden');
+  //         }
+  //         // Close the drawer if it's open and your moving up
+  //         else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
+  //           $nav_ham.removeClass('nav-ham__icon--sticky');
+  //           $nav_mk.removeClass('nav-mk__icon--sticky');
+  //           $nav_drawer.removeClass('nav-drawer--active');
+  //           // $nav_bar.css('visibility', 'visible');
+  //         }
+  //         // Scrolled up
+  //         else {
+  //           $nav_ham.removeClass('nav-ham__icon--sticky');
+  //           $nav_mk.removeClass('nav-mk__icon--sticky');
+  //           // $nav_bar.css('visibility', 'visible');
+  //         }
+  //       }
+  //     });
+  //   }
+  //   else {
+  //     $nav_ham.addClass('nav-ham__icon--sticky');
+  //   }
+  // };
 
   fn.drawer = function() {
     var $nav_ham = $('.nav-ham__icon');
     var $nav_drawer = $('.nav-drawer');
 
     $nav_ham.on('click', function(e) {
-        if ($nav_drawer.hasClass('nav-drawer--active')) {
-          $nav_drawer.removeClass('nav-drawer--active');
-        }
-        else {
-          $nav_drawer.addClass('nav-drawer--active');
-        }
+      $(this).toggleClass('nav-ham__icon--open');
+        // if ($nav_drawer.hasClass('nav-drawer--active')) {
+        //   $nav_drawer.removeClass('nav-drawer--active');
+        // }
+        // else {
+        //   $nav_drawer.addClass('nav-drawer--active');
+        // }
     });
   };
-
   fn.init = function() {
     fn.scroll();
-    fn.nav();
+    // fn.nav();
     fn.drawer();
   };
 
