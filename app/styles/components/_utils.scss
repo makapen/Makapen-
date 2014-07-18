@@ -22,7 +22,9 @@
   $wideGutterWidth: 3.7% !default;
 
   // Default padding
-  $padding: 2em;
+  $padding-section: 6em;
+  $padding-diff-element: 3em;
+  $padding-same-element: 1.5em;
 
   // Defining colors
   // Primary accent colors
@@ -45,10 +47,10 @@
 
   // Grey-scales
   $colorBlack: #111111 !default;
-  $colorLightGrey: #CFD0CC !default;
-  $colorDarkGrey: #9D9D9D !default;
+  // $colorGrayLight: #CFD0CC !default;
+  // $colorGrayDark: #9D9D9D !default;
   $colorWhite: #fff !default;
-  $colorRemember: #09829a !default;
+  // $colorRemember: #09829a !default;
 
   $colorText: $colorGrayDark !default;
   $colorHighlight: $colorBlue !default;

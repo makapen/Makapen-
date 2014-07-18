@@ -384,11 +384,6 @@ blockquote {
   margin: 0;
 }
 
-/**
-*
-* Global
-*
-**/
 /** Syntax Quick Reference
 --------------------------
 column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
@@ -2477,7 +2472,7 @@ cf()
 }
 .nav-bar__list li a, .nav-bar__list li a:visited {
   text-decoration: none;
-  color: #9d9d9d;
+  color: #404040;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
@@ -2574,14 +2569,14 @@ cf()
 .nav-drawer__list li {
   padding: 5% 0 5% 5%;
   list-style: none;
-  border-bottom: 1px solid #cfd0cc;
+  border-bottom: 1px solid #eeeeee;
 }
 .nav-drawer__list li:last-child {
   border-bottom: none;
 }
 .nav-drawer__list li a, .nav-drawer__list li a:visited {
   text-decoration: none;
-  color: #9d9d9d;
+  color: #404040;
 }
 .nav-drawer__list li a:focus, .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:focus, .nav-drawer__list li a:visited:hover {
   color: #111111;
@@ -2602,8 +2597,8 @@ cf()
 *
 **/
 #portfolio {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .portfolio__work {
@@ -2616,7 +2611,7 @@ cf()
   width: 48.5%;
   margin-left: 0%;
   margin-right: 3%;
-  margin-top: 2em;
+  margin-top: 6em;
 }
 .portfolio__work:before, .portfolio__work:after {
   content: '';
@@ -2646,7 +2641,7 @@ cf()
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
-  background-color: #cfd0cc;
+  background-color: #eeeeee;
 }
 
 .portfolio__work-pawzii:hover .portfolio__work-mask {
@@ -2664,7 +2659,7 @@ cf()
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
   }
   .portfolio__work:first-child {
     margin-left: auto;
@@ -2682,7 +2677,7 @@ footer {
   max-width: 100%;
   padding-top: 30px;
   padding-bottom: 50px;
-  background-color: #cfd0cc;
+  background-color: #eeeeee;
   text-align: center;
 }
 
@@ -2804,9 +2799,9 @@ footer {
 **/
 #services {
   min-width: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background-color: #cfd0cc;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: #eeeeee;
 }
 
 .services__content {
@@ -2963,7 +2958,7 @@ footer {
   color: #111111;
 }
 .font-awesome:hover {
-  color: #9d9d9d;
+  color: #404040;
 }
 
 .col {
@@ -2983,162 +2978,6 @@ footer {
 }
 .col:after {
   clear: both;
-}
-
-/**
-*
-* Helper
-*
-**/
-.clear::before, .clear::after {
-  content: "";
-  display: table;
-}
-.clear::after {
-  clear: both;
-}
-
-/*==========  COLORS  ==========*/
-.color--blue {
-  color: #3399cc;
-}
-
-.color--red {
-  color: #cb4437;
-}
-
-.color--green {
-  color: #0f9d58;
-}
-
-.color--yellow {
-  color: #f4b400;
-}
-
-.color--blue-secondary {
-  color: #add6eb;
-}
-
-.color--red-secondary {
-  color: #ebb6b0;
-}
-
-.color--green-secondary {
-  color: #56efa5;
-}
-
-.color--yellow-secondary {
-  color: #ffd45b;
-}
-
-.color--gray-background {
-  color: #f0f0f0;
-}
-
-.color--gray-keyline {
-  color: #e0e0e0;
-}
-
-.color--gray {
-  color: #737373;
-}
-
-.color--gray-dark {
-  color: #404040;
-}
-
-.color--text {
-  color: #404040;
-}
-
-.color--highlight {
-  color: #3399cc;
-}
-
-.color--warning {
-  color: #ffd45b;
-}
-
-.color--danger {
-  color: #cb4437;
-}
-
-.color--muted {
-  color: #737373;
-}
-
-.color--remember {
-  color: #09829a;
-}
-
-.color--learning {
-  color: #da2e75;
-}
-
-.color--layouts {
-  color: #297ea9;
-}
-
-.color--user {
-  color: #2c8566;
-}
-
-.color--media {
-  color: #cf423a;
-}
-
-.color--performance {
-  color: #7b5294;
-}
-
-.color--layouts-secondary {
-  color: #89c4e2;
-}
-
-.color--user-secondary {
-  color: #78d2b3;
-}
-
-.color--media-secondary {
-  color: #edb8b5;
-}
-
-.color--performance-secondary {
-  color: #c4add2;
-}
-
-/*==========  TEXT DIVIDER  ==========*/
-.text-divider {
-  position: relative;
-  margin-bottom: 26px;
-}
-.text-divider::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 40%;
-  height: 1px;
-  box-shadow: 0 1px 0 0 #e0e0e0;
-  left: 30%;
-  bottom: -13px;
-}
-.text-divider.xlarge {
-  margin-bottom: 52px;
-}
-.text-divider.xlarge::after {
-  bottom: -26px;
-}
-.text-divider.xxlarge {
-  margin-bottom: 78px;
-}
-.text-divider.xxlarge::after {
-  bottom: -39px;
-}
-.text-divider.huge {
-  margin-bottom: 78px;
-}
-.text-divider.huge::after {
-  bottom: -39px;
 }
 
 /*==========  GENERIC  ==========*/

@@ -18,7 +18,7 @@
 
   a, a:visited {
     text-decoration:none;
-    color: $colorDarkGrey;
+    color: $colorGrayDark;
     transition: all 0.2s ease-in-out;
 
     &:focus, &:hover {
@@ -121,14 +121,14 @@
     padding: 5% 0 5% 5%;
     list-style: none;
 
-    border-bottom: 1px solid $colorLightGrey;
+    border-bottom: 1px solid $colorGrayLight;
 
     &:last-child {
       border-bottom: none;
     }
     a, a:visited {
       text-decoration:none;
-      color: $colorDarkGrey;
+      color: $colorGrayDark;
 
       &:focus, &:hover {
         color: $colorBlack;
