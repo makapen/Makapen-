@@ -2515,33 +2515,43 @@ cf()
           transition: opacity 1s ease-in-out;
 }
 
+.nav-ham__wrapper {
+  position: fixed !important;
+  top: 1em !important;
+  right: 1em !important;
+  z-index: 100;
+  height: 30px;
+  width: 24px;
+}
+
 .nav-ham__icon {
   position: absolute;
   top: -9999px !important;
   right: -9999px !important;
   overflow: hidden;
   cursor: pointer;
-  z-index: 100;
   width: 24px;
-  height: 20px;
-  background-color: #111111;
+  height: 4px;
+  background: none repeat scroll 0 0 #111111;
   -webkit-transition: background-color 0.4s ease, -webkit-transform 0.4s ease, top 0.4s ease, opacity 1s ease-in-out;
           transition: background-color 0.4s ease, transform 0.4s ease, top 0.4s ease, opacity 1s ease-in-out;
   opacity: 0;
 }
+.nav-ham__icon:after {
+  top: 8px;
+}
+.nav-ham__icon:before {
+  top: -8px;
+}
 .nav-ham__icon:before, .nav-ham__icon:after {
   content: '';
+  display: block;
   position: absolute;
-  top: 20%;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: white;
+  width: 24px;
+  height: 4px;
+  background: none repeat scroll 0 0 #111111;
   -webkit-transition: background-color 0.4s ease, -webkit-transform 0.4s ease, top 0.4s ease;
           transition: background-color 0.4s ease, transform 0.4s ease, top 0.4s ease;
-}
-.nav-ham__icon:after {
-  top: 60%;
 }
 
 .nav-ham__icon.nav-ham__icon--open {
@@ -2560,7 +2570,7 @@ cf()
 
 .nav-ham__icon--sticky {
   position: fixed !important;
-  top: 0.7em !important;
+  top: 1.6em !important;
   right: 1em !important;
   overflow: visible !important;
   opacity: 1 !important;
@@ -2583,8 +2593,6 @@ cf()
 }
 
 .nav-drawer.nav-drawer--active {
-  width: 100%;
-  height: 100%;
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -2601,11 +2609,14 @@ cf()
   list-style: none;
   text-align: center;
 }
+.nav-drawer__list li:hover {
+  background-color: white;
+  color: white;
+}
 .nav-drawer__list li a, .nav-drawer__list li a:visited {
   text-decoration: none;
-  color: #404040;
 }
-.nav-drawer__list li a:focus, .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:focus, .nav-drawer__list li a:visited:hover {
+.nav-drawer__list li a:hover {
   color: #111111;
 }
 

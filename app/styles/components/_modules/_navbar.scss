@@ -60,9 +60,18 @@
 
   overflow: visible !important;
   opacity: 1 !important;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out,
 }
 
+.nav-ham__wrapper {
+  position: fixed !important;
+  top: 1em !important;
+  right: 1em !important;
+  z-index: 100;
+
+  height: 30px;
+  width: 24px;
+}
 .nav-ham__icon {
   position: absolute;
   top: -9999px !important;
@@ -70,38 +79,38 @@
 
   overflow: hidden;
   cursor: pointer;
-  z-index: 100;
 
   width: 24px;
-  height: 20px;
-  background-color: $colorBlack;
+  height: 4px;
+  background: none repeat scroll 0 0 $colorBlack;
   transition: background-color 0.4s ease,
               transform 0.4s ease,
               top 0.4s ease,
               opacity 1s ease-in-out;
   opacity: 0;
 
+  &:after {
+    top: 8px;
+  }
+
+  &:before {
+    top: -8px;
+  }
   &:before, &:after {
     content: '';
+    display: block;
     position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: $colorWhite;
+    width: 24px;
+    height: 4px;
+    background: none repeat scroll 0 0 $colorBlack;
     transition: background-color 0.4s ease,
                 transform 0.4s ease,
                 top 0.4s ease;
-  }
-
-  &:after {
-    top: 60%;
   }
 }
 
 .nav-ham__icon.nav-ham__icon--open {
   background-color: $colorGrayLight;
-
   &:before, &:after {
     top: 40%;
     transform: rotate(45deg);
@@ -114,7 +123,7 @@
 }
 .nav-ham__icon--sticky {
   position: fixed !important;
-  top: 0.7em !important;
+  top: 1.6em !important;
   right: 1em !important;
 
   overflow: visible !important;
@@ -137,8 +146,6 @@
 }
 
 .nav-drawer.nav-drawer--active {
-  width: 100%;
-  height: 100%;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.4s ease,
@@ -155,13 +162,17 @@
     list-style: none;
     text-align: center;
 
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorWhite;
+    }
+
     a, a:visited {
       text-decoration:none;
-      color: $colorGrayDark;
+    }
 
-      &:focus, &:hover {
-        color: $colorBlack;
-      }
+    a:hover {
+      color: $colorBlack;
     }
   }
 }
