@@ -2641,6 +2641,10 @@ cf()
   margin-left: 0%;
   margin-right: 3%;
   margin-top: 6em;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
 }
 .portfolio__work:before, .portfolio__work:after {
   content: '';
@@ -2654,11 +2658,15 @@ cf()
 }
 
 .portfolio__work-pawzii {
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  height: 400px;
   background: url("../../../images/portfolio/TNR.jpg") no-repeat scroll center center/cover transparent;
+}
+
+.portfolio__work-restrepo {
+  background: url("../../../images/portfolio/restrepoBag.jpg") no-repeat scroll center center/cover transparent;
+}
+
+.portfolio__work-nextdmedia {
+  background: url("../../../images/portfolio/productivity.jpg") no-repeat scroll center center/cover transparent;
 }
 
 .portfolio__work-mask {
@@ -2673,7 +2681,7 @@ cf()
   background-color: #eeeeee;
 }
 
-.portfolio__work-pawzii:hover .portfolio__work-mask {
+.portfolio__work:hover .portfolio__work-mask {
   opacity: 1;
   top: 0;
   -webkit-transform: translateY(0%);
