@@ -2437,6 +2437,12 @@ cf()
   display: block;
   padding-top: 25px;
 }
+.logo__content-wrapper .fa {
+  color: #737373;
+}
+.logo__content-wrapper .fa:focus, .logo__content-wrapper .fa:active, .logo__content-wrapper .fa:hover {
+  color: #111111;
+}
 
 .logo__image {
   *zoom: 1;

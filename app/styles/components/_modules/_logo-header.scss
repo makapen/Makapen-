@@ -21,6 +21,13 @@
 .logo__content-wrapper {
   display: block;
   padding-top: 25px;
+  .fa{
+    color: $colorGray;
+    &:focus, &:active, &:hover {
+      color: $colorBlack;
+    }
+
+  }
 }
 
 .logo__image {
