@@ -15,10 +15,12 @@
   padding-top: 10px;
   padding-right: 35px;
   list-style: none;
+  text-transform: uppercase;
+  font-style: italic;
 
   a, a:visited {
     text-decoration:none;
-    color: $colorGrayDark;
+    color: $colorGray;
     transition: all 0.2s ease-in-out;
 
     &:focus, &:hover {
