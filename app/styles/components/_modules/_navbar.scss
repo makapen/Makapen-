@@ -35,9 +35,9 @@
 }
 
 .nav-mk__icon {
-  position: absolute;
-  top: -9999px !important;
-  left: -9999px !important;
+  position: fixed;
+  top: 0.75em;
+  left: 1em;
 
   height: 30px;
   width: 70px;
@@ -50,17 +50,11 @@
   background-size: 70px 30px;
 
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.nav-mk__icon--sticky {
-  position: fixed !important;
-  top: 0.75em !important;
-  left: 1em !important;
-
-  overflow: visible !important;
-  opacity: 1 !important;
-  transition: opacity 1s ease-in-out,
+.nav-mk__icon.nav-mk__icon--sticky {
+  opacity: 1;
 }
 
 .nav-ham__wrapper {
@@ -72,22 +66,22 @@
   height: 30px;
   width: 24px;
 }
-.nav-ham__icon {
-  position: absolute;
-  top: -9999px !important;
-  right: -9999px !important;
 
-  overflow: hidden;
+.nav-ham__icon {
+  position: fixed;
+  top: 1.6em;
+  right: 1em;
+
   cursor: pointer;
+  opacity: 0;
 
   width: 24px;
   height: 4px;
-  background: none repeat scroll 0 0 $colorBlack;
+  background-color: $colorBlack;
   transition: background-color 0.4s ease,
               transform 0.4s ease,
               top 0.4s ease,
-              opacity 1s ease-in-out;
-  opacity: 0;
+              opacity 0.4s ease;
 
   &:after {
     top: 8px;
@@ -102,9 +96,10 @@
     position: absolute;
     width: 24px;
     height: 4px;
-    background: none repeat scroll 0 0 $colorBlack;
+    background-color: $colorBlack;
     transition: background-color 0.4s ease,
                 transform 0.4s ease,
+                opacity 0.4s ease,
                 top 0.4s ease;
   }
 }
@@ -122,13 +117,7 @@
   }
 }
 .nav-ham__icon--sticky {
-  position: fixed !important;
-  top: 1.6em !important;
-  right: 1em !important;
-
-  overflow: visible !important;
-  opacity: 1 !important;
-  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .nav-drawer {

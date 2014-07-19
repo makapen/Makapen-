@@ -12,6 +12,8 @@ $(function() {
           $('html,body').animate({
             scrollTop: target.offset().top
           }, 1000);
+          $('.nav-drawer').removeClass('nav-drawer--active');
+          $('.nav-ham__icon').removeClass('nav-ham__icon--open');
           return false;
         }
       }
