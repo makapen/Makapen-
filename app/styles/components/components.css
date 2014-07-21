@@ -2756,11 +2756,11 @@ cf()
   .portfolio__work:after {
     clear: both;
   }
-  .portfolio__work:nth-child(2n) {
+  .portfolio__work:nth-child(3n) {
     margin-right: 0%;
     float: right;
   }
-  .portfolio__work:nth-child(2n + 1) {
+  .portfolio__work:nth-child(3n + 1) {
     clear: both;
   }
 }

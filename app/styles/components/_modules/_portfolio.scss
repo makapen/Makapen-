@@ -88,7 +88,7 @@
 @media only screen and (max-width: $wider) {
   .portfolio__work {
     @include unstack();
-    @include col(1/2, $cycle: 2);
+    @include col(1/2, $cycle: 3);
   }
 }
 
