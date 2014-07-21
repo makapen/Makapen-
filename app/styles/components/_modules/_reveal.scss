@@ -4,6 +4,7 @@
 
   .reveal-modal-bg {
     position: fixed;
+
     height: 100%;
     width: 100%;
     background: #000;
@@ -19,6 +20,7 @@
     top: 100px;
     left: 50%;
     margin-left: -300px;
+    width: auto;
     background: #eee; /*url(modal-gloss.png) no-repeat -200px -80px;*/
     position: absolute;
     z-index: 101;
@@ -47,3 +49,19 @@
     font-weight: bold;
     cursor: pointer;
     }
+  /*
+
+  NOTES
+
+  Close button entity is &#215;
+
+  Example markup
+
+  <div id="myModal" class="reveal-modal">
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch.  I it's mine.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  */
