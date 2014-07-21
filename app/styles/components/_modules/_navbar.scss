@@ -34,6 +34,10 @@
   position: relative;
   top: 0;
   left: 0;
+
+  a{
+    @include cf();
+  }
 }
 
 .nav-mk__icon {
@@ -147,24 +151,29 @@
   padding: 0;
   margin: auto;
   font-size: $fontLarge;
+  font-style: italic;
 
   li {
-    padding: 5% 0 5% 5%;
+    padding: 5% 0 5% 0;
     list-style: none;
     text-align: center;
 
     &:hover {
       background-color: $colorWhite;
-      color: $colorWhite;
+      color: $colorBlack;
+      a {
+        color: $colorBlack;
+      }
     }
 
     a, a:visited {
       text-decoration:none;
+      color: $colorGray;
     }
-
-    a:hover {
-      color: $colorBlack;
-    }
+    //
+    // a:hover {
+    //   color: $colorBlack;
+    // }
   }
 }
 

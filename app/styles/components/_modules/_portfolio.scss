@@ -39,7 +39,7 @@
   text-align: center;
   padding-top: 0px;
   text-transform: uppercase;
-  
+
 }
 .portfolio__work-mask {
   position: absolute;
@@ -84,6 +84,14 @@
 //   80% { transform: translateY(-100%); }
 //   100% { transform: translateY(-200%); }
 // }
+
+@media only screen and (max-width: $wider) {
+  .portfolio__work {
+    @include unstack();
+    @include col(1/2, $cycle: 2);
+  }
+}
+
 @media only screen and (max-width: $medium) {
   .portfolio__work {
     @include stack();
