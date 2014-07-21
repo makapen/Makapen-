@@ -6,7 +6,7 @@
  * http://www.opensource.org/licenses/mit-license.php
 */
 
-
+/*jshint ignore: start*/
 (function($) {
 
 /*---------------------------

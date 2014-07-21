@@ -134,7 +134,8 @@ gulp.task('html', function () {
       ignore: [
         '.nav-ham__icon--sticky',
         '.nav-drawer--active',
-        '.nav-mk__icon--sticky'
+        '.nav-mk__icon--sticky',
+        '.reveal-modal-bg'
       ]
     })))
     // Concatenate And Minify Styles
