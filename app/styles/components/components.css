@@ -2436,12 +2436,31 @@ cf()
 .logo__content-wrapper {
   display: block;
   padding-top: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.logo__content-wrapper a {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .logo__content-wrapper .fa {
   color: #737373;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .logo__content-wrapper .fa:focus, .logo__content-wrapper .fa:active, .logo__content-wrapper .fa:hover {
   color: #111111;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .logo__image {

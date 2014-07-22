@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
   'use strict';
 
   var fn = fn || {};
@@ -67,7 +67,7 @@ $(function() {
     var $nav_drawer = $('.nav-drawer');
     var $nav_wrap = $('.nav-ham__wrapper');
 
-    $nav_wrap.on('click', function(e) {
+    $nav_wrap.on('click', $nav_ham, function(e) {
       e.preventDefault();
       $nav_ham.toggleClass('nav-ham__icon--open');
       $nav_drawer.toggleClass('nav-drawer--active');

@@ -130,12 +130,13 @@ gulp.task('html', function () {
       html: [
         'app/index.html'
       ],
-      // CSS Selectors for UnCSS to ignore
+      // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
       ignore: [
         '.nav-ham__icon--sticky',
-        '.nav-drawer--active',
+        '.nav-drawer.nav-drawer--active',
         '.nav-mk__icon--sticky',
-        '.reveal-modal-bg'
+        '.reveal-modal-bg',
+        '.nav-ham__icon.nav-ham__icon--open'
       ]
     })))
     // Concatenate And Minify Styles
@@ -173,6 +174,7 @@ gulp.task('serve', function () {
 // Build and serve the output from the dist build
 gulp.task('serve:dist', ['default'], function () {
   browserSync({
+    open: false,
     notify: false,
     server: {
       baseDir: 'dist'

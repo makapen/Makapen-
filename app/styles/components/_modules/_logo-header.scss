@@ -21,10 +21,19 @@
 .logo__content-wrapper {
   display: block;
   padding-top: 25px;
+  user-select: none;
+
+  a {
+    display: inline-block;
+    user-select: none;
+  }
   .fa{
     color: $colorGray;
+    user-select: none;
+
     &:focus, &:active, &:hover {
       color: $colorBlack;
+      user-select: none;
     }
 
   }
