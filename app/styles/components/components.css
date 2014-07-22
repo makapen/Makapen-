@@ -2447,6 +2447,7 @@ cf()
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .logo__content-wrapper .fa {
   color: #737373;
@@ -2549,6 +2550,7 @@ cf()
   z-index: 100;
   height: 30px;
   width: 24px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-ham__icon {

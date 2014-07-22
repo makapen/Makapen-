@@ -26,8 +26,9 @@
   a {
     display: inline-block;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
-  .fa{
+  .fa {
     color: $colorGray;
     user-select: none;
 
