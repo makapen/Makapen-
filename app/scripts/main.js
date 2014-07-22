@@ -28,7 +28,7 @@ $(document).ready(function() {
     var $nav_drawer = $('.nav-drawer');
     var $nav_mk = $('.nav-mk__icon');
 
-    // If mobile, show nav icons off the bat, hack
+    // If mobile, show nav icons off the bat
     if (window.innerWidth > 480) {
       $logo.waypoint({
         offset: function() {
@@ -36,29 +36,26 @@ $(document).ready(function() {
         },
         handler: function(direction) {
           if (direction === "down") {
-            $nav_ham.addClass('nav-ham__icon--sticky');
-            $nav_mk.addClass('nav-mk__icon--sticky');
-            // $nav_bar.css('visibility', 'hidden');
+            $nav_ham.addClass('fade');
+            $nav_mk.addClass('fade');
           }
           // Close the drawer if it's open and your moving up
           else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
-            $nav_ham.removeClass('nav-ham__icon--sticky');
-            $nav_mk.removeClass('nav-mk__icon--sticky');
+            $nav_ham.removeClass('fade');
+            $nav_mk.removeClass('fade');
             $nav_ham.removeClass('nav-ham__icon--open');
             $nav_drawer.removeClass('nav-drawer--active');
-            // $nav_bar.css('visibility', 'visible');
           }
           // Scrolled up
           else {
-            $nav_ham.removeClass('nav-ham__icon--sticky');
-            $nav_mk.removeClass('nav-mk__icon--sticky');
-            // $nav_bar.css('visibility', 'visible');
+            $nav_ham.removeClass('fade');
+            $nav_mk.removeClass('fade');
           }
         }
       });
     }
     else {
-      $nav_ham.addClass('nav-ham__icon--sticky');
+      $nav_ham.addClass('fade');
     }
   };
 

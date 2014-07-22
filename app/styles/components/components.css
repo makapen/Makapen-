@@ -2542,10 +2542,6 @@ cf()
           transition: opacity 0.4s ease-in-out;
 }
 
-.nav-mk__icon.nav-mk__icon--sticky {
-  opacity: 1;
-}
-
 .nav-ham__wrapper {
   position: fixed !important;
   top: 1em !important;
@@ -2598,10 +2594,6 @@ cf()
           transform: rotate(-45deg);
 }
 
-.nav-ham__icon--sticky {
-  opacity: 1;
-}
-
 .nav-drawer {
   position: fixed;
   visibility: hidden;
@@ -2644,6 +2636,10 @@ cf()
 .nav-drawer__list li a, .nav-drawer__list li a:visited {
   text-decoration: none;
   color: #737373;
+}
+
+.fade {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 480px) {
@@ -2925,6 +2921,7 @@ footer {
   border: none;
 }
 .contact__form textarea {
+  box-sizing: border-box;
   border: none;
   display: block;
   background-color: white;

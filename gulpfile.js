@@ -132,9 +132,8 @@ gulp.task('html', function () {
       ],
       // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
       ignore: [
-        '.nav-ham__icon--sticky',
+        '.fade',
         '.nav-drawer.nav-drawer--active',
-        '.nav-mk__icon--sticky',
         '.reveal-modal-bg',
         '.nav-ham__icon.nav-ham__icon--open'
       ]
