@@ -2855,12 +2855,12 @@ footer {
   padding: 5px;
 }
 .footer__ul li a .fa-stack {
-  color: #3399cc;
+  color: #111111;
   -webkit-transition: 0.2s ease-in-out;
           transition: 0.2s ease-in-out;
 }
 .footer__ul li a .fa-stack:visited, .footer__ul li a .fa-stack:hover, .footer__ul li a .fa-stack:focus, .footer__ul li a .fa-stack:active {
-  color: #cc6633;
+  color: #737373;
 }
 .footer__ul li a .fa-stack .fa-stack-1x {
   color: white;

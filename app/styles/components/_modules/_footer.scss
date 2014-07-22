@@ -38,11 +38,11 @@ footer {
   }
 
   li a .fa-stack {
-    color: $colorBlue;
+    color: $colorBlack;
     transition: 0.2s ease-in-out;
 
     &:visited, &:hover, &:focus, &:active {
-      color: complement($colorBlue);
+      color: complement($colorGray);
     }
 
     .fa-stack-1x {
