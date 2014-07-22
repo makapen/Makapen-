@@ -177,11 +177,12 @@
   }
 }
 
-@media only screen and (max-width: $medium) {
+@media only screen and (max-width: $small) {
   #nav-bar {
     display: none;
   }
-  .nav-drawer {
-    min-width: 100%;
+  .nav-ham__icon {
+    opacity: 1;
   }
+
 }

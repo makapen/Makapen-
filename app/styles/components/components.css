@@ -2627,13 +2627,13 @@ cf()
   color: #737373;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 480px) {
   #nav-bar {
     display: none;
   }
 
-  .nav-drawer {
-    min-width: 100%;
+  .nav-ham__icon {
+    opacity: 1;
   }
 }
 /**
