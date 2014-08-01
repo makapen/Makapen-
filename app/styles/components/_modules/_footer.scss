@@ -42,7 +42,7 @@ footer {
     transition: 0.2s ease-in-out;
 
     &:visited, &:hover, &:focus, &:active {
-      color: complement($colorGray);
+      color: $colorBlackLight;
     }
 
     .fa-stack-1x {
