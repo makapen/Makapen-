@@ -128,7 +128,8 @@ gulp.task('html', function () {
     // the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/index.html'
+        'app/index.html',
+        'app/pawzii.html'
       ],
       // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
       ignore: [

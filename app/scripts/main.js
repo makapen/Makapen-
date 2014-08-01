@@ -63,7 +63,8 @@ $(document).ready(function() {
     var $nav_ham = $('.nav-ham__icon');
     var $nav_drawer = $('.nav-drawer');
     var $nav_wrap = $('.nav-ham__wrapper');
-
+    var $nav_anchor = $('.nav-mk__icon').parent();
+    console.log($nav_anchor);
     $nav_wrap.on('click', $nav_ham, function(e) {
       e.preventDefault();
       $nav_ham.toggleClass('nav-ham__icon--open');
