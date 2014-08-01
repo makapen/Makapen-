@@ -2489,6 +2489,8 @@ cf()
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 
 .nav-bar__list li {
@@ -2638,8 +2640,12 @@ cf()
   color: #111111;
 }
 
-.fade {
+.fade-in {
   opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 480px) {
