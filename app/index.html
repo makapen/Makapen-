@@ -207,8 +207,12 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints-sticky.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
 
-
+  <script>
+    $(document).ready(function() {
+      FastClick.attach(document.body);
+    });
   <script>
     $(document).ready(function() {
       $("#contact form").submit(function(event) {
