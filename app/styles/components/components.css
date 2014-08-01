@@ -2866,9 +2866,13 @@ footer {
   color: #111111;
   -webkit-transition: 0.2s ease-in-out;
           transition: 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 }
 .footer__ul li a .fa-stack:visited, .footer__ul li a .fa-stack:hover, .footer__ul li a .fa-stack:focus, .footer__ul li a .fa-stack:active {
   color: #4d4d4d;
+}
+.footer__ul li a .fa-stack .fa {
+  -webkit-tap-highlight-color: transparent;
 }
 .footer__ul li a .fa-stack .fa-stack-1x {
   color: white;

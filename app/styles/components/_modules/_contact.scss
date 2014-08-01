@@ -8,9 +8,11 @@
   padding-top: $padding-section;
   padding-bottom: $padding-section;
   background-color: $colorGrayLight;
+
   .col{
   margin-bottom: 0;
   }
+  
   h1 {
     font-weight: 300;
     text-transform: uppercase;
@@ -53,6 +55,7 @@
       outline: none;
     }
   }
+
   .button--primary {
     background-color: $colorBlack;
     font-weight: 400;
