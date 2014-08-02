@@ -35,20 +35,20 @@ footer {
 
     margin: auto;
     padding: 5px;
+
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 
   li a .fa-stack {
     color: $colorBlack;
     transition: 0.2s ease-in-out;
-    -webkit-tap-highlight-color: transparent;
 
     &:visited, &:hover, &:focus, &:active {
       color: $colorBlackLight;
     }
 
-    .fa {
-      -webkit-tap-highlight-color: transparent;
-    }
     .fa-stack-1x {
       color: $colorWhite;
 
