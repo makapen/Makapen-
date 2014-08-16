@@ -20,8 +20,9 @@
 
 .logo__content-wrapper {
   display: block;
-  padding-top: 25px;
   user-select: none;
+  padding-top: 100px;
+  margin-bottom: -100px;
 
   a {
     display: inline-block;
