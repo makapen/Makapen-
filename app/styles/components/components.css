@@ -2500,6 +2500,7 @@ cf()
   list-style: none;
   text-transform: uppercase;
   font-style: italic;
+  color: #737373;
 }
 .nav-bar__list li a, .nav-bar__list li a:visited {
   text-decoration: none;
@@ -2620,7 +2621,6 @@ cf()
 .nav-drawer__list {
   padding: 0;
   margin: auto;
-  font-size: 26px;
   font-style: italic;
 }
 .nav-drawer__list li {
@@ -2630,10 +2630,10 @@ cf()
 }
 .nav-drawer__list li a, .nav-drawer__list li a:visited {
   display: block;
+  padding: 1em;
   width: 100%;
-  font-size: 54px;
+  font-size: 36px;
   text-decoration: none;
-  color: #737373;
 }
 .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:hover {
   background-color: white;
