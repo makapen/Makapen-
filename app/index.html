@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Makapen Co is a website and web applications development agency that works with startups on new build-outs and rapid prototyping projects. We aim to create simple but powerful solutions that are well designed.">
-  <meta name="viewport" content="initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makapen Co | Web Development agency for Startups</title>
 
   <!-- Add to homescreen for Chrome on Android -->
@@ -42,7 +42,7 @@
     <ul class="nav-bar__list">
       <li><a href="#contact">contact</a>
       </li>
-      <li><a href="#portfolio">portfolio</a>
+      <li><a href="#portfolio">recent work</a>
       </li>
       <li><a href="#services">services</a>
       </li>
@@ -55,7 +55,9 @@
     <a href="#" class="nav-ham__wrapper">
       <div class="nav-ham__icon"></div>
     </a>
-    <a href="#logo">
+
+    <a class="nav-mk__anchor" href="#logo">
+
       <div class="nav-mk__icon"></div>
     </a>
   </div>
@@ -131,26 +133,34 @@
   <!-- Portfolio -->
   <div id="portfolio" class="col">
     <h1 class="centered">Recent work</h1>
+
     <div class="portfolio__work portfolio__work-pawzii">
-      <h2 class="portfolio__item-title">Pawzii</h2>
-      <div class="portfolio__work-mask">
-        <h2>TNR Hybrid App for Pawzii</h2>
-        <p>Created a hybrid mobile app and website that allows TNR organizations to coordinate and record their activities.</p>
-      </div>
+      <a href="pawzii.html">
+        <h2 class="portfolio__item-title">Pawzii</h2>
+        <div class="portfolio__work-mask">
+          <h2>TNR Hybrid App for Pawzii</h2>
+          <p>Created a hybrid mobile app and website that allows TNR organizations to coordinate and record their activities.</p>
+        </div>
+      </a>
     </div>
     <div class="portfolio__work portfolio__work-restrepo">
-      <h2 class="portfolio__item-title">Restrepo Leather</h2>
-      <div class="portfolio__work-mask">
-        <h2>Restrepo Leather</h2>
-        <p>When Restrepo Leather was featured in GQ last December, their traffic skyrocketed while their site couldn't keep up. Makapen was hired to increase speed and install caching on their Wordpress e-commerce website.</p>
-      </div>
+      <a href="restrepo.html">
+        <h2 class="portfolio__item-title">Restrepo Leather</h2>
+        <div class="portfolio__work-mask">
+          <h2>Restrepo Leather</h2>
+          <p>When Restrepo Leather was featured in GQ last December, their traffic skyrocketed while their site couldn't keep up. Makapen was hired to increase speed and install caching on their Wordpress e-commerce website.</p>
+        </div>
+      </a>
     </div>
     <div class="portfolio__work portfolio__work-nextdmedia">
-      <h2 class="portfolio__item-title">NextDMedia</h2>
-      <div class="portfolio__work-mask">
-        <h2>NextDMedia</h2>
-        <p>Next Dimension Media operates a wide range of Social Business assets. It is the world’s largest independent operator of LinkedIn groups. Makapen built NextDMedia's internal workflow management system tailored to their distributed network of operators.</p>
-      </div>
+      <a href="nextdmedia.html">
+        <h2 class="portfolio__item-title">NextDMedia</h2>
+        <div class="portfolio__work-mask">
+          <h2>NextDMedia</h2>
+          <p>Next Dimension Media operates a wide range of Social Business assets. It is the world’s largest independent operator of LinkedIn groups. Makapen built NextDMedia's internal workflow management system tailored to their distributed network of
+            operators.</p>
+        </div>
+      </a>
     </div>
   </div>
   <!-- END-Portfolio -->
@@ -203,7 +213,13 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints-sticky.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
 
+  <script>
+    $(document).ready(function() {
+      FastClick.attach(document.body);
+    });
+  </script>
 
   <script>
     $(document).ready(function() {
