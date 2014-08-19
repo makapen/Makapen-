@@ -26,7 +26,8 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var awspublish = require('gulp-awspublish');
-var awsConfig = require('./aws_config.json');
+//var awsConfig = require('./aws_config.json');
+var awsConfig = {};
 var pagespeed = require('psi');
 var reload = browserSync.reload;
 

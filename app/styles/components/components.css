@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
 /**
 *
 * Main Stylesheet For Visual Style Guide
@@ -9,10 +10,9 @@
 *
 **/
 /*==========  VARIABLES  ==========*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
 /*==========  FUNCTIONS  ==========*/
 /*==========  MIXINS  ==========*/
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -398,7 +398,7 @@ unstack()
 align($direction: both)
 cf()
 **/
-/*!
+/*
  *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -411,6 +411,7 @@ cf()
   font-weight: normal;
   font-style: normal;
 }
+
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -494,6 +495,7 @@ cf()
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -503,6 +505,7 @@ cf()
     -webkit-transform: rotate(359deg);
   }
 }
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -514,6 +517,7 @@ cf()
     transform: rotate(359deg);
   }
 }
+
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
