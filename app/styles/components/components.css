@@ -2635,7 +2635,6 @@ cf()
   width: 100%;
   font-size: 36px;
   text-decoration: none;
-  box-sizing: border-box;
 }
 .nav-drawer__list li a:hover, .nav-drawer__list li a:visited:hover {
   background-color: white;
