@@ -2633,6 +2633,7 @@ cf()
   display: block;
   padding: 1em;
   width: 100%;
+  box-sizing: border-box;
   font-size: 36px;
   text-decoration: none;
 }
