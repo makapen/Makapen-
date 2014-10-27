@@ -7,10 +7,9 @@
 footer {
   max-width: 100%;
 
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 50px;
 
-  background-color: #BFBFBF;
   text-align: center;
 }
 
@@ -50,10 +49,10 @@ footer {
     }
 
     .fa-stack-1x {
-      color: $colorWhite;
+      color: $colorBlack;
 
       &:visited, &:hover, &:focus {
-        color: $colorWhite;
+        color: $colorBlackLight;
       }
     }
   }
