@@ -2,7 +2,7 @@
   "devDependencies": {
     "browser-sync": "^1.1.2",
     "del": "^0.1.1",
-    "gulp": "^3.8.5",
+    "gulp": "~3.8.9",
     "gulp-autoprefixer": "^0.0.8",
     "gulp-awspublish": "0.0.18",
     "gulp-cache": "^0.2.0",
