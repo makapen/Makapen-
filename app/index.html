@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="styles/h5bp.css">
   <link rel="stylesheet" href="styles/components/components.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/style.css">
   <!-- endbuild -->
 
 
@@ -46,7 +47,7 @@
       </li>
       <li><a href="#services">services</a>
       </li>
-      <li><a href="#home">home</a>
+      <li><a href="index.html">home</a>
       </li>
     </ul>
   </nav>
@@ -68,6 +69,8 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
+      <li><a href="index">HOME</a>
+      </li>
       <li><a href="#services">SERVICES</a>
       </li>
       <li><a href="#portfolio">PORTFOLIO</a>
@@ -79,14 +82,10 @@
   <!-- END-Drawer -->
 
   <!-- Logo -->
-  <div id="logo" class="col">
-    <div class="logo__content centered vert-align-text">
-      <img class="logo__image" src="./images/mklogo.png" alt="MAKAPEN \ co">
-      <span>We make <strong>websites</strong> and <strong>web applications</strong> that are <strong>smart, simple, </strong>and <strong>delightful.</strong></span>
-      <div class="logo__content-wrapper">
-        <a class="font-awesome" href="#services"><i id="down" class="fa fa-angle-down fa-3x"></i></a>
-      </div>
-    </div>
+  <div class="slider">
+    <div><img src="images/tnr_app_screens.png"></div>
+    <div><img src="images/NEXTDMEDIA.png"></div>
+    <div><img src="images/RESTREPO.png"></div>
   </div>
 
 
@@ -173,16 +172,16 @@
       <h1 class="centered"><span>Contact us</span></h1>
       <section class="contact__content">
         <iframe name="hidden_ifrafmFe" id="hidden_iframe" style="display:none;"></iframe>
-        <form class="contact__form" action="https://docs.google.com/a/makapen.co/forms/d/1bJvXsyPbE493paWU6slonqNpmR97CCLZnT9DiZnGTYI/formResponse" method="POST" target="hidden_iframe">
-          <label>
-            <input type="text" placeholder="  Name" name="entry.896889779" />
-          </label>
-          <label>
-            <input type="text" placeholder="  Email" name="entry.327695594" />
-          </label>
-          <textarea type="text" placeholder="  Message" name="entry.1112831279"></textarea>
-          <button class="button--primary" type="submit">Request a Quote</button>
-        </form>
+          <form class="contact__form" action="https://docs.google.com/a/makapen.co/forms/d/1bJvXsyPbE493paWU6slonqNpmR97CCLZnT9DiZnGTYI/formResponse" method="POST" target="hidden_iframe">
+            <label>
+              <input type="text" placeholder="  Name" name="entry.896889779" />
+            </label>
+            <label>
+              <input type="text" placeholder="  Email" name="entry.327695594" />
+            </label>
+            <textarea type="text" placeholder="  Message" name="entry.1112831279"></textarea>
+            <button class="button--primary" type="submit">Request a Quote</button>
+          </form>
       </section>
     </div>
   </div>
@@ -215,7 +214,8 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints-sticky.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-
+  <script type="text/javascript" src="scripts/slick.js"></script>
+  <script type="text/javascript" src="scripts/slickInit.js"></script>
   <script>
     $(document).ready(function() {
       FastClick.attach(document.body);

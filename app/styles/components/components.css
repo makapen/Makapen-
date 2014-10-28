@@ -2817,9 +2817,8 @@ cf()
 **/
 footer {
   max-width: 100%;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 50px;
-  background-color: #BFBFBF;
   text-align: center;
 }
 
@@ -2876,10 +2875,10 @@ footer {
   color: #4d4d4d;
 }
 .footer__ul li a .fa-stack .fa-stack-1x {
-  color: #fff;
+  color: #111111;
 }
 .footer__ul li a .fa-stack .fa-stack-1x:visited, .footer__ul li a .fa-stack .fa-stack-1x:hover, .footer__ul li a .fa-stack .fa-stack-1x:focus {
-  color: #fff;
+  color: #4d4d4d;
 }
 
 /**
@@ -2890,17 +2889,18 @@ footer {
 #contact {
   padding-top: 6em;
   padding-bottom: 6em;
-  background: url("../../images/map.png");
-  -webkit-filter: grayscale(1);
-  filter: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cfilter%20id%3D%22desaturate%22%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22/%3E%3C/filter%3E%3C/svg%3E#desaturate);
 }
 #contact .col {
   margin-bottom: 0;
 }
 #contact h1 {
-  font-weight: 300;
+  color: #fff;
+  font-weight: 500;
   text-transform: uppercase;
   font-style: italic;
+}
+#contact h1 span {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contact__content {
@@ -2952,16 +2952,22 @@ footer {
   outline: none;
 }
 .contact__form .button--primary {
-  background-color: #111111;
   font-weight: 400;
   border: none;
   box-shadow: none;
+  float: right;
 }
 .contact__form .button--primary:focus, .contact__form .button--primary:active, .contact__form .button--primary:hover {
-  background-color: #4d4d4d;
+  background-color: #add6eb;
   font-weight: 400;
   box-shadow: none;
   border: none;
+}
+
+.contract_form_div {
+  background: url("../../images/map.png") repeat-x;
+  -webkit-filter: grayscale(1);
+  filter: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cfilter%20id%3D%22desaturate%22%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22/%3E%3C/filter%3E%3C/svg%3E#desaturate);
 }
 
 /**
