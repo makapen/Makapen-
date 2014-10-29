@@ -2676,7 +2676,7 @@ cf()
 #process {
   padding-top: 6em;
   padding-bottom: 6em;
-  background-color: #add6eb;
+  background: url("../../images/blue-background.png");
 }
 #process h1 {
   font-weight: 300;
@@ -2848,7 +2848,6 @@ footer {
   min-width: 100%;
   padding-top: 6em;
   padding-bottom: 6em;
-  background-color: #eeeeee;
 }
 #services h1 {
   font-weight: 300;
@@ -2863,7 +2862,7 @@ footer {
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 31.3333333333%;
+  width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
   font-size: 20px;
