@@ -1,6 +1,6 @@
 /**
 *
-* Portfolio styling
+* Process styling
 *
 **/
 
@@ -9,14 +9,19 @@
   padding-top: $padding-section;
   padding-bottom: $padding-section;
   background: url('../../images/blue-background.png');
+
+  .blue {
+    color: $colorBlue;
+  }
+
   p {
     max-width: 90%;
     font-size: $fontBase;
-    text-align: center;  
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
 
   h1 {
     font-weight: 300;
