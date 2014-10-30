@@ -9,8 +9,8 @@
   padding-bottom: $padding-section;
   background: url('../../images/map.png') repeat-x;
 
-  .col{
-  margin-bottom: 0;
+  .col {
+    margin-bottom: 0;
   }
 
   h1 {
@@ -31,7 +31,6 @@
 .contact__form {
   max-width: 800px;
   margin: auto;
-
   font-size: 1.3em;
 
   input {
@@ -73,5 +72,4 @@
       border: none;
     }
   }
-
 }
