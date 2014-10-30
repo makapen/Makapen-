@@ -5,19 +5,36 @@
 **/
 
 #process {
+  max-width: 100%;
   padding-top: $padding-section;
   padding-bottom: $padding-section;
   background: url('../../images/blue-background.png');
+  p {
+    max-width: 90%;
+    font-size: $fontBase;
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
   h1 {
     font-weight: 300;
     text-transform: uppercase;
     font-style: italic;
-
   }
 
   .process__content {
     @include col(1/3);
+    margin-top: 30px;
+    img { @include center(); }
+  }
+
+
+  @media only screen and (max-width: $medium) {
+    .process__content {
+      @include stack();
+    }
   }
 }
 
