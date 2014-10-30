@@ -2482,7 +2482,7 @@ cf()
 
 #slider {
   margin-top: 125px;
-  max-width: 95%;
+  max-width: 90%;
 }
 #slider img {
   max-width: 70%;
@@ -2674,14 +2674,78 @@ cf()
 *
 **/
 #process {
+  max-width: 100%;
   padding-top: 6em;
   padding-bottom: 6em;
   background: url("../../images/blue-background.png");
+}
+#process p {
+  max-width: 90%;
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 #process h1 {
   font-weight: 300;
   text-transform: uppercase;
   font-style: italic;
+}
+#process .process__content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-top: 30px;
+}
+#process .process__content:before, #process .process__content:after {
+  content: '';
+  display: table;
+}
+#process .process__content:after {
+  clear: both;
+}
+#process .process__content:last-child {
+  margin-right: 0%;
+}
+#process .process__content img {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+#process .process__content img:before, #process .process__content img:after {
+  content: '';
+  display: table;
+}
+#process .process__content img:after {
+  clear: both;
+}
+@media only screen and (max-width: 620px) {
+  #process .process__content {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #process .process__content:first-child {
+    margin-left: auto;
+  }
+  #process .process__content:last-child {
+    margin-right: auto;
+  }
 }
 
 /**
@@ -2865,7 +2929,7 @@ footer {
   width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 .services__content:before, .services__content:after {
@@ -2880,7 +2944,8 @@ footer {
 }
 .services__content h3 {
   border-bottom: 2px solid #111111;
-  font-weight: 400;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .services__content ul {
   list-style: none;
