@@ -1,0 +1,49 @@
+
+.product {
+  padding-top: $padding-section;
+  position: relative;
+  width: 100%;
+  .main {
+    display:block;
+    width: 70%;
+    float:left;
+    img {
+      border: 1px solid #CCC;
+      width: 100%;
+    }
+  }
+  .side {
+    @include center();
+
+    display:block;
+    width: 30%;
+    float:left;
+
+    line-height: .5;
+
+    h4 { font-style:oblique; }
+
+    .logo { @include center(); }
+
+    .tools {
+
+      width: 25%;
+      line-height: initial;
+      position: absolute;
+      bottom: 0;
+
+      ul {
+        list-style-type: none;
+        font-style: italic;
+        padding-left: 0;
+      }
+
+      hr {
+        width: 25%;
+        height: 1px;
+        border: 0;
+        background-color: #000;
+      }
+    }
+  }
+}

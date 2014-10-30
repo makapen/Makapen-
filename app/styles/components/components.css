@@ -2977,6 +2977,81 @@ footer {
     margin: auto;
   }
 }
+.product {
+  padding-top: 6em;
+  position: relative;
+  width: 100%;
+}
+.product .main {
+  display: block;
+  width: 70%;
+  float: left;
+}
+.product .main img {
+  border: 1px solid #CCC;
+  width: 100%;
+}
+.product .side {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  width: 30%;
+  float: left;
+  line-height: .5;
+}
+.product .side:before, .product .side:after {
+  content: '';
+  display: table;
+}
+.product .side:after {
+  clear: both;
+}
+.product .side h4 {
+  font-style: oblique;
+}
+.product .side .logo {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.product .side .logo:before, .product .side .logo:after {
+  content: '';
+  display: table;
+}
+.product .side .logo:after {
+  clear: both;
+}
+.product .side .tools {
+  width: 25%;
+  line-height: initial;
+  position: absolute;
+  bottom: 0;
+}
+.product .side .tools ul {
+  list-style-type: none;
+  font-style: italic;
+  padding-left: 0;
+}
+.product .side .tools hr {
+  width: 25%;
+  height: 1px;
+  border: 0;
+  background-color: #000;
+}
+
 /*	--------------------------------------------------
   Reveal Modals
   -------------------------------------------------- */
