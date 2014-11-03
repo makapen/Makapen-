@@ -2549,7 +2549,7 @@ cf()
   overflow: hidden;
   cursor: pointer;
   z-index: 100;
-  background: url("../../images/mklogo-small.png") no-repeat top left;
+  background: url("../../images/mklogo-small.png") no-repeat;
   background-size: 70px 30px;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease-in-out;
@@ -2670,7 +2670,7 @@ cf()
 }
 /**
 *
-* Portfolio styling
+* Process styling
 *
 **/
 #process {
@@ -2678,6 +2678,9 @@ cf()
   padding-top: 6em;
   padding-bottom: 6em;
   background: url("../../images/blue-background.png");
+}
+#process .blue {
+  color: #3399CC;
 }
 #process p {
   max-width: 90%;
@@ -2825,9 +2828,12 @@ footer {
 *
 **/
 #contact {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  overflow: hidden;
   background: url("../../images/map.png") repeat-x;
+}
+#contact .black-overlay {
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #contact .col {
   margin-bottom: 0;
@@ -2837,9 +2843,6 @@ footer {
   font-weight: 500;
   text-transform: uppercase;
   font-style: italic;
-}
-#contact h1 span {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contact__content {
@@ -2852,6 +2855,7 @@ footer {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  opacity: initial;
 }
 .contact__content:before, .contact__content:after {
   content: '';
@@ -2978,9 +2982,21 @@ footer {
   }
 }
 .product {
-  padding-top: 6em;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6em;
   position: relative;
   width: 100%;
+}
+.product:first-child {
+  margin-left: auto;
+}
+.product:last-child {
+  margin-right: auto;
 }
 .product .main {
   display: block;
