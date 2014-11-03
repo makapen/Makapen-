@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   // Show nav icons using waypoints
   fn.nav = function() {
-    var $logo = $('#logo');
+    var $slider = $('#slider');
     var $nav_bar = $('#nav-bar');
     var $nav_ham = $('.nav-ham__icon');
     var $nav_drawer = $('.nav-drawer');
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     // If mobile, show nav icons off the bat
     if (window.innerWidth > 480) {
-      $logo.waypoint({
+      $slider.waypoint({
         offset: function() {
           return -$nav_bar.height();
         },

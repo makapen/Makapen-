@@ -2549,7 +2549,7 @@ cf()
   overflow: hidden;
   cursor: pointer;
   z-index: 100;
-  background: url("../../images/mklogo-small.png") no-repeat;
+  background: url("../../images/mklogo-small.png") no-repeat top left;
   background-size: 70px 30px;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease-in-out;
@@ -2982,21 +2982,9 @@ footer {
   }
 }
 .product {
-  display: block;
-  clear: both;
-  float: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 6em;
   position: relative;
   width: 100%;
-}
-.product:first-child {
-  margin-left: auto;
-}
-.product:last-child {
-  margin-right: auto;
 }
 .product .main {
   display: block;
