@@ -85,6 +85,9 @@ $(document).ready(function() {
     fn.scroll();
     fn.nav();
     fn.drawer();
+    $('#slider').slick({
+      dots: true
+    });
   };
 
   fn.init();
