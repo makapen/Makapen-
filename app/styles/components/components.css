@@ -2829,7 +2829,8 @@ footer {
 **/
 #contact {
   overflow: hidden;
-  background: url("../../images/map.png") repeat-x;
+  background: url("../../images/map.png") no-repeat center;
+  background-size: cover;
 }
 #contact .black-overlay {
   clear: both;
@@ -2843,7 +2844,6 @@ footer {
   font-weight: 500;
   text-transform: uppercase;
   font-style: italic;
-  margin-top: 118px;
 }
 
 .contact__content {
@@ -3291,6 +3291,10 @@ footer {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.grey-text {
+  color: #737373;
 }
 
 /*==========  TAG  ==========*/

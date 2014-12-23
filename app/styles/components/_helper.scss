@@ -11,6 +11,9 @@
   transform: translateY(-50%);
 }
 
+.grey-text {
+  color: $colorGray;
+}
 /*==========  TAG  ==========*/
 .tag {
   @include type--small;
