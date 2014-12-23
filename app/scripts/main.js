@@ -83,6 +83,8 @@ $(document).ready(function() {
 
   fn.slider = function() {
     $('#slider').slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
       dots: true,
       nextArrow: '<button class="slide-arrow--next"><i class="fa fa-4x fa-angle-right"></i></button>',
       prevArrow: '<button class="slide-arrow--prev"><i class="fa fa-4x fa-angle-left"></i></button>'
