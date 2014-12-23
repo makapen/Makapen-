@@ -81,13 +81,19 @@ $(document).ready(function() {
     });
   };
 
+  fn.slider = function() {
+    $('#slider').slick({
+      dots: true,
+      nextArrow: '<button class="slide-arrow--next"><i class="fa fa-4x fa-angle-right"></i></button>',
+      prevArrow: '<button class="slide-arrow--prev"><i class="fa fa-4x fa-angle-left"></i></button>'
+    });
+  }
+
   fn.init = function() {
     fn.scroll();
     fn.nav();
     fn.drawer();
-    $('#slider').slick({
-      dots: true
-    });
+    fn.slider();
   };
 
   fn.init();

@@ -1,0 +1,45 @@
+.slide-arrow {
+  position: absolute;
+  display: block;
+  height: 4em;
+  width: 2em;
+  cursor: pointer;
+  background: transparent;
+  top: calc(50% - 2em);
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slide-arrow--next {
+  @extend .slide-arrow;
+  right: -25px;
+  padding-right: 10px;
+}
+
+.slide-arrow--prev {
+  @extend .slide-arrow;
+  left: -25px;
+  padding-left: 10px;
+}
+
+//override slick dots
+.slick-dots li button {
+  &:hover {
+    &:before {
+      color: $colorBlue !important;
+    }
+  }
+  &:before {
+    font-size: 11px !important;
+  }
+  &:after {
+    font-size: 11px !important;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: $colorBlue !important;
+  opacity: 1 !important;
+}

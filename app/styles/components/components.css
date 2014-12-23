@@ -3240,6 +3240,46 @@ footer {
   clear: both;
 }
 
+.slide-arrow, .slide-arrow--next, .slide-arrow--prev {
+  position: absolute;
+  display: block;
+  height: 4em;
+  width: 2em;
+  cursor: pointer;
+  background: transparent;
+  top: -webkit-calc(50% - 2em);
+  top: calc(50% - 2em);
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slide-arrow--next {
+  right: -25px;
+  padding-right: 10px;
+}
+
+.slide-arrow--prev {
+  left: -25px;
+  padding-left: 10px;
+}
+
+.slick-dots li button:hover:before {
+  color: #3399CC !important;
+}
+.slick-dots li button:before {
+  font-size: 11px !important;
+}
+.slick-dots li button:after {
+  font-size: 11px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3399CC !important;
+  opacity: 1 !important;
+}
+
 /*==========  GENERIC  ==========*/
 .centered {
   text-align: center;

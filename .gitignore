@@ -2,7 +2,8 @@ node_modules/
 .idea/
 .DS_Store
 .sass-cache/
-
+dist/
+bower_components/
 
 #important! do not remove
 aws_config.json
