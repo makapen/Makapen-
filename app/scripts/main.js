@@ -96,6 +96,8 @@ $(document).ready(function() {
     fn.nav();
     fn.drawer();
     fn.slider();
+    FastClick.attach(document.body);
+    
   };
 
   fn.init();

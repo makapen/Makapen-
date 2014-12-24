@@ -162,7 +162,7 @@ gulp.task('serve', function () {
   browserSync({
     notify: false,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: ['.tmp', 'app', './']
     }
   });
 
