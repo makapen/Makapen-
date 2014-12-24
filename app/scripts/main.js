@@ -89,7 +89,7 @@ $(document).ready(function() {
       nextArrow: '<button class="slide-arrow--next"><i class="fa fa-4x fa-angle-right"></i></button>',
       prevArrow: '<button class="slide-arrow--prev"><i class="fa fa-4x fa-angle-left"></i></button>'
     });
-  }
+  };
 
   fn.init = function() {
     fn.scroll();
@@ -97,7 +97,7 @@ $(document).ready(function() {
     fn.drawer();
     fn.slider();
     FastClick.attach(document.body);
-    
+
   };
 
   fn.init();
