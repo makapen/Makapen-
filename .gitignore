@@ -10,4 +10,3 @@ bower_components/
 node_modules/
 
 #important! do not remove
-aws_config.json

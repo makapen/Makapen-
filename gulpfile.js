@@ -27,6 +27,7 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var awsConfig = require('./config/aws_config.json');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -192,6 +193,31 @@ gulp.task('default', ['clean'], function (cb) {
   runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
+gulp.task('publish-staging', function() {
+
+  // create a new publisher
+  var publisher = awspublish.create({
+      key: awsConfig.aws_key ,
+      secret: awsConfig.aws_secret,
+      bucket: awsConfig.aws_bucket,
+      region: awsConfig.aws_region
+    });
+
+    // define custom headers
+    var headers = {
+      'Cache-Control': 'no-cache'
+    };
+
+    return gulp.src('./dist/**')
+
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
+    .pipe(awspublish.reporter({
+      states: ['create', 'update', 'delete']
+    }))
+
+    .on('error', function(err) { console.error('failed to publish err code: ', err.statusCode); } )
+  });
 // Run PageSpeed Insights
 // Update `url` below to the public URL for your site
 gulp.task('pagespeed', pagespeed.bind(null, {
