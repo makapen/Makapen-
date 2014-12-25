@@ -50,8 +50,8 @@ gulp.task('jshint', function () {
 });
 
 // Optimize Images
-gulp.task('images', function () {
-  return gulp.src('app/images/**/*')
+gulp.task('images', ['ajax-loader-img'], function () {
+  return gulp.src(['app/images/**/*', '!app/images/ajax-loader.gif'])
   .pipe($.cache($.imagemin({
     progressive: true,
     interlaced: true
@@ -59,6 +59,12 @@ gulp.task('images', function () {
   .pipe(gulp.dest('dist/images'))
   .pipe($.size({title: 'images'}));
 });
+
+gulp.task('ajax-loader-img', function() {
+  return gulp.src('app/images/ajax-loader.gif')
+    .pipe(gulp.dest('.tmp'))
+    .pipe(gulp.dest('dist'))
+})
 
 // Copy All Files At The Root Level (app)
 gulp.task('copy', function () {
@@ -75,22 +81,9 @@ gulp.task('copy', function () {
 // Copy Web Fonts To Dist
 gulp.task('fonts', function () {
   return gulp.src(['app/fonts/**'])
+  .pipe(gulp.dest('.tmp/fonts'))
   .pipe(gulp.dest('dist/fonts'))
   .pipe($.size({title: 'fonts'}));
-});
-
-gulp.task('bower_js', function() {
-  return gulp.src([
-    "bower_components/jquery-1.11.2.min/index.js",
-    "bower_components/waypoints/lib/jquery.waypoints.min.js",
-    "bower_components/waypoints/lib/shortcuts/sticky.min.js",
-    "bower_components/fastclick/lib/fastclick.js",
-    "bower_components/slick.js/slick/slick.js",
-    "bower_components/foundation/js/foundation.min.js",
-    "bower_components/foundation/js/foundation/foundation.reveal.js"
-    ])
-    .pipe($.concat('vendor.js'))
-    .pipe(gulp.dest('dist/scripts'))
 });
 
 // Compile and Automatically Prefix Stylesheets
@@ -99,7 +92,6 @@ gulp.task('styles', function () {
   return gulp.src([
     'app/styles/*.scss',
     'app/styles/**/*.css',
-    'app/styles/components/components.scss'
     ])
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.sass({
@@ -121,7 +113,7 @@ gulp.task('html', function () {
   return gulp.src('app/**/*.html')
   .pipe(assets)
   // Concatenate And Minify JavaScript
-  // .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
+  .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
   // Remove Any Unused CSS
   // Note: If not using the Style Guide, you can delete it from
   // the next line to only include styles your project uses.
@@ -157,7 +149,7 @@ gulp.task('html', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles'], function () {
+gulp.task('serve', ['styles', 'fonts', 'images:send'], function () {
   browserSync({
     notify: false,
     open: false,
