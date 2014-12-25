@@ -1,0 +1,6 @@
+{
+  "aws_key": "your key here",
+  "aws_secret": "your secret",
+  "aws_bucket": "bucket url",
+  "raws_region": "region"
+}
