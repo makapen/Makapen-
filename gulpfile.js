@@ -149,7 +149,7 @@ gulp.task('html', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles', 'fonts', 'images:send'], function () {
+gulp.task('serve', ['styles', 'fonts'], function () {
   browserSync({
     notify: false,
     open: false,
