@@ -79,10 +79,18 @@ gulp.task('fonts', function () {
   .pipe($.size({title: 'fonts'}));
 });
 
-gulp.task('bower', function() {
-  return gulp.src('bower_components/**')
-    .pipe(gulp.dest('.tmp/bower_components'))
-    .pipe(gulp.dest('dist/bower_components'))
+gulp.task('bower_js', function() {
+  return gulp.src([
+    "bower_components/jquery-1.11.2.min/index.js",
+    "bower_components/waypoints/lib/jquery.waypoints.min.js",
+    "bower_components/waypoints/lib/shortcuts/sticky.min.js",
+    "bower_components/fastclick/lib/fastclick.js",
+    "bower_components/slick.js/slick/slick.js",
+    "bower_components/foundation/js/foundation.min.js",
+    "bower_components/foundation/js/foundation/foundation.reveal.js"
+    ])
+    .pipe($.concat('vendor.js'))
+    .pipe(gulp.dest('dist/scripts'))
 });
 
 // Compile and Automatically Prefix Stylesheets
@@ -108,29 +116,29 @@ gulp.task('styles', function () {
 
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
-  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
+  var assets = $.useref.assets({searchPath: ['.tmp', 'app']});
 
   return gulp.src('app/**/*.html')
   .pipe(assets)
   // Concatenate And Minify JavaScript
-  .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
+  // .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
   // Remove Any Unused CSS
   // Note: If not using the Style Guide, you can delete it from
   // the next line to only include styles your project uses.
-  .pipe($.if('*.css', $.uncss({
-    html: [
-    'app/index.html',
-    'app/pawzii.html'
-    ],
-    // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
-    ignore: [
-    '.fade-in',
-    '.fade-out',
-    '.nav-drawer.nav-drawer--active',
-    '.reveal-modal-bg',
-    '.nav-ham__icon.nav-ham__icon--open'
-    ]
-  })))
+  // .pipe($.if('*.css', $.uncss({
+  //   html: [
+  //   'app/index.html',
+  //   'app/pawzii.html'
+  //   ],
+  //   // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
+  //   ignore: [
+  //   '.fade-in',
+  //   '.fade-out',
+  //   '.nav-drawer.nav-drawer--active',
+  //   '.reveal-modal-bg',
+  //   '.nav-ham__icon.nav-ham__icon--open'
+  //   ]
+  // })))
   // Concatenate And Minify Styles
   // In case you are still using useref build blocks
   .pipe($.if('*.css', $.csso()))
@@ -180,13 +188,13 @@ gulp.task('serve:dist', ['default'], function () {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: ['dist', '.tmp']
+    server: 'dist'
   });
 });
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', 'bower', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights

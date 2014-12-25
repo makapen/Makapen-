@@ -82,6 +82,7 @@ $(document).ready(function() {
   };
 
   fn.slider = function() {
+    console.log('hit');
     $('#slider').slick({
       autoplay: true,
       autoplaySpeed: 4000,
