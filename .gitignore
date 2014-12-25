@@ -1,10 +1,13 @@
-node_modules/
+#ignore dot files
 .idea/
 .DS_Store
 .sass-cache/
+.tmp/
+
+#ignore libs and dist
 dist/
 bower_components/
-.tmp/
+node_modules/
 
 #important! do not remove
 aws_config.json

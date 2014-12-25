@@ -117,20 +117,23 @@ gulp.task('html', function () {
   // Remove Any Unused CSS
   // Note: If not using the Style Guide, you can delete it from
   // the next line to only include styles your project uses.
-  // .pipe($.if('*.css', $.uncss({
-  //   html: [
-  //   'app/index.html',
-  //   'app/pawzii.html'
-  //   ],
-  //   // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
-  //   ignore: [
-  //   '.fade-in',
-  //   '.fade-out',
-  //   '.nav-drawer.nav-drawer--active',
-  //   '.reveal-modal-bg',
-  //   '.nav-ham__icon.nav-ham__icon--open'
-  //   ]
-  // })))
+  .pipe($.if('*.css', $.uncss({
+    html: [
+    'app/index.html',
+    'app/pawzii.html'
+    ],
+    // CSS Selectors for UnCSS to ignore. Have to specify exact markup that is in css
+    ignore: [
+    '.fade-in',
+    '.fade-out',
+    '.nav-drawer.nav-drawer--active',
+    '.reveal-modal-bg',
+    '.nav-ham__icon.nav-ham__icon--open',
+    /.fa+/,
+    /.slide+/,
+    /.slick+/
+    ]
+  })))
   // Concatenate And Minify Styles
   // In case you are still using useref build blocks
   .pipe($.if('*.css', $.csso()))
