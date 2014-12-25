@@ -28,6 +28,7 @@ var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
 var awsConfig = require('./config/aws_config.json');
+var awspublish = require('gulp-awspublish');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
