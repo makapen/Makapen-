@@ -170,10 +170,12 @@ color: $colorGray;
 
 .fade-in {
   opacity: 1;
+  visibility: visible;
 }
 
 .fade-out {
   opacity: 0;
+  visibility: hidden;
 }
 
 @media only screen and (max-width: $small) {

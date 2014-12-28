@@ -65,6 +65,7 @@ $(document).ready(function() {
     }
     else {
       $nav_ham.addClass('fade-in');
+      $nav_mk.addClass('fade-in');
     }
   };
 
