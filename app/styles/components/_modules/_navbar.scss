@@ -47,17 +47,24 @@ color: $colorGray;
   left: 1em;
 
   height: 30px;
-  width: 70px;
+  width: 150px;
 
   overflow: hidden;
   cursor: pointer;
   z-index: 100;
 
-  background: url('../../images/mklogo-small.png') no-repeat top left;
-  background-size: 70px 30px;
+  background: url('../../images/mklogo.png') no-repeat top left;
+  background-size: 150px 30px;
 
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+
+  @media (max-width: $screen-xs) {
+    background: url('../../images/mklogo-small.png') no-repeat top left;
+    height: 30px;
+    width: 70px;
+    background-size: 70px 30px;
+  }
 }
 
 .nav-ham__wrapper {

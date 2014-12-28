@@ -97,7 +97,7 @@
   // Defining sidebar stuff
   $sidebarWidth: 280px !default;
 
-
+  $screen-xs: 40em;
 /*==========  FUNCTIONS  ==========*/
 
   @function leading($size, $context: $lineHeight) {
