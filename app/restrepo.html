@@ -108,10 +108,18 @@
     </div>
   </footer>
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints-sticky.min.js"></script>
-
+  <!-- build:js(./) scripts/vendor.min.js -->
+  <script type="text/javascript" src="bower_components/jquery-1.11.2.min/index.js"></script>
+  <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
+  <script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
+  <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+  <!-- endbuild -->
+  
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 
   <script>
     $(document).ready(function() {
