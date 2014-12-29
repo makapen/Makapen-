@@ -18,6 +18,11 @@
   }
 
   h1 {
+    width: 200px;
+    margin: 2em auto;
+    padding: 10px 6px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
     color: $colorWhite;
     font-weight: 500;
     text-transform: uppercase;
@@ -27,6 +32,7 @@
 .contact__content {
   @include center();
   opacity: initial;
+  margin-bottom: 2.5em;
 }
 
 .contact__form {
