@@ -30,38 +30,40 @@ $(document).ready(function() {
 
     // If mobile, show nav icons off the bat
     if (window.innerWidth > 480) {
-      $slider.waypoint({
-        offset: function() {
-          return -$nav_bar.height();
-        },
-        handler: function(direction) {
-          var time_delay = 450;
+      if ($slider) {
+        $slider.waypoint({
+          offset: function() {
+            return -$nav_bar.height();
+          },
+          handler: function(direction) {
+            var time_delay = 450;
 
-          if (direction === "down") {
-            $nav_ham.addClass('fade-in');
-            $nav_mk.addClass('fade-in');
-            $nav_bar.addClass('fade-out');
+            if (direction === "down") {
+              $nav_ham.addClass('fade-in');
+              $nav_mk.addClass('fade-in');
+              $nav_bar.addClass('fade-out');
+            }
+            // Close the drawer if it's open and your moving up
+            else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
+              $nav_ham.removeClass('fade-in');
+              $nav_mk.removeClass('fade-in');
+              $nav_ham.removeClass('nav-ham__icon--open');
+              $nav_drawer.removeClass('nav-drawer--active');
+              setTimeout(function() {
+                $nav_bar.removeClass('fade-out').delay(3000);
+              }, time_delay);
+            }
+            // Scrolled up
+            else {
+              $nav_ham.removeClass('fade-in');
+              $nav_mk.removeClass('fade-in');
+              setTimeout(function() {
+                $nav_bar.removeClass('fade-out').delay(3000);
+              }, time_delay);
+            }
           }
-          // Close the drawer if it's open and your moving up
-          else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
-            $nav_ham.removeClass('fade-in');
-            $nav_mk.removeClass('fade-in');
-            $nav_ham.removeClass('nav-ham__icon--open');
-            $nav_drawer.removeClass('nav-drawer--active');
-            setTimeout(function() {
-              $nav_bar.removeClass('fade-out').delay(3000);
-            }, time_delay);
-          }
-          // Scrolled up
-          else {
-            $nav_ham.removeClass('fade-in');
-            $nav_mk.removeClass('fade-in');
-            setTimeout(function() {
-              $nav_bar.removeClass('fade-out').delay(3000);
-            }, time_delay);
-          }
-        }
-      });
+        });
+      }
     }
     else {
       $nav_ham.addClass('fade-in');

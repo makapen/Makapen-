@@ -11,6 +11,14 @@
   transform: translateY(-50%);
 }
 
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
 .grey-text {
   color: $colorGray;
 }
