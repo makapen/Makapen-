@@ -73,9 +73,16 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true
+      },
+      
       styles: {
         files: ['app/styles/{,*/}*.scss'],
         tasks: ['sass:dist', 'autoprefixer:dist']
+      },
+      html: {
+        files: ['app/*.html'],
       }
     },
 
