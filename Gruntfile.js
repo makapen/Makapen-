@@ -61,7 +61,14 @@ module.exports = function (grunt) {
     },
 
     usemin:{
-      html:['dist/index.html']
+      html:['dist/index.html'],
+      options: {
+        blockReplacements: {
+          livereload: function (block) {
+            return null;
+          }
+        }
+      }
     },
 
     watch: {
