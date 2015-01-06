@@ -100,6 +100,20 @@ module.exports = function (grunt) {
           base: ['dist']
         }
       },
+    },
+
+    aws: grunt.file.readJSON('config/aws_config.json'),
+    s3: {
+      options: {
+        accessKeyId: "<%= aws.accessKeyId %>",
+        secretAccessKey: "<%= aws.secretAccessKey %>",
+        bucket: "makapen-staging",
+        region: 'us-west-2'
+      },
+      build: {
+        cwd: "dist/",
+        src: "**"
+      }
     }
   });
 
@@ -118,4 +132,5 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
   grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist']);
+  grunt.registerTask('publish-staging', ['s3']);
 }
