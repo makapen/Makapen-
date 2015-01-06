@@ -15,7 +15,7 @@ module.exports = function (grunt) {
       dist: {
         expand: true,
         cwd: 'app',
-        src: ['images/**/*', 'fonts/**/*', 'index.html'],
+        src: ['fonts/**/*', 'index.html'],
         dest: 'dist/'
       },
       tmp: {
@@ -56,10 +56,6 @@ module.exports = function (grunt) {
       html: 'dist/index.html',
     },
 
-    imagemin: {
-
-    },
-
     usemin:{
       html:['dist/index.html'],
       options: {
@@ -68,6 +64,20 @@ module.exports = function (grunt) {
             return null;
           }
         }
+      }
+    },
+
+    imagemin: {
+      static: {                          // Target
+        options: {                       // Target options
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          cwd: '.tmp/images',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'dist/images'
+        }]
       }
     },
 
@@ -125,7 +135,8 @@ module.exports = function (grunt) {
     'cssmin:generated',
     'uglify:generated',
     // 'filerev',
-    'usemin'
+    'usemin',
+    'imagemin'
   ]);
 
   grunt.registerTask('default', ['server']);
