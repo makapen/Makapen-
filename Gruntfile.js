@@ -141,6 +141,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
-  grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist']);
+  grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
   grunt.registerTask('publish-staging', ['s3']);
 }
