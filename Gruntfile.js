@@ -56,14 +56,6 @@ module.exports = function (grunt) {
       html: 'dist/index.html',
     },
 
-    cssmin: {
-      target: {
-        files: {
-          'dist/styles/main.min.css': ['.tmp/styles/h5bp.css', '.tmp/styles/main.css']
-        }
-      }
-    },
-
     imagemin: {
 
     },
@@ -123,7 +115,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'useminPrepare',
     'concat:generated',
-    'cssmin',
+    'cssmin:generated',
     'uglify:generated',
     // 'filerev',
     'usemin'
