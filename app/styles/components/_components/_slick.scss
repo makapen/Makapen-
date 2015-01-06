@@ -25,6 +25,11 @@
 }
 
 //override slick dots
+.slick-dots {
+  left: 0;
+  right: 0;
+}
+
 .slick-dots li button {
   &:hover {
     &:before {

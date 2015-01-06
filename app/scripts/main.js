@@ -29,7 +29,7 @@ $(document).ready(function() {
     var $nav_mk = $('.nav-mk__icon');
 
     // If mobile, show nav icons off the bat
-    if (window.innerWidth > 480) {
+    if (window.innerWidth > 620) {
       if ($slider) {
         $slider.waypoint({
           offset: function() {
@@ -64,10 +64,6 @@ $(document).ready(function() {
           }
         });
       }
-    }
-    else {
-      $nav_ham.addClass('fade-in');
-      $nav_mk.addClass('fade-in');
     }
   };
 

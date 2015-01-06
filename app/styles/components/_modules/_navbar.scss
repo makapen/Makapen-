@@ -6,12 +6,26 @@
 
 #nav-bar {
   position: absolute;
+  width: 100%;
   top: 0;
   right: 0;
   transition: all 0.4s ease;
 }
 
-.nav-bar__list li {
+.nav-bar__list {
+  @include cf();
+  width: calc(100% - 2em);
+  padding-left: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav-bar__list .nav-bar__list-icon {
+  float: left;
+  padding-top: 0;
+}
+
+.nav-bar__list  li {
   float: right;
   padding-top: 10px;
   padding-right: 35px;
@@ -19,9 +33,13 @@
   text-transform: uppercase;
   font-style: italic;
   color: $colorGray;
+
+  &:nth-of-type(2) {
+    padding-right: 0;
+  }
   a, a:visited {
     text-decoration:none;
-color: $colorGray;
+    color: $colorGray;
     transition: all 0.2s ease-in-out;
 
     &:focus, &:hover {
@@ -47,25 +65,40 @@ color: $colorGray;
   left: 1em;
 
   height: 30px;
-  width: 150px;
+  width: 70px;
 
   overflow: hidden;
   cursor: pointer;
   z-index: 100;
 
-  background: url('../../images/mklogo.png') no-repeat top left;
-  background-size: 150px 30px;
+  background: url('../../images/mklogo-small.png') no-repeat top left;
+  background-size: 70px 30px;
 
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 
-  @media (max-width: $screen-xs) {
-    background: url('../../images/mklogo-small.png') no-repeat top left;
+  @media (max-width: $medium) {
     height: 30px;
     width: 70px;
     background-size: 70px 30px;
+    opacity: 1;
   }
 }
+
+.nav-mk__icon--lg {
+  position: relative;
+  height: 30px;
+  width: 150px;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  background: url('../../images/mklogo.png') no-repeat top left;
+  background-size: 150px 30px;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
 
 .nav-ham__wrapper {
   position: fixed !important;
@@ -185,7 +218,7 @@ color: $colorGray;
   visibility: hidden;
 }
 
-@media only screen and (max-width: $small) {
+@media only screen and (max-width: $medium) {
   #nav-bar {
     display: none;
   }

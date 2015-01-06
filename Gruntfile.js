@@ -76,13 +76,16 @@ module.exports = function (grunt) {
       options: {
         livereload: true
       },
-      
+
       styles: {
-        files: ['app/styles/{,*/}*.scss'],
-        tasks: ['sass:dist', 'autoprefixer:dist']
+        files: ['app/styles/**/*.scss'],
+        tasks: ['sass:local', 'autoprefixer:dist']
       },
       html: {
         files: ['app/*.html'],
+      },
+      scripts: {
+        files: ['app/scripts/*.js']
       }
     },
 
@@ -113,6 +116,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', ['server']);
-  grunt.registerTask('server', ['styles:local', 'connect:local', 'watch']);
-  grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
+  grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
+  grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist']);
 }
