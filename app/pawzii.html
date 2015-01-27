@@ -37,13 +37,12 @@
   <!-- Navbar -->
   <nav id="nav-bar">
     <ul class="nav-bar__list">
-      <li><a href="index.html#contact">contact</a>
+      <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
+      <li><a href="/#contact">contact</a>
       </li>
-      <li><a href="index.html#process">process</a>
+      <li><a href="/#process">process</a>
       </li>
-      <li><a href="index.html#services">services</a>
-      </li>
-      <li><a href="index.html">home</a>
+      <li><a href="/#services">services</a>
       </li>
     </ul>
   </nav>
@@ -51,8 +50,12 @@
 
   <!-- Dropdown -->
   <div id="nav-dropdown">
-    <a href="#" class="nav-ham__wrapper"><div class="nav-ham__icon"></div></a>
-    <a href="#logo">
+    <a href="#" class="nav-ham__wrapper">
+      <div class="nav-ham__icon"></div>
+    </a>
+
+    <a href="#nav-dropdown" class="nav-mk__anchor" >
+
       <div class="nav-mk__icon"></div>
     </a>
   </div>
@@ -61,25 +64,20 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="index.html">HOME</a>
-      </li>
-      <li><a href="index.html#services">SERVICES</a>
-      </li>
-      <li><a href="index.html#process">PROCESS</a>
-      </li>
-      <li><a href="index.html#contact">CONTACT</a>
-      </li>
+      <li><a href="/#nav-dropdown">HOME</a></li>
+      <li><a href="/#process">PROCESS</a></li>
+      <li><a href="/#services">SERVICES</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
-
   <div class="product">
     <div class="col">
       <div class="main">
         <img src="images/tnr_app_screens.png">
       </div>
       <div class="side">
-        <img class="logo" src="images/pawzii_logo.png">
+        <a href="https://tnr.pawzii.com" target="blank"><img class="logo" src="images/pawzii_logo.png"></a>
         <h4>Trap-Neuter-Return App</h4>
         <p>When the Pawzii team was busy building their world leading pet licensing software, they also wanted to build a record keeping app for the hugely underserved TNR community. Makapen was hired to design and fully implement a web app centered around google maps that allowed tnr volunteers to record cat colonies based on their location. Makapen continues to be involved in the buildout of new features for this project. </p>
         <div class="tools">
@@ -91,7 +89,9 @@
             <li>Google Maps</li>
           </ul>
         </div>
-        <button class="button--primary" type="submit">Request a Quote</button>
+        <form action="/#contact">
+          <button class="button--primary" type="submit">Request a Quote</button>
+        </form>
 
       </div>
     </div>

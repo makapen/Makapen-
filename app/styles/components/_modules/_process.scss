@@ -8,7 +8,8 @@
   max-width: 100%;
   padding-top: $padding-section;
   padding-bottom: $padding-section;
-  background: url('../../images/blue-background.png');
+  background: url('../../images/blue-background.png') no-repeat center center; 
+  background-size: cover;
 
   .blue {
     color: $colorBlue;
@@ -42,5 +43,3 @@
     }
   }
 }
-
-

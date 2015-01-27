@@ -37,13 +37,12 @@
   <!-- Navbar -->
   <nav id="nav-bar">
     <ul class="nav-bar__list">
-      <li><a href="index.html#contact">contact</a>
+      <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
+      <li><a href="/#contact">contact</a>
       </li>
-      <li><a href="index.html#process">process</a>
+      <li><a href="/#process">process</a>
       </li>
-      <li><a href="index.html#services">services</a>
-      </li>
-      <li><a href="index.html">home</a>
+      <li><a href="/#services">services</a>
       </li>
     </ul>
   </nav>
@@ -51,8 +50,12 @@
 
   <!-- Dropdown -->
   <div id="nav-dropdown">
-    <a href="#" class="nav-ham__wrapper"><div class="nav-ham__icon"></div></a>
-    <a href="#logo">
+    <a href="#" class="nav-ham__wrapper">
+      <div class="nav-ham__icon"></div>
+    </a>
+
+    <a href="/#nav-dropdown" class="nav-mk__anchor" >
+
       <div class="nav-mk__icon"></div>
     </a>
   </div>
@@ -61,14 +64,10 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="index.html">HOME</a>
-      </li>
-      <li><a href="index.html#services">SERVICES</a>
-      </li>
-      <li><a href="index.html#process">PROCESS</a>
-      </li>
-      <li><a href="index.html#contact">CONTACT</a>
-      </li>
+      <li><a href="/#nav-dropdown">HOME</a></li>
+      <li><a href="/#process">PROCESS</a></li>
+      <li><a href="/#services">SERVICES</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
@@ -79,7 +78,7 @@
         <img src="images/NEXTDMEDIA.png">
       </div>
       <div class="side">
-        <img class="logo" src="images/logo.gif">
+        <a href="http://www.nextdmedia.com" target="blank"><img class="logo" src="images/logo.gif"></a>
         <h4>NEXTDMEDIA internal tools</h4>
         <p>Created internal tools for the world's largest independant owner of Linkedin Groups, streamling and improving their process. </p>
         <div class="tools">
@@ -89,7 +88,9 @@
             <li>Natural Language Processing</li>
           </ul>
         </div>
+        <form action="/#contact">
         <button class="button--primary" type="submit">Request a Quote</button>
+      </form>
       </div>
     </div>
   </div>
