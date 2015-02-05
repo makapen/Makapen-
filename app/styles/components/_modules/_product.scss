@@ -1,6 +1,7 @@
 
 .product {
-  margin-top: $padding-section;
+  margin-top: 9em;
+  margin-bottom: 9em;
   position: relative;
   width: 100%;
   .main {
@@ -24,6 +25,12 @@
 
     h4 {
       font-style:oblique;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+    p {
+      color: #737373;
+      font-size: 0.8em;
     }
 
     @media (max-width: $screen-xs) {
@@ -34,7 +41,7 @@
 }
 
 .logo {
-  width: 100%;
+  width: auto;
   max-width: 200px;
 }
 
@@ -43,6 +50,7 @@
     list-style-type: none;
     font-style: italic;
     padding-left: 0;
+    text-transform: uppercase;
   }
 
   hr {
