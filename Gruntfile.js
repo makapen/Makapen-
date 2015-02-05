@@ -15,7 +15,7 @@ module.exports = function (grunt) {
       dist: {
         expand: true,
         cwd: 'app',
-        src: ['fonts/**/*', 'index.html'],
+        src: ['fonts/**/*', 'index.html', 'restrepo.html', 'nextdmedia.html', 'pawzii.html'],
         dest: 'dist/'
       },
       tmp: {
@@ -53,11 +53,11 @@ module.exports = function (grunt) {
     },
 
     useminPrepare: {
-      html: 'dist/index.html',
+      html: ['dist/index.html', 'dist/restrepo.html', 'dist/nextdmedia.html', 'dist/pawzii.html']
     },
 
     usemin:{
-      html:['dist/index.html'],
+      html:['dist/index.html', 'dist/restrepo.html', 'dist/nextdmedia.html', 'dist/pawzii.html'],
       options: {
         blockReplacements: {
           livereload: function (block) {
