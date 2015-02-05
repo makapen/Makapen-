@@ -52,7 +52,7 @@
   <!-- Dropdown -->
   <div id="nav-dropdown">
     <a href="#" class="nav-ham__wrapper"><div class="nav-ham__icon"></div></a>
-    <a href="#logo">
+    <a href="index.html">
       <div class="nav-mk__icon"></div>
     </a>
   </div>
@@ -76,7 +76,7 @@
   <div class="product">
     <div class="col">
       <div class="main">
-        <img src="images/RESTREPO.png">
+        <div class='border'><img src="images/RESTREPO.png"></div>
       </div>
       <div class="side">
         <img class="logo" src="images/RESTREPO.png">
@@ -89,8 +89,10 @@
             <li>Shopping Cart</li>
           </ul>
         </div>
-        <button class="button--primary" type="submit">Request a Quote</button>
-
+        <iframe name="hidden_ifrafmFe" id="hidden_iframe" style="display:none;"></iframe>
+        <form action="https://docs.google.com/a/makapen.co/forms/d/1bJvXsyPbE493paWU6slonqNpmR97CCLZnT9DiZnGTYI/formResponse" method="POST" target="hidden_iframe">
+          <button class="button--primary" type="submit">Request a Quote</button>
+        </form>
       </div>
     </div>
   </div>
@@ -124,7 +126,7 @@
 
   <script>
     $(document).ready(function() {
-      $("#contact form").submit(function(event) {
+      $("form").submit(function(event) {
         var postDest = event.target.action;
 
         $("#hidden_iframe").load(function(event) {
@@ -145,9 +147,7 @@
 
     });
   </script>
-  <!-- build:js scripts/main.min.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+
   <!-- Google Analytics-->
   <script>
     (function(i, s, o, g, r, a, m) {

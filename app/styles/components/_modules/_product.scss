@@ -4,10 +4,14 @@
   position: relative;
   width: 100%;
   .main {
-    @include col(9/12);
-    img {
-      border: 1px solid #CCC;
+    @include col(2/3);
+
+    .border {
+      border: 1px solid #ccc;
+      border-radius: 2px;
       padding: 10px;
+    }
+    img {
       width: 100%;
     }
 
@@ -16,7 +20,7 @@
     }
   }
   .side {
-    @include col(3/12);
+    @include col(1/3);
 
     h4 {
       font-style:oblique;
