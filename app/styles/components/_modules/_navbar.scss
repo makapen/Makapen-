@@ -205,6 +205,10 @@
         background-color: $colorWhite;
         color: $colorBlack;
       }
+
+      @media (max-height: $medium) {
+        font-size: 24px;
+      }
     }
   }
 }
