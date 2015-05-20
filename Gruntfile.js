@@ -116,7 +116,7 @@ module.exports = function (grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        bucket: "makapen-staging",
+        bucket: "makapen",
         region: 'us-west-2'
       },
       build: {
