@@ -132,11 +132,11 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'useminPrepare',
     'concat:generated',
-    'cssmin:generated',
     'uglify:generated',
+    'cssmin:generated',
     // 'filerev',
-    'usemin',
-    'imagemin'
+    'imagemin',
+    'usemin'
   ]);
 
   grunt.registerTask('default', ['server']);
