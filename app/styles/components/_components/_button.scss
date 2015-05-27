@@ -58,12 +58,14 @@
 
 .button--primary {
   @extend .button;
-  @include style-button($color: $colorBlue, $textColor: #ffffff, $hover: darken($colorBlue, 10%));
-  border: none;
+  @include style-button($color: #ffffff, $textColor: $colorBlue, $hover: darken($colorBlue, 10%));
+  border: 1px solid $colorBlue;
   box-shadow: none;
-  font-weight: 400;
+  font-weight: 300;
+  text-transform: uppercase;
   &:focus, &:active, &:hover{
-    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 300;
     box-shadow: none;
     border: none;
   }
