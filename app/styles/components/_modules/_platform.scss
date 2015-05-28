@@ -1,6 +1,7 @@
 
-.platform {
-  margin-bottom: 9em;
+#platform {
+  padding-top: 6em;
+  padding-bottom: 6em;
   position: relative;
   width: 100%;
   .main {
@@ -34,12 +35,6 @@
       margin-top: 2em;
     }
   }
-}
-
-h1 {
-  font-weight: 300;
-  text-transform: uppercase;
-  font-style: italic;
 }
 
 .logo {

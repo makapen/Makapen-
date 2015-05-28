@@ -22,6 +22,10 @@
 .grey-text {
   color: $colorGray;
 }
+
+.white-text {
+  color: $colorWhite;
+}
 /*==========  TAG  ==========*/
 .tag {
   @include type--small;

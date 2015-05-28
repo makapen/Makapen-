@@ -1,7 +1,6 @@
 
-.client {
+#client {
   background-color: $colorBlue;
-  margin-bottom: 6em;
   padding-top: 6em;
   position: relative;
   width: 100%;
@@ -10,7 +9,7 @@
     color: $colorWhite;
     text-align: center;
     img {
-      width: 55%;
+      width: 60%;
     }
 
     @media (max-width: $screen-xs) {
@@ -38,11 +37,7 @@
   }
 }
 
-h1 {
-  font-weight: 300;
-  text-transform: uppercase;
-  font-style: italic;
-}
+
 
 .logo {
   width: auto;

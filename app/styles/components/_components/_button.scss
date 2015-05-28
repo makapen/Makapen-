@@ -62,12 +62,12 @@
   border: 1px solid $colorBlue;
   box-shadow: none;
   font-weight: 300;
+  border-radius: 0px;
   text-transform: uppercase;
   &:focus, &:active, &:hover{
     text-transform: uppercase;
     font-weight: 300;
     box-shadow: none;
-    border: none;
   }
 }
 
