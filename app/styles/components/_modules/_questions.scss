@@ -1,0 +1,62 @@
+
+#questions {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  position: relative;
+  width: 100%;
+  .main {
+    @include col(1/1);
+    text-align: center;
+    img {
+      width: 80%;
+      border: 1px solid $colorGrayKeyline;
+    }
+
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+    }
+  }
+  .side {
+    @include col(.45);
+    padding-left: 3%;
+    h1 {
+      font-style:oblique;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+    p {
+      max-width: 90%;
+      font-size: $fontBase;
+    }
+
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+      margin-top: 2em;
+    }
+  }
+}
+
+
+
+.logo {
+  width: auto;
+  max-width: 200px;
+}
+
+.tools {
+  ul {
+    list-style-type: none;
+    font-style: italic;
+    padding-left: 0;
+    text-transform: uppercase;
+  }
+
+  hr {
+    left: 0;
+    max-width: 200px;
+    height: 1px;
+    margin: 0;
+    border: 0;
+    background-color: #000;
+  }
+}
