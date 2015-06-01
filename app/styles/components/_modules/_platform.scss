@@ -9,17 +9,24 @@
     color: $colorWhite;
     text-align: center;
     img {
-      width: 80%;
-      border: 1px solid $colorGrayKeyline;
+      width: 85%;
     }
 
     @media (max-width: $screen-xs) {
       @include col(1/1);
+      text-align: center;
+      img {
+        padding-top: 2em;
+        width: 80%;
+      }
     }
   }
   .side {
     @include col(.45);
     padding-left: 3%;
+    .fa {
+      color: $colorBlue;
+    }
     h1 {
       font-style:oblique;
       text-transform: uppercase;
@@ -32,30 +39,10 @@
 
     @media (max-width: $screen-xs) {
       @include col(1/1);
-      margin-top: 2em;
     }
   }
-}
-
-.logo {
-  width: auto;
-  max-width: 200px;
-}
-
-.tools {
-  ul {
-    list-style-type: none;
-    font-style: italic;
-    padding-left: 0;
-    text-transform: uppercase;
-  }
-
-  hr {
-    left: 0;
-    max-width: 200px;
-    height: 1px;
-    margin: 0;
-    border: 0;
-    background-color: #000;
+  @media (max-width: $screen-xs) {
+    padding-top: 4em;
+    padding-bottom: 4em;
   }
 }

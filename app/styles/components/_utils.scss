@@ -98,6 +98,7 @@
   $sidebarWidth: 280px !default;
 
   $screen-xs: 40em;
+  $screen-sm: 80em;
 /*==========  FUNCTIONS  ==========*/
 
   @function leading($size, $context: $lineHeight) {
