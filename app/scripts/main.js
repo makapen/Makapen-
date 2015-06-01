@@ -21,8 +21,8 @@ $(document).ready(function() {
   };
 
   // Show nav icons using waypoints
-  fn.nav = function() {
-    var $slider = $('#slider');
+  fn.nav = function(elementId) {
+    var firstElement = $(elementId);
     var $nav_bar = $('#nav-bar');
     var $nav_ham = $('.nav-ham__icon');
     var $nav_drawer = $('.nav-drawer');
@@ -30,8 +30,8 @@ $(document).ready(function() {
 
     // If mobile, show nav icons off the bat
     if (window.innerWidth > 620) {
-      if ($slider) {
-        $slider.waypoint({
+      if (firstElement) {
+        firstElement.waypoint({
           offset: function() {
             return -$nav_bar.height();
           },
@@ -90,9 +90,11 @@ $(document).ready(function() {
     });
   };
 
+  // for each new page that has a new element, add a new nav function
   fn.init = function() {
     fn.scroll();
-    fn.nav();
+    fn.nav("#slider");
+    fn.nav("#product");
     fn.drawer();
     fn.slider();
     FastClick.attach(document.body);

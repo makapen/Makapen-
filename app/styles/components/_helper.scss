@@ -30,6 +30,24 @@
 .white-text {
   color: $colorWhite;
 }
+
+.portfolio-link {
+    text-decoration: none;
+    position: relative;
+}
+.portfolio-link:after {
+    content: 'featured projects';
+    color: transparent;
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    border-color: #737373;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
 /*==========  TAG  ==========*/
 .tag {
   @include type--small;

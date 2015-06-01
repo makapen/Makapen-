@@ -110,8 +110,8 @@ module.exports = function (grunt) {
         }
       },
     },
-
-    aws: grunt.file.readJSON('config/aws_config.json'),
+    // temporarily commented out b/c I deleted the config files
+    // aws: grunt.file.readJSON('config/aws_config.json'),
     s3: {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
