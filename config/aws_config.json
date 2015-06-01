@@ -1,6 +1,6 @@
 {
-  "aws_key": "AKIAIOTQNYRWOBIVGKCQ",
-  "aws_secret": "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",
+  "accessKeyId": "AKIAIOTQNYRWOBIVGKCQ",
+  "secretAccessKey": "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",
   "aws_bucket": "bucket url",
-  "raws_region": "region"
+  "aws_region": "region"
 }
