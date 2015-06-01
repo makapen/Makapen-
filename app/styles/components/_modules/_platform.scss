@@ -24,9 +24,6 @@
   .side {
     @include col(.45);
     padding-left: 3%;
-    .fa {
-      color: $colorBlue;
-    }
     h1 {
       font-style:oblique;
       text-transform: uppercase;
