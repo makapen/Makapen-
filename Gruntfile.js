@@ -2,6 +2,11 @@ module.exports = function (grunt) {
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt, {pattern: ['grunt-contrib-*', 'grunt-*']});
 
+function getUserHome() {
+  return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
+}
+
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -110,8 +115,7 @@ module.exports = function (grunt) {
         }
       },
     },
-    // temporarily commented out b/c I deleted the config files
-    // aws: grunt.file.readJSON('config/aws_config.json'),
+    aws: grunt.file.readJSON(getUserHome() + '/.makapen/config.json'),
     s3: {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
