@@ -118,8 +118,8 @@ function getUserHome() {
     aws: grunt.file.readJSON(getUserHome() + '/.makapen/config.json'),
     s3: {
       options: {
-        accessKeyId: "<%= accessKeyId %>",
-        secretAccessKey: "<%= secretAccessKey %>",
+        accessKeyId: "<%= aws.accessKeyId %>",
+        secretAccessKey: "<%= aws.secretAccessKey %>",
         bucket: "makapen",
         region: 'us-west-2'
       },
