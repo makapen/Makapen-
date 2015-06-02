@@ -114,8 +114,8 @@ module.exports = function (grunt) {
     // aws: grunt.file.readJSON('config/aws_config.json'),
     s3: {
       options: {
-        accessKeyId: "<%= aws.accessKeyId %>",
-        secretAccessKey: "<%= aws.secretAccessKey %>",
+        accessKeyId: "<%= accessKeyId %>",
+        secretAccessKey: "<%= secretAccessKey %>",
         bucket: "makapen",
         region: 'us-west-2'
       },
