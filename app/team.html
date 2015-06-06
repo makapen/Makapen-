@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Makapen Co is a website and web applications development agency that works with startups on new build-outs and rapid prototyping projects. We aim to create simple but powerful solutions that are well designed.">
-  <meta name="viewport" content="initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Makapen Co | Web Development agency for Startups</title>
 
   <!-- Add to homescreen for Chrome on Android -->
@@ -27,9 +27,11 @@
     -->
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <!-- build:css(.tmp/) styles/main.pawzii.min.css -->
+
+  <!-- build:css(.tmp/) styles/team/main.min.css -->
   <link rel="stylesheet" href="styles/h5bp.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -37,8 +39,10 @@
   <!-- Navbar -->
   <nav id="nav-bar">
     <ul class="nav-bar__list">
-      <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
-      <li><a href="/#contact">contact</a>
+      <li class='nav-bar__list-icon'>
+        <a href="/#nav-dropdown"><div class='nav-mk__icon--lg'></div></a>
+      </li>
+      <li class='last'><a href="/#contact">contact</a>
       </li>
       <li><a href="team.html">team</a>
       </li>
@@ -46,7 +50,7 @@
       </li>
       <li><a href="/#process">process</a>
       </li>
-      <li><a href="whyzer.html" class="portfolio-link">featured project</a>
+      <li><a href="/#nav-dropdown" class="portfolio-link">featured projects</a>
       </li>
     </ul>
   </nav>
@@ -58,7 +62,7 @@
       <div class="nav-ham__icon"></div>
     </a>
 
-    <a href="/" class="nav-mk__anchor" >
+    <a href="#nav-dropdown" class="nav-mk__anchor" >
       <div class="nav-mk__icon"></div>
     </a>
   </div>
@@ -67,7 +71,7 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="whyzer.html">FEATURED PROJECT</a></li>
+      <li><a href="/#nav-dropdown">FEATURED PROJECTS</a></li>
       <li><a href="/#process">PROCESS</a></li>
       <li><a href="/#services">SERVICES</a></li>
       <li><a href="team.html">TEAM</a></li>
@@ -75,61 +79,53 @@
     </ul>
   </div>
   <!-- END-Drawer -->
-  <div id="product">
+
+  <!-- About Message -->
+  <div id="about" class="centered">
     <div class="col">
-      <div class="side">
-        <h1>Get Whyzer App</h1>
-        <p class="grey-text">Whyzer allows brands to create fun and interactive polls that are embeddable, easily shareable, and quantifiable via an analytics dashboard that features user demographics data.</p>
-        <div class="tools">
-          <p>EmberJS • Bootstrap • AWS• NodeJS • Express • Facebook API • Twitter API • D3.js</p>
-        </div>
-        <br>
-        <a href="#client">
-          <button class="button--primary" type="submit">Learn More</button>
-        </a>
-      </div>
-      <div class="main">
-        <div><img src="images/portfolio/desktop/whyzer.png"></div>
-      </div>
+      <section class="centered about__content">
+        <section class="cd-intro">
+          <h1 class="white-text cd-headline clip is-full-width">
+            <span>We are</span>
+            <span class="cd-words-wrapper">
+              <b class="is-visible">customer focused</b>
+              <b>your technology partner</b>
+              <b>professional</b>
+              <b>innovative</b>
+            </span>
+          </h1>
+        </section>
+        <h3 class="white-text" style="line-height:1.5em">We are a full-stack agency specialized in building web applications, rapid prototypes, and custom websites for startups. Our team of technology professionals and engineers work together to deliver quality code, seamless experiences and
+  unparalleled customer service.</h3>
+      </section>
     </div>
   </div>
+  <!-- END-About-Message -->
 
-  <div id="client">
-    <div class="col">
-      <div class="side">
-        <h2 class="white-text">The Client Goal</h2>
-        <p>Whyzer wanted to provide businesses with consumer polling solutions to better understand and engage with their customers. These online polls needed to be mobile friendly, visually interesting to end users, and easily shareable via social media. Furthermore, business clients would receive poll answers and demographic data in realtime via a dashboard, and have the tools necessary to publish new polls via social media channels.</p>
-      </div>
-      <div class="main">
-        <img src="images/portfolio/mobile/whyzer.png">
-      </div>
+  <div id="team-members" class="centered">
+    <div class="team-members__card">
+      <img src="../images/team/ewelina.jpg">
+      <section class="team-members__content">
+        <h3>Ewelina Prockow</h3>
+        <p class="grey-text small-text">BUSINESS DEVELOPER</p>
+        <p class="small-text">Ewelina focused on helping entrepreneurs make better decisions while developing their software products, and is fostering growth and engagement within  the Makapen team. Her interests span people management, business development, design, and science. She also enjoys running, hiking, and Belgian beers.</p>
+      </section>
     </div>
-  </div>
-
-  <div id="platform">
-    <div class="col">
-      <div class="side">
-        <h2><i class="fa fa-cogs fa-3 padding-r"></i> Dashboards</h2>
-        <p>In order to provide rich analytics to the Whzyer’s business users, each poll is given its own dashboard. By leveraging existing D3 widget libraries, the team was able to build out a grid of poll response bar charts, demographic info pie charts, social media share counts, and a visualized world map of end user locations.</p>
-        <h2><i class="fa fa-users fa-3 padding-r"></i> Social Media Integration</h2>
-        <p>In order to meet the goal of allowing polls to spread virally through social media networks, the client asked that users be able to share a ‘snapshot’ of their poll results. Since twitter and facebook only allow images and text in posted content, the Makapen devised a quick and simple solution using the URL2PNG screenshot service, in which the poll UI would be turned into a thumbnail on request. In keeping with our philosophy of using existing tools, we were able to deliver this feature cost effectively.</p>
-      </div>
-      <div class="main">
-        <img src="images/portfolio/mobile/whyzer_side.png">
-      </div>
+    <div class="team-members__card">
+      <img src="../images/team/tyler.jpg">
+      <section class="team-members__content">
+        <h3>Tyler Iguchi</h3>
+        <p class="grey-text small-text">FULL STACK DEVELOPER</p>
+        <p class="small-text">Tyler is a regular open source community contributor and ember enthusiast who enjoys writing quality and extendable code. He pushes our team to explore and apply new technologies. In his spare time he also enjoys climing, turnip illustrations, cold brews, and long walks on the beach. </p>
+      </section>
     </div>
-  </div>
-
-  <div id="questions">
-    <div class="col">
-      <div class="main">
-        <h2 class="white-text">Ready to get started on your MVP?</h2>
-        <p>Tell us about your project and we will provide professional feedback and an architecture outline to help you take the first step.</p>
-        <br>
-        <form action="/#contact">
-          <button class="button--primary" type="submit">Contact Us</button>
-        </form>
-      </div>
+    <div class="team-members__card">
+      <img src="../images/team/claire.jpg">
+      <section class="team-members__content">
+        <h3>Claire Lyles</h3>
+        <p class="grey-text small-text">FRONT END ENGINEER</p>
+        <p class="small-text">Claire is a design-focused front end engineer. She has a high attention to detail and enjoys delivering intuitive user interfaces both through building rapid prototypes or rich user experiences. When not coding, you can find Claire cantering on horseback through the trails of Washington.</p>
+      </section>
     </div>
   </div>
 
@@ -147,21 +143,52 @@
     </div>
   </footer>
 
-  <!-- build:js(./) scripts/vendor.pawzii.min.js -->
+  <!-- Modal -->
+  <div id="form_modal" class="reveal-modal">
+    <h1>Thanks!</h1>
+
+    <p>We will contact you shortly.</p>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+  <!-- END-Modal -->
+
+
+  <!-- build:js(./) scripts/vendor.min.js -->
   <script type="text/javascript" src="bower_components/jquery-1.11.2.min/index.js"></script>
   <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
   <script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
-  <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
-  <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+
   <!-- endbuild -->
 
-  <!-- build:js(./app) scripts/main.pawzii.min.js -->
-  <script src="scripts/main.js"></script>
+  <!-- build:js(./app) scripts/main.min.js -->
+  <script type="text/javascript" src="scripts/main.js"></script>
   <!-- endbuild -->
-
 
   <!-- Google Analytics-->
+  <script>
+  $(document).ready(function() {
+    $("#contact form").submit(function(event) {
+      var postDest = event.target.action;
+
+      $("#hidden_iframe").load(function(event) {
+        $("#hidden_iframe").unbind("load");
+        $("#contact form")[0].reset();
+
+        $('#form_modal').reveal({
+          animation: 'fadeAndPop', //fade, fadeAndPop, none
+          animationspeed: 300, //how fast animtions are
+          closeonbackgroundclick: true, //if you click background will modal close?
+          dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+        });
+
+      });
+
+      return true;
+    });
+
+  });
+  </script>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -202,9 +229,10 @@
     </p>
   </noscript>
   <!-- End Contactmetrics.com Code -->
-  <!-- Built with love using Web Starter Kit -->
 
   <!-- build:livereload -->
   <script src="//localhost:35729/livereload.js"></script>
   <!-- endbuild -->
 </body>
+
+</html>
