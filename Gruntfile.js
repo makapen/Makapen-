@@ -120,8 +120,8 @@ function getUserHome() {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        // bucket: "makapen",
         bucket: "makapen.co",
+        // bucket: "makapen",
         region: 'us-west-2'
       },
       build: {
@@ -148,6 +148,6 @@ function getUserHome() {
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
   grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
   grunt.registerTask('publish-staging', ['s3']);
-  // grunt.registerTask('publish-production', ['s3']);
+  grunt.registerTask('publish-production', ['s3']);
 
 }
