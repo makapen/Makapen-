@@ -24,7 +24,7 @@
 
 #about {
   overflow: hidden;
-  background: url('/images/team/header.png') no-repeat center center;
+  background: url('/images/team/team.png') no-repeat center center;
   background-size: cover;
   margin-top: 5em;
   padding-top: 8em;
@@ -180,4 +180,32 @@
       opacity: 1;
   }
 
+}
+@media (max-width: 400px) {
+  #about {
+    padding-top: 0em;
+    padding-bottom: 2em;
+    .about__content {
+      h1 {
+        font-size: 1.4em;
+      }
+    }
+
+    .cd-headline {
+        font-size: 1.4em;
+        line-height: 1.2;
+    }
+    .cd-intro {
+        margin: 3em auto;
+    }
+  }
+  #team-members {
+    .team-members__card {
+      width: 275px;
+      margin-bottom: 1em;
+      img {
+        width: 275px;
+      }
+    }
+  }
 }
