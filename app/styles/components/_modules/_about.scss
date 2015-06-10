@@ -182,7 +182,21 @@
   }
 
 }
+
+
 @media (max-width: 1220px) {
+  .team-members__card {
+    margin-bottom: 2.5em;
+  }
+}
+
+@media (max-width: 615px) {
+  .break-line {
+    display: block !important;
+  }
+}
+
+@media (max-width: 425px) {
   #about {
     padding-top: 0em;
     padding-bottom: 2em;
@@ -191,7 +205,6 @@
         font-size: 1.4em;
       }
     }
-
     .cd-headline {
         font-size: 1.4em;
         line-height: 1.2;
@@ -204,7 +217,6 @@
     padding-top: 6em;
     .team-members__card {
       width: 275px;
-      margin-bottom: 2.5em;
       img {
         width: 275px;
       }
