@@ -121,9 +121,9 @@ function getUserHome() {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
         // this bucket is for production
-        bucket: "makapen.co",
+        // bucket: "makapen.co",
         // this bucket is for staging
-        // bucket: "makapen",
+        bucket: "makapen",
         region: 'us-west-2'
       },
       build: {
