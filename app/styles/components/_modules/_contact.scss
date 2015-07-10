@@ -120,7 +120,6 @@
 }
 
 .contact_mail {
-  transition: all 0.4s ease;
   display: inline;
   text-align: center;
   padding-top: 2.5em;
@@ -132,7 +131,13 @@
   cursor: pointer;
 }
 
-.contact_mail:hover {
+.contact_mail_a {
+  transition: all 0.4s ease;
+  color: $colorBlue;
+  text-decoration: none;
+}
+
+.contact_mail_a:hover {
   color: $colorBlue;
   width: 49%;
   text-decoration: underline;
