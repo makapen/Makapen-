@@ -6,11 +6,17 @@
 
 footer {
   max-width: 100%;
-
   padding-top: 10px;
-  padding-bottom: 50px;
-
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.footer_copyright {
+  width: 50%;
+  text-align: center;
+  border-top: 1px dashed $colorBlue;
+  margin: 0 auto;
+  padding-top: 17px;
 }
 
 .footer__content {
@@ -18,7 +24,6 @@ footer {
 
   span {
     display: block;
-
     text-align: center;
   }
 }
@@ -31,9 +36,9 @@ footer {
   li {
     float: left;
     list-style: none;
-
     margin: auto;
     padding: 5px;
+    padding-right: 20px;
 
     a {
       -webkit-tap-highlight-color: transparent;

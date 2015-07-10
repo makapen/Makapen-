@@ -17,7 +17,7 @@
   $huge: 1600px !default;
   $mediumContainer: 688px !default;
   $wideContainer: 864px !default;
-
+ 
   // Defining grid sizes
   $mediumColCount: 3 !default;
   $mediumColWidth: 30.3% !default;
@@ -72,6 +72,10 @@
   $colorMediaSecondary: lighten($colorMedia, 30%) !default;
   $colorPerformance: #7b5294 !default;
   $colorPerformanceSecondary: lighten($colorPerformance, 30%) !default;
+  $colorFacebook : #3B5998;
+  $colorTwitter : #4099FF;
+  $colorLinkedin : #007bb6;
+
 
   // Defining font family
   $fontDefault: 'Open Sans', sans-serif !default;

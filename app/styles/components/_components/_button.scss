@@ -71,6 +71,24 @@
   }
 }
 
+.button--contact {
+  @extend .button;
+  transition: all 0.4s ease;
+  font-weight: 300;
+  border: none;
+  text-transform: upercase;
+  background-color: $colorBlue;
+  border: 3px solid $colorWhite;
+  color: $colorWhite !important;
+  box-shadow: none;
+  display: inline;
+  &:focus, &:active, &:hover{
+    background-color: $colorWhite;
+    border: 3px solid $colorWhite;
+    color: $colorBlue !important;
+  }
+}
+
 .button--secondary {
   @extend .button;
   @include style-button(#ffffff, $colorBlue, $colorBlue);
