@@ -1,3 +1,17 @@
+// Section Styling
+.section {
+  padding-top: $padding-section;
+  padding-bottom: $padding-section;
+}
+
+// Header Styling
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 1.9em;
+}
+
 /*==========  GENERIC  ==========*/
 .centered {
   text-align: center;
@@ -21,6 +35,10 @@
 
 .grey-text {
   color: $colorGray;
+}
+
+.italic-text {
+  font-style: italic;
 }
 
 .padding-r {
