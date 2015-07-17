@@ -4,11 +4,11 @@ This README outlines the details of collaborating on this yeoman project.
 
 ## Deploying to AWS
 
-First, you'll need to obtain your own secret + key from AWS. These can be obtained from going to:
+**First**, you'll need to obtain your own secret + key from AWS. These can be obtained from going to:
 
-* Username Dropdown > Security Credentials > Users > Create New User (if not already created) > Select * your username > Select Create Access Key
+* Username Dropdown > Security Credentials > Users > Create New User (if not already created) > Select Username > Select Create Access Key
 
-Second, once your access key and secret have been activated, you will need to create a `.makapen` folder:
+**Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder:
 
 `mkdir .makapen`
 `cd .makapen`
@@ -17,14 +17,13 @@ Create a .config file:
 
 `touch .config`
 
-Open the file, and place the following code in the `.config` file (replace with your AWS credentials):
+**Lastly**, open the file, and place the following code in the `.config` file (replace with your AWS credentials):
 
-`{`
-  <br />
-  `"accessKeyId": "YOUR KEY HERE",`
-  `"secretAccessKey": "YOUR SECRET HERE",`
-  `"aws_bucket": "bucket url",`
-  `"raws_region": "region"`
+`{` <br />
+  `"accessKeyId": "YOUR KEY HERE",` <br />
+  `"secretAccessKey": "YOUR SECRET HERE",` <br />
+  `"aws_bucket": "bucket url",` <br />
+  `"raws_region": "region"` <br />
 `}`
 
 
