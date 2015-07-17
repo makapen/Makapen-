@@ -3,11 +3,41 @@
     color: #fff;
   }
   .our-work__content {
+    cursor: pointer;
+    position: relative;
     vertical-align: top;
     text-align: left;
     overflow: hidden;
     display: inline-block;
-    width: 300px;
-    margin: 15px;
+    width: 330px;
+    margin-right: $margin-same-element;
+  }
+  .hover-project {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,.65);
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .hover-project-text {
+    padding-top: 25%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .button--primary {
+    background: none;
+    border: 2px solid #3399cc;
+    font-weight: 600;
   }
 }

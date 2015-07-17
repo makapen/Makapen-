@@ -10,7 +10,7 @@ This README outlines the details of collaborating on this yeoman project.
 
 **Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder:
 
-`mkdir .makapen`
+`mkdir .makapen` <br />
 `cd .makapen`
 
 Create a .config file:
@@ -18,13 +18,14 @@ Create a .config file:
 `touch .config`
 
 **Lastly**, open the file, and place the following code in the `.config` file (replace with your AWS credentials):
-
-`{` <br />
-  `"accessKeyId": "YOUR KEY HERE",` <br />
-  `"secretAccessKey": "YOUR SECRET HERE",` <br />
-  `"aws_bucket": "bucket url",` <br />
-  `"raws_region": "region"` <br />
-`}`
+<pre>
+  `{` <br />
+    `"accessKeyId": "YOUR KEY HERE",` <br />
+    `"secretAccessKey": "YOUR SECRET HERE",` <br />
+    `"aws_bucket": "bucket url",` <br />
+    `"raws_region": "region"` <br />
+  `}`
+</pre>
 
 
 ### Development

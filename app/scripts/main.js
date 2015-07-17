@@ -106,6 +106,14 @@ $(document).ready(function() {
   fn.init();
 
 
+// Display Portfolio
+$('.our-work__content')
+  .mouseenter(function() {
+    $('.hover-project').removeClass('hide');
+  })
+  .mouseleave(function() {
+    $('.hover-project').addClass('hide');
+  })
 
 // Waypoint to trigger Process animation
   var processOneWaypoint = new Waypoint({
@@ -115,6 +123,8 @@ $(document).ready(function() {
       // $('.process-1-right').addClass('animated fadeInRight');
     }
   })
+
+
 
 
 
