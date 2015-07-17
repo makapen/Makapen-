@@ -4,17 +4,59 @@
   padding-bottom: $padding-section;
 }
 
-// Header Styling
-
-h1 {
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  font-size: 1.9em;
+.section--gray {
+  background-color: $colorGrayLight;
 }
 
+.section--white {
+  background-color: $colorWhite;
+}
+
+.section--dark {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+.section--top {
+  padding-top: 10em;
+}
+
+@media (max-width: 400px) {
+  .section--top {
+    padding-top: 6em;
+  }
+}
+
+// Condensing Column Width
+.condensed-col {
+  max-width: 800px;
+  margin-left: 0;
+}
+
+// Scroll Arrow
+.scroll-arrow {
+  font-size: 1.5em;
+  border: 3px solid #3399cc;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
 /*==========  GENERIC  ==========*/
+.black-slash {
+  color: $colorBlack;
+}
+
+.blue-slash {
+  color: $colorBlue;
+}
+
 .centered {
   text-align: center;
+}
+
+.blue-divider {
+  border-top: 2px solid #3399cc;
 }
 
 .vert-align-text {
@@ -45,6 +87,10 @@ h1 {
   padding-right: 10px;
 }
 
+.margin-r {
+  margin-right: 10px;
+}
+
 .white-text {
   color: $colorWhite;
 }
@@ -53,23 +99,6 @@ h1 {
   font-size: .8em;
 }
 
-.portfolio-link {
-    text-decoration: none;
-    position: relative;
-}
-.portfolio-link:after {
-    content: 'featured projects';
-    color: transparent;
-
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-
-    border-color: #737373;
-    border-width: 0 0 1px;
-    border-style: solid;
-}
 /*==========  TAG  ==========*/
 .tag {
   @include type--small;

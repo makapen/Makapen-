@@ -93,8 +93,9 @@ $(document).ready(function() {
   // for each new page that has a new element, add a new nav function
   fn.init = function() {
     fn.scroll();
-    fn.nav("#slider");
+    fn.nav("#philosophy");
     fn.nav("#product");
+    fn.nav("#work");
     fn.nav("#about");
     fn.drawer();
     fn.slider();
@@ -103,6 +104,19 @@ $(document).ready(function() {
   };
 
   fn.init();
+
+
+
+// Waypoint to trigger Process animation
+  var processOneWaypoint = new Waypoint({
+    element: $('.process-1'),
+    handler: function() {
+      // $('.process-1-left').addClass('animated fadeInLeft');
+      // $('.process-1-right').addClass('animated fadeInRight');
+    }
+  })
+
+
 
 
   // Animate Header w/ animate.css

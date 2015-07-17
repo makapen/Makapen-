@@ -1,22 +1,49 @@
-Miniport 2.0 by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Makapen Website
 
-A super simple responsive portfolio template. It's only a single page because hey, sometimes
-you don't need a half dozen pages to make your point.
+This README outlines the details of collaborating on this yeoman project.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+## Deploying to AWS
 
-AJ
-n33.co @n33co dribbble.com/n33
+First, you'll need to obtain your own secret + key from AWS. These can be obtained from going to:
 
-Credits:
+* Username Dropdown > Security Credentials > Users > Create New User (if not already created) > Select * your username > Select Create Access Key
 
-	Images:
-		fotogrph (http://fotogrph.com/)
-		n33 (http://flypixel.com/n33)
-	
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		5grid.js + 5grid-ui.js (n33.co)
+Second, once your access key and secret have been activated, you will need to create a `.makapen` folder:
+
+* `mkdir .makapen`
+* `cd .makapen`
+
+Create a .config file:
+
+* `touch .config`
+
+Open the file, and place the following code in the `.config` file (replace with your AWS credentials):
+
+`{`
+  `"accessKeyId": "YOUR KEY HERE",`
+  `"secretAccessKey": "YOUR SECRET HERE",`
+  `"aws_bucket": "bucket url",`
+  `"raws_region": "region"`
+`}`
+
+
+### Development
+
+This will host our app in unminified/packaged mode. It will be easy to debug, but not optimized for speed
+
+* `env deployTarget=development ember divshot push development`
+* Visit this app at development.greenkrate.divshot.io
+
+### Staging
+
+This will host our app in packaged form. It will point to the exact same data as production
+
+* `env deployTarget=staging ember divshot push staging --config=./config/divshot/production.json`
+* Visit this app at staging.greenkrate.divshot.io
+
+### Production
+
+Production should be the same as staging, so we only need to promote the deployed package
+
+* `divshot promote staging production`
+* Visit this app at app.greenkrate.com

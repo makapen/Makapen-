@@ -6,40 +6,89 @@
 
 #process {
   max-width: 100%;
-  padding-top: $padding-section;
-  padding-bottom: $padding-section;
-  background: url('../../images/blue-background.png') no-repeat center center; 
-  background-size: cover;
 
-  .blue {
-    color: $colorBlue;
-  }
-
-  p {
-    max-width: 90%;
-    font-size: $fontBase;
-    text-align: center;
+  h1 {
     margin-left: auto;
     margin-right: auto;
   }
 
-
-  h1 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-style: italic;
+  .col {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: none;
   }
 
-  .process__content {
-    @include col(1/3);
-    margin-top: 50px;
-    img { @include center(); }
+  .two-cols-description-row {
+    display: none;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .two-cols-description-text {
+    vertical-align: middle;
+    padding: 130px 100px;
+    width: 50%;
+    display: table-cell;
+    float: none !important;
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+  }
+
+  .two-cols-description-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .process-one-image {
+    background: url('https://static.pexels.com/photos/2916/clothes-travel-voyage-backpack.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .process-two-image {
+    background: url('https://static.pexels.com/photos/1714/city-people-woman-street.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .process-three-image {
+    background: url('https://static.pexels.com/photos/363/nature-sunny-people-clouds.jpg') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .two-cols-description-image {
+    width: 50%;
+    display: table-cell;
+    float: none !important;
   }
 
 
-  @media only screen and (max-width: $medium) {
-    .process__content {
-      @include stack();
+  // Media Query for images and process divs
+  @media (max-width: 992px) {
+    .two-cols-description-image {
+      display: table-row;
+      -webkit-transition: color 0.5s ease;
+      -moz-transition: color 0.5s ease;
+      -o-transition: color 0.5s ease;
     }
+    .two-cols-description-text {
+      padding: 20px;
+    }
+  }
+}
+
+// Media Query for entire Process Section
+@media (max-width: 992px) {
+  #process {
+    padding: 6em 0;
+    background-color: $colorWhite;
   }
 }

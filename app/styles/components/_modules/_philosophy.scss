@@ -5,63 +5,23 @@
 **/
 
 #philosophy {
-  min-width: 100%;
+  
+  a {
+    color: #f8f8f8;
+  }
   h1 {
-    font-weight: 700;
-    color: $colorBlue;
-    letter-spacing: 1.5px;
-    font-size: 1.9em;
+    // font-weight: 700;
+    // color: $colorBlue;
+    // letter-spacing: 1.5px;
+    // font-size: 1.9em;
     // text-transform: uppercase;
     // font-style: italic;
   }
   p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-
-}
-
-.services__content {
-  @include col(1/3);
-  color: $colorBlack;
-  font-size: $fontBase;
-  text-align: left;
-  padding: 10px 0;
-
-  h3 {
-    // border-bottom: 2px solid $colorBlack;
-    font-weight: 700;
-    font-size: 1em;
-    text-transform: uppercase;
+    // max-width: 90%;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
-  p {
-    font-style: italic;
-  }
 
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: $medium) {
-  .services__content {
-    @include stack();
-
-    font-size: $fontBase;
-    text-align: center;
-
-    padding-bottom: 30px;
-
-    hr {
-      margin: 0 auto 5px auto;
-    }
-
-    ul {
-      margin: auto;
-    }
-  }
 }
