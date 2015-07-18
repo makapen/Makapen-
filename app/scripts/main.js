@@ -107,13 +107,31 @@ $(document).ready(function() {
 
 
 // Display Portfolio
-$('.our-work__content')
+  $('.whyzer')
   .mouseenter(function() {
-    $('.hover-project').removeClass('hide');
+    $('.whyzer-hover-project').removeClass('hide');
   })
   .mouseleave(function() {
-    $('.hover-project').addClass('hide');
+    $('.whyzer-hover-project').addClass('hide');
+  });
+
+  $('.gk')
+  .mouseenter(function() {
+    $('.gk-hover-project').removeClass('hide');
   })
+  .mouseleave(function() {
+    $('.gk-hover-project').addClass('hide');
+  });
+
+  $('.pawzii')
+  .mouseenter(function() {
+    $('.pawzii-hover-project').removeClass('hide');
+  })
+  .mouseleave(function() {
+    $('.pawzii-hover-project').addClass('hide');
+  });
+
+
 
 // Waypoint to trigger Process animation
   var processOneWaypoint = new Waypoint({

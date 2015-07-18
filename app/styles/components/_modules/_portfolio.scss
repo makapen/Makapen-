@@ -2,6 +2,7 @@
  a {
     color: #fff;
   }
+
   .our-work__content {
     cursor: pointer;
     position: relative;
@@ -12,7 +13,9 @@
     width: 330px;
     margin-right: $margin-same-element;
   }
-  .hover-project {
+  .whyzer-hover-project,
+  .gk-hover-project,
+  .pawzii-hover-project {
     position: absolute;
     text-align: center;
     background-color: rgba(0,0,0,.65);
@@ -27,7 +30,9 @@
     transition: all .5s ease;
   }
 
-  .hover-project-text {
+  .whyzer-hover-project-text,
+  .gk-hover-project-text,
+  .pawzii-hover-project-text  {
     padding-top: 25%;
   }
 
