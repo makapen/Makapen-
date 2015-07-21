@@ -9,8 +9,7 @@
   overflow: hidden;
   display: inline-block;
   position: relative;
-  height: 615px;
-  width: 350px;
+  width: 25%;
   margin-left: 25px;
   margin-right: 25px;
   img {
@@ -26,7 +25,7 @@
   p {
     margin-bottom: 20px;
   }
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .team-members__image {
   position: relative;
@@ -54,9 +53,9 @@
 
 #picture-section {
   overflow: hidden;
-  background: url('/images/team/team.png') no-repeat center center;
+  background: url('/images/team/team2.png') no-repeat center center;
   background-size: cover;
-  min-height: 450px;
+  min-height: 375px;
 }
 
 #about {
@@ -194,9 +193,23 @@
   }
 }
 
+@media (max-width: $wide) {
+  .team-members__card {
+    width: 40%;
+  }
+
+}
+
 @media (max-width: 615px) {
+  .team-members__card {
+    display: block;
+    width: 80%;
+  }
   .break-line {
     display: block !important;
+  }
+  #picture-section {
+    min-height: 350px;
   }
 }
 
@@ -220,8 +233,6 @@
   }
   #team-members {
     padding-top: 6em;
-    .team-members__card {
-      width: 275px;
-    }
+    padding-bottom: 6em;
   }
 }

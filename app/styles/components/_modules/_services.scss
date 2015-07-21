@@ -24,15 +24,8 @@
 .services__content {
   @include col(1/3);
   color: $colorBlack;
-  font-size: $fontBase;
   text-align: left;
   padding: 10px 0;
-
-  h3 {
-    border-bottom: 2px solid $colorBlack;
-    font-weight: 700;
-    font-size: 1em;
-  }
 
   p {
     font-style: italic;
@@ -53,10 +46,7 @@
 @media only screen and (max-width: $medium) {
   .services__content {
     @include stack();
-
-    font-size: $fontBase;
     text-align: left;
-
     padding-bottom: 30px;
 
     hr {
