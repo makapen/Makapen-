@@ -13,6 +13,12 @@
     width: 330px;
     margin-right: $margin-same-element;
   }
+  @media (max-width: $small) {
+    .our-work__content {
+      margin: 0 auto;
+    }
+  }
+
   .whyzer-hover-project,
   .gk-hover-project,
   .pawzii-hover-project {

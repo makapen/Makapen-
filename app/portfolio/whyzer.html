@@ -28,8 +28,8 @@
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <!-- build:css(.tmp/) styles/main.pawzii.min.css -->
-  <link rel="stylesheet" href="styles/h5bp.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="../styles/h5bp.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <!-- endbuild -->
 </head>
 <body>
@@ -38,14 +38,9 @@
   <nav id="nav-bar">
     <ul class="nav-bar__list">
       <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
-      <li><a href="/#contact">contact</a>
-      </li>
-      <li><a href="team.html">team</a>
-      </li>
-      <li><a href="/#services">services</a>
-      </li>
-      <li><a href="/#process">process</a>
-      </li>
+      <li class='last'><a href="/#contact">contact</a></li>
+      <li><a href="/team.html">team</a></li>
+      <li><a href="/portfolio.html" class="active-link">portfolio</a></li>
     </ul>
   </nav>
   <!-- END-Navbar -->
@@ -65,54 +60,53 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="/#process">PROCESS</a></li>
-      <li><a href="/#services">SERVICES</a></li>
-      <li><a href="team.html">TEAM</a></li>
+      <li><a href="/portfolio.html">PORTFOLIO</a></li>
+      <li><a href="/team.html">TEAM</a></li>
       <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
-  <div id="product">
+  <div id="product" class="section section--top section--dark">
     <div class="col">
       <div class="side">
-        <h1>Get Whyzer App</h1>
-        <p class="grey-text">Whyzer allows brands to create fun and interactive polls that are embeddable, easily shareable, and quantifiable via an analytics dashboard that features user demographics data.</p>
-        <div class="tools">
+        <h2>Get Whyzer</h2>
+        <p>Whyzer allows brands to create fun and interactive polls that are embeddable, easily shareable, and quantifiable via an analytics dashboard that features user demographics data.</p>
+        <div class="tools grey-text">
           <p>EmberJS • Bootstrap • AWS• NodeJS • Express • Facebook API • Twitter API • D3.js</p>
         </div>
         <br>
-        <a href="#client">
-          <button class="button--primary" type="submit">Learn More</button>
+        <a href="#client" class="arrow-link">
+          <span class="fa fa-chevron-down fa-2 scroll-arrow"></span>
         </a>
       </div>
       <div class="main">
-        <div><img src="images/portfolio/desktop/whyzer.png"></div>
+        <div><img src="../images/portfolio/desktop/whyzer.png"></div>
       </div>
     </div>
   </div>
 
-  <div id="client">
+  <div id="client" class="section">
     <div class="col">
       <div class="side">
-        <h2 class="white-text">The Client Goal</h2>
+        <h1>The Client Goal<span class="black-slash">\</span></h1>
         <p>Whyzer wanted to provide businesses with consumer polling solutions to better understand and engage with their customers. These online polls needed to be mobile friendly, visually interesting to end users, and easily shareable via social media. Furthermore, business clients would receive poll answers and demographic data in realtime via a dashboard, and have the tools necessary to publish new polls via social media channels.</p>
       </div>
       <div class="main">
-        <img src="images/portfolio/mobile/whyzer_side.png" alt="3 Devices with Whyzer App">
+        <img src="../images/portfolio/mobile/whyzer_side.png" alt="3 Devices with Whyzer App">
       </div>
     </div>
   </div>
 
-  <div id="platform">
+  <div id="platform" class="section section--white">
     <div class="col">
       <div class="side">
-        <h2><i class="fa fa-cogs fa-3 padding-r"></i> Dashboards</h2>
+        <h1><i class="fa fa-cogs fa-3 padding-r blue-slash"></i> Dashboards</h1>
         <p>In order to provide rich analytics to the Whyzer’s business users, each poll is given its own dashboard. By leveraging existing D3 widget libraries, the team was able to build out a grid of poll response bar charts, demographic info pie charts, social media share counts, and a visualized world map of end user locations.</p>
-        <h2><i class="fa fa-users fa-3 padding-r"></i> Social Media Integration</h2>
+        <h1><i class="fa fa-users fa-3 padding-r blue-slash"></i> Social Media Integration</h1>
         <p>In order to meet the goal of allowing polls to spread virally through social media networks, the client asked that users be able to share a ‘snapshot’ of their poll results. Since twitter and facebook only allow images and text in posted content, the Makapen devised a quick and simple solution using the URL2PNG screenshot service, in which the poll UI would be turned into a thumbnail on request. In keeping with our philosophy of using existing tools, we were able to deliver this feature cost effectively.</p>
       </div>
       <div class="main">
-        <img src="images/portfolio/mobile/whyzer.png" alt="Device with Whyzer App">
+        <img src="../images/portfolio/mobile/whyzer.png" alt="Device with Whyzer App">
       </div>
     </div>
   </div>
@@ -120,8 +114,8 @@
   <div id="questions">
     <div class="col">
       <div class="main">
-        <h2 class="white-text">Ready to get started on your MVP?</h2>
-        <p>Tell us about your project and we will provide professional feedback and an architecture outline to help you take the first step.</p>
+        <h1>Ready to get started on your MVP?</h1>
+        <p>Tell us about your project and we will provide professional feedback and an <br />architecture outline to help you take the first step.</p>
         <br>
         <form action="/#contact">
           <button class="button--contact" type="submit">Contact Us</button>
@@ -139,7 +133,7 @@
         <li>
           <a href="//www.facebook.com/Makapen.co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x circle"></i></a>
         </li>
-        <li> 
+        <li>
           <a href="//twitter.com/makapen_co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x circle"></i></span></a>
         </li>
       </ul>
@@ -151,16 +145,16 @@
   </footer>
 
   <!-- build:js(./) scripts/vendor.pawzii.min.js -->
-  <script type="text/javascript" src="bower_components/jquery-1.11.2.min/index.js"></script>
-  <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-  <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
-  <script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
-  <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
-  <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+  <script type="text/javascript" src="../bower_components/jquery-1.11.2.min/index.js"></script>
+  <script type="text/javascript" src="../bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="../bower_components/fastclick/lib/fastclick.js"></script>
+  <script type="text/javascript" src="../bower_components/slick.js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../bower_components/foundation/js/foundation.min.js"></script>
+  <script type="text/javascript" src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>
   <!-- endbuild -->
 
   <!-- build:js(./app) scripts/main.pawzii.min.js -->
-  <script src="scripts/main.js"></script>
+  <script src="../scripts/main.js"></script>
   <!-- endbuild -->
 
 

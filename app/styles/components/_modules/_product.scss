@@ -1,8 +1,6 @@
 
 #product {
-  margin-top: 9em;
-  margin-bottom: 6em;
-  position: relative;
+
   width: 100%;
   .main {
     @include col(.55);
@@ -40,12 +38,6 @@
     padding-top: 4em;
     padding-bottom: 4em;
   }
-}
-
-
-h1 {
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .logo {

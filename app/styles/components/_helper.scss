@@ -21,7 +21,7 @@
   padding-top: 10em;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 620px) {
   .section--top {
     padding-top: 6em;
   }
@@ -41,8 +41,16 @@
   padding: 5px;
 }
 
+a.arrow-link {
+  color: #f8f8f8;
+}
 
-/*==========  GENERIC  ==========*/
+a:hover.arrow-link {
+  color: #f8f8f8;
+}
+
+
+// General Styles
 .black-slash {
   color: $colorBlack;
 }

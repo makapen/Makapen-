@@ -11,7 +11,7 @@
     height: 490px;
     overflow: hidden;
     img {
-      width: 60%;
+      width: 65%;
     }
 
     @media (max-width: $screen-sm) {
@@ -24,7 +24,7 @@
       text-align: center;
       img {
         padding-top: 2em;
-        width: 40%;
+        width: 70%;
       }
     }
   }
@@ -33,7 +33,6 @@
     float: right;
     h1 {
       color: $colorWhite;
-      font-style:oblique;
       text-transform: uppercase;
       font-weight: 100;
     }

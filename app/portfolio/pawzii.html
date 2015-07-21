@@ -28,8 +28,8 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- build:css(.tmp/) styles/main.pawzii.min.css -->
-    <link rel="stylesheet" href="styles/h5bp.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/h5bp.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -38,14 +38,9 @@
     <nav id="nav-bar">
       <ul class="nav-bar__list">
         <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
-        <li><a href="/#contact">contact</a>
-        </li>
-        <li><a href="team.html">team</a>
-        </li>
-        <li><a href="/#services">services</a>
-        </li>
-        <li><a href="/#process">process</a>
-        </li>
+        <li class='last'><a href="/#contact">contact</a></li>
+        <li><a href="/team.html">team</a></li>
+        <li><a href="/portfolio.html" class="active-link">portfolio</a></li>
       </ul>
     </nav>
     <!-- END-Navbar -->
@@ -65,57 +60,56 @@
     <!-- Drawer -->
     <div class="nav-drawer">
       <ul class="nav-drawer__list vert-align-text">
-        <li><a href="/#process">PROCESS</a></li>
-        <li><a href="/#services">SERVICES</a></li>
-        <li><a href="team.html">TEAM</a></li>
+        <li><a href="/portfolio.html">PORTFOLIO</a></li>
+        <li><a href="/team.html">TEAM</a></li>
         <li><a href="/#contact">CONTACT</a></li>
       </ul>
     </div>
     <!-- END-Drawer -->
-    <div id="product">
+    <div id="product" class="section section--top section--dark">
       <div class="col">
         <div class="side">
-          <h1>Trap Neuter Release App</h1>
-          <p class="grey-text">Pawzii is a leading pet licensing software company that gave back to the community by building a feral cat tracking tool for animal welfare volunteers.</p>
-          <div class="tools">
+          <h2>Trap Neuter Release</h2>
+          <p>Pawzii is a leading pet licensing software company that gave back to the community by building a feral cat tracking tool for animal welfare volunteers.</p>
+          <div class="tools grey-text">
             <p>EmberJS • Foundation • Firebase • Google Maps API</p>
           </div>
           <br>
-          <a href="#client">
-            <button class="button--primary" type="submit">Learn More</button>
+          <a href="#client" class="arrow-link">
+            <span class="fa fa-chevron-down fa-2 scroll-arrow"></span>
           </a>
         </div>
         <div class="main">
-          <div><img src="images/tnr_app_screens.png"></div>
+          <div><img src="../images/tnr_app_screens.png"></div>
         </div>
       </div>
     </div>
 
-    <div id="client">
+    <div id="client" class="section">
       <div class="col">
         <div class="side">
-          <h2 class="white-text">The Client Goal</h2>
+          <h1>The Client Goal<span class="black-slash">\</span></h1>
           <p>TNR (Trap-Neuter-Release) programs have been started around the country to address the growing population of wild, feral cats. These programs depend on volunteers, working with local veterinarians, to locate and trap wild cats. Most are self funded and record data via paper documents.</p>
           <p>The Pawzi team wanted to help these underserved communities, and worked with Makapen to design and implement a mobile web app. The goal was to help the TNR community get a clear picture of where feral cat colonies are being reported via mapping tools, use this information to more effectively plan volunteer activity, and maintain a database of trapped, vaccinated and neutered cats.</p>
         </div>
         <div class="main">
-          <img src="images/portfolio/mobile/pawzii_side.png" alt="3 Devices with Pawzii App">
+          <img src="../images/portfolio/mobile/pawzii_side.png" alt="3 Devices with Pawzii App">
         </div>
       </div>
     </div>
 
-    <div id="platform">
+    <div id="platform" class="section section--white">
       <div class="col">
         <div class="side">
-          <h2><i class="fa fa-laptop fa-3 padding-r"></i> Research</h2>
+          <h1><i class="fa fa-laptop fa-3 padding-r blue-slash"></i> Research</h1>
           <p>In our research phase we read through books, guides, and articles to better understand the problem and the process of trapping feral cats. We spent time interviewing local organizations and individuals to identify the key features that needed to exist in the first releasable version of the software.</p>
-          <h2><i class="fa fa-certificate fa-3 padding-r"></i> UX Design</h2>
+          <h1><i class="fa fa-certificate fa-3 padding-r blue-slash"></i> UX Design</h1>
           <p>In the design stage we focused on creating an experience that allowed for faster and more detailed data recording in the field. We accomplished this by leveraging the Google Maps API to geolocate users allowing them to record the location with a click of a button. Input is given through a guided wizard that eliminates as much typing as possible and provides essential information quickly.</p>
-          <h2><i class="fa fa-cubes fa-3 padding-r"></i> Rapid Prototyping</h2>
+          <h1><i class="fa fa-cubes fa-3 padding-r blue-slash"></i> Rapid Prototyping</h1>
           <p>To deliver a high quality product with limited resources we used Firebase to take care of our back end functionality and Ember.js for rapid development. We were able to release the first version for public use after 6 weeks of development.</p>
         </div>
         <div class="main">
-          <img src="images/portfolio/mobile/pawzii.png" alt="Device with Pawzii App" >
+          <img src="../images/portfolio/mobile/pawzii.png" alt="Device with Pawzii App" >
         </div>
       </div>
     </div>
@@ -124,8 +118,8 @@
     <div id="questions">
       <div class="col">
         <div class="main">
-          <h2 class="white-text">Ready to get started on your MVP?</h2>
-          <p>Tell us about your project and we will provide professional feedback and an architecture outline to help you take the first step.</p>
+          <h1>Ready to get started on your MVP?</h1>
+          <p>Tell us about your project and we will provide professional feedback and an <br />architecture outline to help you take the first step.</p>
           <br>
           <form action="/#contact">
             <button class="button--contact" type="submit">Contact Us</button>
@@ -143,7 +137,7 @@
         <li>
           <a href="//www.facebook.com/Makapen.co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x circle"></i></a>
         </li>
-        <li> 
+        <li>
           <a href="//twitter.com/makapen_co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x circle"></i></span></a>
         </li>
       </ul>
@@ -155,16 +149,16 @@
   </footer>
 
     <!-- build:js(./) scripts/vendor.pawzii.min.js -->
-    <script type="text/javascript" src="bower_components/jquery-1.11.2.min/index.js"></script>
-    <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
-    <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
-    <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery-1.11.2.min/index.js"></script>
+    <script type="text/javascript" src="../bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../bower_components/slick.js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <!-- endbuild -->
 
     <!-- build:js(./app) scripts/main.pawzii.min.js -->
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <!-- endbuild -->
 
 

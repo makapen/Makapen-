@@ -134,17 +134,13 @@ $(document).ready(function() {
 
 
 // Waypoint to trigger Process animation
-  var processOneWaypoint = new Waypoint({
-    element: $('.process-1'),
-    handler: function() {
-      // $('.process-1-left').addClass('animated fadeInLeft');
-      // $('.process-1-right').addClass('animated fadeInRight');
-    }
-  })
-
-
-
-
+  // var processOneWaypoint = new Waypoint({
+  //   element: $('.process-1'),
+  //   handler: function() {
+  //     // $('.process-1-left').addClass('animated fadeInLeft');
+  //     // $('.process-1-right').addClass('animated fadeInRight');
+  //   }
+  // })
 
 
   // Animate Header w/ animate.css
