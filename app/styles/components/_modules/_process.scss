@@ -30,14 +30,18 @@
     width: 50%;
     display: table-cell;
     float: none !important;
-    -vendor-animation-duration: 3s;
-    -vendor-animation-delay: 2s;
-    -vendor-animation-iteration-count: infinite;
   }
 
   .two-cols-description-image {
     position: relative;
     overflow: hidden;
+  }
+
+  .two-cols-description-image,
+  .two-cols-description-text {
+    visibility: hidden;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
   }
 
   .process-one-image {
@@ -60,7 +64,7 @@
 
   .process-three-image {
     // background: url('https://static.pexels.com/photos/363/nature-sunny-people-clouds.jpg') center no-repeat;
-    background: url('../images/process/process_three_2.png') center no-repeat;
+    background: url('../images/process/process_three.jpg') center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

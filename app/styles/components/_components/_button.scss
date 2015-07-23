@@ -79,13 +79,13 @@
   font-weight: 400;
   border: none;
   text-transform: uppercase;
-  background-color: $colorBlue;
+  background: none;
   border: 3px solid $colorWhite;
   color: $colorWhite !important;
   box-shadow: none;
   display: inline;
   &:focus, &:active, &:hover{
-    background-color: $colorBlue;
+    background: none;
     border: 3px solid $colorWhite;
     color: $colorBlack !important;
   }

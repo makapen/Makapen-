@@ -33,6 +33,7 @@
 
 
 .team-member__hover {
+  display: none;
   position: absolute;
   text-align: center;
   background-color: rgba(255,255,255,.65);
@@ -47,7 +48,20 @@
   transition: all .5s ease;
   .fa {
     font-size: 2em;
-    color: #3399cc;
+    color: #3399cc !important;
+    background: none;
+  }
+  .fa:hover {
+    background: none;
+  }
+  .team-member__hover-text {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
   }
 }
 

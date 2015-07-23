@@ -105,7 +105,6 @@ $(document).ready(function() {
 
   fn.init();
 
-
 // Display Portfolio
   $('.whyzer')
   .mouseenter(function() {
@@ -131,19 +130,40 @@ $(document).ready(function() {
     $('.pawzii-hover-project').addClass('hide');
   });
 
+// Display Team Member Social media
+$('.team-members__image')
+  .mouseenter(function() {
+    $(this).children('div').css('display', 'inline')
+  })
+  .mouseleave(function() {
+    $(this).children('div').css('display','none');
+  })
+
 
 
 // Waypoint to trigger Process animation
-  // var processOneWaypoint = new Waypoint({
-  //   element: $('.process-1'),
-  //   handler: function() {
-  //     // $('.process-1-left').addClass('animated fadeInLeft');
-  //     // $('.process-1-right').addClass('animated fadeInRight');
-  //   }
-  // })
+  var processOneWaypoint = new Waypoint({
+    element: $('#process'),
+    handler: function() {
+      $('.section--left').css('visibility','visible');
+      $('.section--right').css('visibility','visible');
+      $('.section--left').addClass('animated fadeInLeft');
+      $('.section--right').addClass('animated fadeInRight');
+    },
+    offset: 500
+  });
 
+// Waypoint to trigger Services animation
+  var processOneWaypoint = new Waypoint({
+    element: $('#services'),
+    handler: function() {
+      $('.services__content-row').css('visibility','visible');
+      $('.services__content-row').addClass('animated fadeInUp');
+    }
+    // offset: 500
+  });
 
-  // Animate Header w/ animate.css
+// Animate Header w/ animate.css
   jQuery(document).ready(function ($) {
     //set animation timing
     var animationDelay = 2500,
