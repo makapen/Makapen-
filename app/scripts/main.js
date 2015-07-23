@@ -95,6 +95,7 @@ $(document).ready(function() {
     fn.scroll();
     fn.nav("#philosophy");
     fn.nav("#product");
+    fn.nav("#portfolio");
     fn.nav("#work");
     fn.nav("#about");
     fn.drawer();
@@ -132,56 +133,80 @@ $('.team-members__image')
   })
 
 
-// Waypoint to change navigation logo based on BG color
-  // Dark Sections
-  var navDarkWaypoint = document.getElementsByClassName('section--dark');
-  for (var i = 0; i < navDarkWaypoint.length; i++) {
-    new Waypoint({
-      element: $('.section--dark'),
-      handler: function() {
+
+// Trigger Navbar Waypoints when the gutter is removed (<1127px)
+if (window.innerWidth < 1127) {
+  // Waypoint to trigger nav logo in white sections
+  $('.section--dark').waypoint({
+    offset: function() {
+      return -$('.section--dark').height();
+    },
+    handler: function(direction) {
+      if (direction == 'down') {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      } else if (direction == 'up') {
         $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       }
-    })
-  };
-
-  var navigationWhiteoWaypoint = new Waypoint({
-    element: $('.section--white'),
-    handler: function() {
-      $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
-      $('.nav-mk__icon').css('background-size', '70px 30px');
     }
   });
-  //
-  var navigationBlueWaypoint = new Waypoint({
-    element: $('.section--blue'),
-    handler: function() {
-      $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
-      $('.nav-mk__icon').css('background-size', '70px 30px');
+  // Waypoint to trigger nav logo in white sections
+  $('.section--white').waypoint({
+    offset: function() {
+      return -$('.section--white').height();
+    },
+    handler: function(direction) {
+      if (direction == 'down') {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      } else if (direction == 'up') {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      }
     }
   });
-
+  // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
+  //     $('.nav-ham__icon::before').css('background-color', '#fff');
+  //     $('.nav-ham__icon').css('background-color', '#fff');
+  //     $('.nav-ham__icon::after').css('background-color', '#fff');
+  // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
+  // Waypoint to trigger nav logo in blue sections
+  $('.section--blue').waypoint({
+    offset: function() {
+      return -$('.section--blue').height();
+    },
+    handler: function(direction) {
+      if (direction == 'down') {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      } else if (direction == 'up') {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      }
+    }
+  });
+};
 
 // Waypoint to trigger Process animation
-  var processesWaypoint = new Waypoint({
-    element: $('#process'),
+  $('#process').waypoint({
+    offset: function() {
+      return 500;
+    },
     handler: function() {
       $('.section--left').css('visibility','visible');
       $('.section--right').css('visibility','visible');
       $('.section--left').addClass('animated fadeInLeft');
       $('.section--right').addClass('animated fadeInRight');
-    },
-    offset: 500
+    }
   });
 
 // Waypoint to trigger Services animation
-  var servicesWaypoint = new Waypoint({
-    element: $('#services'),
+  $('#services').waypoint({
     handler: function() {
       $('.services__content-row').css('visibility','visible');
       $('.services__content-row').addClass('animated fadeInUp');
     }
-    // offset: 500
   });
 
 // Animate Header w/ animate.css
