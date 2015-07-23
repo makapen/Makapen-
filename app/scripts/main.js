@@ -105,44 +105,65 @@ $(document).ready(function() {
 
   fn.init();
 
-// Display Portfolio
-  $('.whyzer')
+
+// Portfolio Hover Toggle
+  $('.our-work__content')
   .mouseenter(function() {
-    $('.whyzer-hover-project').removeClass('hide');
+    $(this).children().children('div').css('visibility','visible');
+    $(this).children().children('div').children().css('visibility','visible');
+    $(this).children().children('div').children().children('button').css('visibility','visible');
   })
   .mouseleave(function() {
-    $('.whyzer-hover-project').addClass('hide');
+    $(this).children().children('div').css('visibility','hidden');
+    $(this).children().children('div').children().css('visibility','hidden');
+    $(this).children().children('div').children().children('button').css('visibility','hidden');
   });
 
-  $('.gk')
-  .mouseenter(function() {
-    $('.gk-hover-project').removeClass('hide');
-  })
-  .mouseleave(function() {
-    $('.gk-hover-project').addClass('hide');
-  });
-
-  $('.pawzii')
-  .mouseenter(function() {
-    $('.pawzii-hover-project').removeClass('hide');
-  })
-  .mouseleave(function() {
-    $('.pawzii-hover-project').addClass('hide');
-  });
 
 // Display Team Member Social media
 $('.team-members__image')
   .mouseenter(function() {
-    $(this).children('div').css('display', 'inline')
+    $(this).children('div').css('visibility', 'visible');
+    $(this).children('div').children().css('visibility', 'visible');
   })
   .mouseleave(function() {
-    $(this).children('div').css('display','none');
+    $(this).children('div').css('visibility','hidden');
+    $(this).children('div').children().css('visibility', 'hidden');
   })
 
+
+// Waypoint to change navigation logo based on BG color
+  // Dark Sections
+  var navDarkWaypoint = document.getElementsByClassName('section--dark');
+  for (var i = 0; i < navDarkWaypoint.length; i++) {
+    new Waypoint({
+      element: $('.section--dark'),
+      handler: function() {
+        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background-size', '70px 30px');
+      }
+    })
+  };
+
+  var navigationWhiteoWaypoint = new Waypoint({
+    element: $('.section--white'),
+    handler: function() {
+      $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
+      $('.nav-mk__icon').css('background-size', '70px 30px');
+    }
+  });
+  //
+  var navigationBlueWaypoint = new Waypoint({
+    element: $('.section--blue'),
+    handler: function() {
+      $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
+      $('.nav-mk__icon').css('background-size', '70px 30px');
+    }
+  });
 
 
 // Waypoint to trigger Process animation
-  var processOneWaypoint = new Waypoint({
+  var processesWaypoint = new Waypoint({
     element: $('#process'),
     handler: function() {
       $('.section--left').css('visibility','visible');
@@ -154,7 +175,7 @@ $('.team-members__image')
   });
 
 // Waypoint to trigger Services animation
-  var processOneWaypoint = new Waypoint({
+  var servicesWaypoint = new Waypoint({
     element: $('#services'),
     handler: function() {
       $('.services__content-row').css('visibility','visible');

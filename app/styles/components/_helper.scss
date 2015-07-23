@@ -17,6 +17,11 @@
   color: #f8f8f8;
 }
 
+.section--blue {
+  color: #f8f8f8;
+  background-color: $colorBlue;
+}
+
 .section--top {
   padding-top: 10em;
 }
@@ -47,7 +52,9 @@ a.arrow-link {
 }
 
 a:hover.arrow-link {
-  color: #f8f8f8;
+  color: #3399cc;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 

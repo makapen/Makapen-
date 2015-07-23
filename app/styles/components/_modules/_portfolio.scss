@@ -5,8 +5,8 @@
   }
 
   .our-work__content {
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
     cursor: pointer;
     cursor: auto;
     position: relative;
@@ -36,9 +36,10 @@
     }
   }
 
-  .whyzer-hover-project,
-  .gk-hover-project,
-  .pawzii-hover-project {
+  .hover-project {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    visibility: hidden;
     position: absolute;
     text-align: center;
     background-color: rgba(51,153,204,.80);
@@ -47,20 +48,17 @@
     left: 0;
     height:100%;
     width: 100%;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
   }
 
-  .whyzer-hover-project-text,
-  .gk-hover-project-text,
-  .pawzii-hover-project-text  {
+  a:hover > .hover-project {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .hover-project-text {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     padding-top: 20%;
-  }
-
-  .hide {
-    display: none;
   }
 
   .button--primary {
