@@ -36,7 +36,7 @@ This README outlines the details of collaborating on this yeoman project.
 	}
 	</pre>
 
-5. To run on `http://localhost:8000/` with livereload, simply run:
+5. Now you're project is ready to run. To run on `http://localhost:8000/` with livereload, type this into your command line:
 	<pre>grunt server</pre>
 
 
