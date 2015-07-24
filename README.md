@@ -41,7 +41,7 @@ This README outlines the details of collaborating on this yeoman project.
 
 
 
-### Staging
+### Push to Staging
 
 This will host our website in packaged form.
 
@@ -49,7 +49,7 @@ This will host our website in packaged form.
 
 * Visit this app at <a href="http://makapen.s3-website-us-west-2.amazonaws.com/">http://makapen.s3-website-us-west-2.amazonaws.com/</a>
 
-### Production
+### Push to Production
 
 This will host the live website.
 <pre>grunt publish-production</pre>
