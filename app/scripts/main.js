@@ -64,6 +64,8 @@ $(document).ready(function() {
           }
         });
       }
+    } else {
+      $nav_ham.parent().parent().css('background-color', '#eee');
     }
   };
 
@@ -106,8 +108,8 @@ $(document).ready(function() {
 
   fn.init();
 
-
-// Portfolio Hover Toggle
+if (window.innerWidth > 480) {
+  // Portfolio Hover Toggle
   $('.our-work__content')
   .mouseenter(function() {
     $(this).children().children('div').css('visibility','visible');
@@ -120,9 +122,8 @@ $(document).ready(function() {
     $(this).children().children('div').children().children('button').css('visibility','hidden');
   });
 
-
-// Display Team Member Social media
-$('.team-members__image')
+  // Display Team Member Social media
+  $('.team-members__image')
   .mouseenter(function() {
     $(this).children('div').css('visibility', 'visible');
     $(this).children('div').children().css('visibility', 'visible');
@@ -132,63 +133,7 @@ $('.team-members__image')
     $(this).children('div').children().css('visibility', 'hidden');
   })
 
-
-
-// Trigger Navbar Waypoints when the gutter is removed (<1127px)
-if (window.innerWidth < 1127) {
-  // Waypoint to trigger nav logo in white sections
-  $('.section--dark').waypoint({
-    offset: function() {
-      return -$('.section--dark').height();
-    },
-    handler: function(direction) {
-      if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      }
-    }
-  });
-  // Waypoint to trigger nav logo in white sections
-  $('.section--white').waypoint({
-    offset: function() {
-      return -$('.section--white').height();
-    },
-    handler: function(direction) {
-      if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      }
-    }
-  });
-  // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
-  //     $('.nav-ham__icon::before').css('background-color', '#fff');
-  //     $('.nav-ham__icon').css('background-color', '#fff');
-  //     $('.nav-ham__icon::after').css('background-color', '#fff');
-  // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
-  // Waypoint to trigger nav logo in blue sections
-  $('.section--blue').waypoint({
-    offset: function() {
-      return -$('.section--blue').height();
-    },
-    handler: function(direction) {
-      if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
-        $('.nav-mk__icon').css('background-size', '70px 30px');
-      }
-    }
-  });
-};
-
-// Waypoint to trigger Process animation
+  // Waypoint to trigger Process animation
   $('#process').waypoint({
     offset: function() {
       return 500;
@@ -201,13 +146,29 @@ if (window.innerWidth < 1127) {
     }
   });
 
-// Waypoint to trigger Services animation
-  $('#services').waypoint({
+  $('#contact').waypoint({
+    offset: function() {
+      return 800;
+    },
     handler: function() {
       $('.services__content-row').css('visibility','visible');
-      $('.services__content-row').addClass('animated fadeInUp');
     }
   });
+  // Waypoint to trigger Services animation
+  $('#services').waypoint({
+    offset: 300,
+    handler: function() {
+      $('.services__content').css('visibility','visible');
+      $('.services__content').addClass('animated fadeInUp');
+    }
+  });
+
+} else {
+  // dont show animation if on mobile screens
+  $('.section--left').css('visibility','visible');
+  $('.section--right').css('visibility','visible');
+  $('.services__content-row').css('visibility','visible');
+};
 
 // Animate Header w/ animate.css
   jQuery(document).ready(function ($) {

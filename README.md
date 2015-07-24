@@ -15,14 +15,14 @@ This README outlines the details of collaborating on this yeoman project.
 	* Select Create Access Key
 
 
-2. **Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder:
+2. **Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder in your `~` root drive:
 
 	<pre>
 	mkdir .makapen
 	cd .makapen
 	</pre>
 
-3. **Third**, create a .config file:
+3. **Third**, create a .config file while inside your `.makapen` folder:
 
 	<pre>touch .config</pre>
 
@@ -36,12 +36,12 @@ This README outlines the details of collaborating on this yeoman project.
 	}
 	</pre>
 
-5. To run on `http://localhost:8000/` with livereload, simply run:
+5. Now your project is ready to run. To run on `http://localhost:8000/` with livereload, type this into your command line:
 	<pre>grunt server</pre>
 
 
 
-### Staging
+### Push to Staging
 
 This will host our website in packaged form.
 
@@ -49,7 +49,7 @@ This will host our website in packaged form.
 
 * Visit this app at <a href="http://makapen.s3-website-us-west-2.amazonaws.com/">http://makapen.s3-website-us-west-2.amazonaws.com/</a>
 
-### Production
+### Push to Production
 
 This will host the live website.
 <pre>grunt publish-production</pre>
