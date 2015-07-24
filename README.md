@@ -15,7 +15,7 @@ This README outlines the details of collaborating on this yeoman project.
 	* Select Create Access Key
 
 
-2. **Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder:
+2. **Second**, once your access key and secret have been activated, you will need to create a `.makapen` folder in your `~` root drive:
 
 	<pre>
 	mkdir .makapen
