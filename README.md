@@ -26,7 +26,7 @@ This README outlines the details of collaborating on this yeoman project.
 
 	<pre>touch .config</pre>
 
-4. **Lastly**, open the file, and place the following code in the `.config` file (replace with your AWS credentials):
+4. **Lastly**, open the file, and place the following code in the `.config.json` file (replace with your AWS credentials):
 	<pre>
 	{
 		"accessKeyId": "YOUR KEY HERE",
