@@ -22,7 +22,7 @@ This README outlines the details of collaborating on this yeoman project.
 	cd .makapen
 	</pre>
 
-3. **Third**, create a .config file:
+3. **Third**, create a .config file while inside your `.makapen` folder:
 
 	<pre>touch .config</pre>
 
