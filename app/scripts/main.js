@@ -112,25 +112,25 @@ if (window.innerWidth > 480) {
   // Portfolio Hover Toggle
   $('.our-work__content')
   .mouseenter(function() {
-    $(this).children().children('div').css('visibility','visible');
-    $(this).children().children('div').children().css('visibility','visible');
-    $(this).children().children('div').children().children('button').css('visibility','visible');
+    $(this).children().children('div').css('opacity','1');
+    $(this).children().children('div').children().css('opacity','1');
+    $(this).children().children('div').children().children('button').css('opacity','1');
   })
   .mouseleave(function() {
-    $(this).children().children('div').css('visibility','hidden');
-    $(this).children().children('div').children().css('visibility','hidden');
-    $(this).children().children('div').children().children('button').css('visibility','hidden');
+    $(this).children().children('div').css('opacity','0');
+    $(this).children().children('div').children().css('opacity','0');
+    $(this).children().children('div').children().children('button').css('opacity','0');
   });
 
   // Display Team Member Social media
   $('.team-members__image')
   .mouseenter(function() {
-    $(this).children('div').css('visibility', 'visible');
-    $(this).children('div').children().css('visibility', 'visible');
+    $(this).children('div').children().css('opacity','1');
+    $(this).children('div').css('opacity','1');
   })
   .mouseleave(function() {
-    $(this).children('div').css('visibility','hidden');
-    $(this).children('div').children().css('visibility', 'hidden');
+    $(this).children('div').css('opacity','0');
+    $(this).children('div').children().css('opacity','0');
   })
 
   // Waypoint to trigger Process animation

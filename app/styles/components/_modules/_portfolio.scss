@@ -39,7 +39,7 @@
   .hover-project {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     text-align: center;
     background-color: rgba(51,153,204,.80);
