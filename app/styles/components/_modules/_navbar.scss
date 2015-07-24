@@ -6,6 +6,7 @@
 
 #nav-bar {
   background-color: $colorGrayLight;
+  z-index: 6;
   padding: 10px 0;
   position: absolute;
   width: 100%;
@@ -258,6 +259,9 @@
 @media only screen and (max-width: $medium) {
   #nav-bar {
     display: none;
+  }
+  #nav-dropdown {
+    background-color: #eee;
   }
   .nav-ham__icon {
     opacity: 1;

@@ -42,7 +42,6 @@ $(document).ready(function() {
               $nav_ham.addClass('fade-in');
               $nav_mk.addClass('fade-in');
               $nav_bar.addClass('fade-out');
-              $nav_ham.parent().parent().css('background-color', '#eee');
             }
             // Close the drawer if it's open and your moving up
             else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
@@ -60,12 +59,13 @@ $(document).ready(function() {
               $nav_mk.removeClass('fade-in');
               setTimeout(function() {
                 $nav_bar.removeClass('fade-out').delay(3000);
-                $nav_ham.parent().parent().css('background-color', '');
               }, time_delay);
             }
           }
         });
       }
+    } else {
+      $nav_ham.parent().parent().css('background-color', '#eee');
     }
   };
 
