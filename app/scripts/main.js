@@ -138,9 +138,10 @@ $('.team-members__image')
 if (window.innerWidth < 1127) {
   // Waypoint to trigger nav logo in white sections
   $('.section--dark').waypoint({
-    offset: function() {
-      return -$('.section--dark').height();
-    },
+    // offset: function() {
+    //   return -$('.section--dark').height();
+    // },
+    offset: -1,
     handler: function(direction) {
       if (direction == 'down') {
         $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
@@ -153,9 +154,10 @@ if (window.innerWidth < 1127) {
   });
   // Waypoint to trigger nav logo in white sections
   $('.section--white').waypoint({
-    offset: function() {
-      return -$('.section--white').height();
-    },
+    // offset: function() {
+    //   return -$('.section--white').height();
+    // },
+    offset: -1,
     handler: function(direction) {
       if (direction == 'down') {
         $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
@@ -173,9 +175,10 @@ if (window.innerWidth < 1127) {
   // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
   // Waypoint to trigger nav logo in blue sections
   $('.section--blue').waypoint({
-    offset: function() {
-      return -$('.section--blue').height();
-    },
+    // offset: function() {
+    //   return -$('.section--blue').height();
+    // },
+    offset: -1,
     handler: function(direction) {
       if (direction == 'down') {
         $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
