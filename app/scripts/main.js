@@ -106,8 +106,8 @@ $(document).ready(function() {
 
   fn.init();
 
-
-// Portfolio Hover Toggle
+if (window.innerWidth > 480) {
+  // Portfolio Hover Toggle
   $('.our-work__content')
   .mouseenter(function() {
     $(this).children().children('div').css('visibility','visible');
@@ -120,9 +120,8 @@ $(document).ready(function() {
     $(this).children().children('div').children().children('button').css('visibility','hidden');
   });
 
-
-// Display Team Member Social media
-$('.team-members__image')
+  // Display Team Member Social media
+  $('.team-members__image')
   .mouseenter(function() {
     $(this).children('div').css('visibility', 'visible');
     $(this).children('div').children().css('visibility', 'visible');
@@ -131,6 +130,33 @@ $('.team-members__image')
     $(this).children('div').css('visibility','hidden');
     $(this).children('div').children().css('visibility', 'hidden');
   })
+
+  // Waypoint to trigger Process animation
+  $('#process').waypoint({
+    offset: function() {
+      return 500;
+    },
+    handler: function() {
+      $('.section--left').css('visibility','visible');
+      $('.section--right').css('visibility','visible');
+      $('.section--left').addClass('animated fadeInLeft');
+      $('.section--right').addClass('animated fadeInRight');
+    }
+  });
+
+  // Waypoint to trigger Services animation
+  $('#services').waypoint({
+    handler: function() {
+      $('.services__content-row').css('visibility','visible');
+      $('.services__content-row').addClass('animated fadeInUp');
+    }
+  });
+} else {
+  // dont show animation if on mobile screens
+  $('.section--left').css('visibility','visible');
+  $('.section--right').css('visibility','visible');
+  $('.services__content-row').css('visibility','visible');
+};
 
 
 
@@ -190,27 +216,6 @@ if (window.innerWidth < 1127) {
     }
   });
 };
-
-// Waypoint to trigger Process animation
-  $('#process').waypoint({
-    offset: function() {
-      return 500;
-    },
-    handler: function() {
-      $('.section--left').css('visibility','visible');
-      $('.section--right').css('visibility','visible');
-      $('.section--left').addClass('animated fadeInLeft');
-      $('.section--right').addClass('animated fadeInRight');
-    }
-  });
-
-// Waypoint to trigger Services animation
-  $('#services').waypoint({
-    handler: function() {
-      $('.services__content-row').css('visibility','visible');
-      $('.services__content-row').addClass('animated fadeInUp');
-    }
-  });
 
 // Animate Header w/ animate.css
   jQuery(document).ready(function ($) {
