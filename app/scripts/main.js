@@ -144,6 +144,14 @@ if (window.innerWidth > 480) {
     }
   });
 
+  $('#contact').waypoint({
+    offset: function() {
+      return 800;
+    },
+    handler: function() {
+      $('.services__content-row').css('visibility','visible');
+    }
+  });
   // Waypoint to trigger Services animation
   $('#services').waypoint({
     handler: function() {
@@ -151,6 +159,7 @@ if (window.innerWidth > 480) {
       $('.services__content-row').addClass('animated fadeInUp');
     }
   });
+
 } else {
   // dont show animation if on mobile screens
   $('.section--left').css('visibility','visible');
@@ -163,33 +172,31 @@ if (window.innerWidth > 480) {
 // Trigger Navbar Waypoints when the gutter is removed (<1127px)
 if (window.innerWidth < 1127) {
   // Waypoint to trigger nav logo in white sections
-  $('.section--dark').waypoint({
-    // offset: function() {
-    //   return -$('.section--dark').height();
-    // },
-    offset: -1,
+  $('#philosophy').waypoint({
+    offset: function() {
+      return -$('#philosophy').height();
+    },
     handler: function(direction) {
       if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small-blue-white.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-blue-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small-blue-white.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       }
     }
   });
   // Waypoint to trigger nav logo in white sections
-  $('.section--white').waypoint({
-    // offset: function() {
-    //   return -$('.section--white').height();
-    // },
-    offset: -1,
+  $('process').waypoint({
+    offset: function() {
+      return -$('process').height();
+    },
     handler: function(direction) {
       if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       }
     }
@@ -201,20 +208,19 @@ if (window.innerWidth < 1127) {
   // !!!!!!!! SAVE FOR HAMBURGER BARS !!!!!!!!
   // Waypoint to trigger nav logo in blue sections
   $('.section--blue').waypoint({
-    // offset: function() {
-    //   return -$('.section--blue').height();
-    // },
-    offset: -1,
+    offset: function() {
+      return -$('.section--blue').height();
+    },
     handler: function(direction) {
       if (direction == 'down') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small-black-white.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       } else if (direction == 'up') {
-        $('.nav-mk__icon').css('background', 'url("../../images/mklogo-small-black-white.png") no-repeat top left');
+        $('.nav-mk__icon').css('background', 'url("../../images/logos/mklogo-small-black-white.png") no-repeat top left');
         $('.nav-mk__icon').css('background-size', '70px 30px');
       }
     }
-  });
+  })
 };
 
 // Animate Header w/ animate.css
