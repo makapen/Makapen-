@@ -42,6 +42,7 @@ $(document).ready(function() {
               $nav_ham.addClass('fade-in');
               $nav_mk.addClass('fade-in');
               $nav_bar.addClass('fade-out');
+              $nav_ham.parent().parent().css('background-color', '#eee');
             }
             // Close the drawer if it's open and your moving up
             else if (direction === "up" && $nav_drawer.hasClass('nav-drawer--active')) {
@@ -59,6 +60,7 @@ $(document).ready(function() {
               $nav_mk.removeClass('fade-in');
               setTimeout(function() {
                 $nav_bar.removeClass('fade-out').delay(3000);
+                $nav_ham.parent().parent().css('background-color', '');
               }, time_delay);
             }
           }
@@ -154,9 +156,10 @@ if (window.innerWidth > 480) {
   });
   // Waypoint to trigger Services animation
   $('#services').waypoint({
+    offset: 300,
     handler: function() {
-      $('.services__content-row').css('visibility','visible');
-      $('.services__content-row').addClass('animated fadeInUp');
+      $('.services__content').css('visibility','visible');
+      $('.services__content').addClass('animated fadeInUp');
     }
   });
 
