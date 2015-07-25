@@ -134,10 +134,8 @@ function getUserHome() {
           bucket: "makapen.co",
           region: 'us-west-2'
         },
-        build: {
-          cwd: "dist/",
-          src: "**"
-        }
+        cwd: "dist/",
+        src: "**"
       }
     }
   });
