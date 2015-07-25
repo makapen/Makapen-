@@ -4,6 +4,10 @@
   position: relative;
   width: 100%;
   color: $colorWhite;
+
+  a {
+    text-decoration: none;
+  }
   p {
     max-width: 50%;
     margin: 0 auto;

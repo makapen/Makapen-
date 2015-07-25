@@ -123,14 +123,12 @@ if (window.innerWidth > 480) {
   });
 
   // Display Team Member Social media
-  $('.team-members__image')
+  $('.team-member__hover')
   .mouseenter(function() {
-    $(this).children('div').children().css('opacity','1');
-    $(this).children('div').css('opacity','1');
+    $(this).css('opacity','1');
   })
   .mouseleave(function() {
-    $(this).children('div').css('opacity','0');
-    $(this).children('div').children().css('opacity','0');
+    $(this).css('opacity','0');
   })
 
   // Waypoint to trigger Process animation
