@@ -134,8 +134,8 @@ function getUserHome() {
           bucket: "makapen.co",
           region: 'us-west-2'
         },
-        cwd: "dist/",
-        src: "**"
+          cwd: "dist/",
+          src: "**"
       }
     }
   });
@@ -157,6 +157,6 @@ function getUserHome() {
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
   grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
   grunt.registerTask('publish-staging', ['copy', 'styles:dist', 'build', 's3:staging']);
-  grunt.registerTask('publish-production', ['s3:production']);
+  grunt.registerTask('publish-production', ['copy', 'styles:dist', 'build', 's3:production']);
 
 }
