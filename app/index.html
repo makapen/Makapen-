@@ -68,7 +68,7 @@
       <li><a href="portfolio.html">PORTFOLIO</a></li>
       <li><a href="team.html">TEAM</a></li>
       <li><a href="http://makapen-blog.ghost.io/" target="_blank">BLOG</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
@@ -90,7 +90,7 @@
       <h1>Mission<span class="blue-slash">\</span></h1>
       <h2>We regularly survey and test web technologies to harness the power of existing tools to bring the most value to the software we build.</h2>
       <!-- <h2>Small team working on big challenges in collaboration with our clients.</h2> -->
-      <p>What makes Makapen different? We are small team working on big challenges in an empathetic and honest collaboration with our clients. We're devoted to an agile philosophy of delivering constant, meaningful value. We make a huge impact by enabling our clients to prototype, test against real users, and get to market quickly with a viable product.</p>
+      <p>What makes Makapen different? We are a small team working on big challenges in an empathetic and honest collaboration with our clients. We're devoted to an agile philosophy of delivering constant, meaningful value. We make a huge impact by enabling our clients to prototype, test against real users, and get to market quickly with a viable product.</p>
       <a href="#process" class="arrow-link">
         <span class="fa fa-chevron-down fa-2 scroll-arrow"></span>
       </a>
@@ -225,29 +225,6 @@
   <!-- endbuild -->
 
   <!-- Google Analytics-->
-  <script>
-  $(document).ready(function() {
-    $("#contact form").submit(function(event) {
-      var postDest = event.target.action;
-
-      $("#hidden_iframe").load(function(event) {
-        $("#hidden_iframe").unbind("load");
-        $("#contact form")[0].reset();
-
-        $('#form_modal').reveal({
-          animation: 'fadeAndPop', //fade, fadeAndPop, none
-          animationspeed: 300, //how fast animtions are
-          closeonbackgroundclick: true, //if you click background will modal close?
-          dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
-        });
-
-      });
-
-      return true;
-    });
-
-  });
-  </script>
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
