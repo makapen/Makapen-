@@ -237,14 +237,14 @@
 #victory_men {
   opacity: 0;
   animation: cloud_appear 3s linear;
-  animation-delay: 20s;
+  animation-delay: 19.5s;
   animation-fill-mode: forwards;
 }
 
 #victory {
   transform: translateX(-85px);
   animation: victory 2s linear;
-  animation-delay: 21s;
+  animation-delay: 20s;
   animation-fill-mode: forwards;
 }
 
@@ -253,7 +253,7 @@
   transform-origin: 100% 100%;
   transform: scale(0);
   animation: flag 2s linear;
-  animation-delay: 21.5s;
+  animation-delay: 20.5s;
   animation-fill-mode:forwards;
 }
 
