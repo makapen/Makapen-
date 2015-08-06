@@ -9,7 +9,7 @@
     color: $colorWhite;
     text-align: center;
     img {
-      width: 40%;
+      width: 60%;
     }
 
     @media (max-width: $screen-xs) {
@@ -17,22 +17,13 @@
       text-align: center;
       img {
         padding-top: 2em;
-        width: 80%;
+        width: 50%;
       }
     }
   }
   .side {
     @include col(.45);
     padding-left: 3%;
-    h1 {
-      font-style:oblique;
-      text-transform: uppercase;
-      font-weight: 100;
-    }
-    p {
-      max-width: 90%;
-      font-size: $fontBase;
-    }
 
     @media (max-width: $screen-xs) {
       @include col(1/1);

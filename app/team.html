@@ -27,7 +27,7 @@
     -->
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,200%7CMontserrat:400,700%7CMerriweather:300,700" rel="stylesheet" type="text/css">
   <!-- build:css(.tmp/) styles/team/main.min.css -->
   <link rel="stylesheet" href="styles/h5bp.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -42,14 +42,10 @@
       <li class='nav-bar__list-icon'>
         <a href="/#nav-dropdown"><div class='nav-mk__icon--lg'></div></a>
       </li>
-      <li class='last'><a href="/#contact">contact</a>
-      </li>
-      <li><a href="team.html" class="portfolio-link">team</a>
-      </li>
-      <li><a href="/#services">services</a>
-      </li>
-      <li><a href="/#process">process</a>
-      </li>
+      <li class='last'><a href="/#contact">contact</a></li>
+      <li><a href="http://blog.makapen.co/" target="_blank">blog</a></li>
+      <li><a href="team.html" class="active-link">team</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
     </ul>
   </nav>
   <!-- END-Navbar -->
@@ -69,20 +65,91 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="/#process">PROCESS</a></li>
-      <li><a href="/#services">SERVICES</a></li>
+      <li><a href="portfolio.html">PORTFOLIO</a></li>
       <li><a href="team.html">TEAM</a></li>
+      <li><a href="http://blog.makapen.co/">BLOG</a></li>
       <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
 
-  <!-- About Message -->
-  <div id="about" class="centered">
+  <!-- New About Section -->
+  <div id="about" class="section section--top section--dark">
     <div class="col">
-      <section class="centered about__content">
+      <h1>Makapen Team<span class="blue-slash">\</span></h1>
+      <h2>Our team is committed to strong collaboration, open communication, and learning.</h2>
+      <p>We are technology enthusiasts who work together to deliver quality code, delightful experiences, and unparalleled customer service. We build software, climb mountains, and drink cold beer together. You can’t ask more ‘good stuff’ in one place!</p>
+      <a href="#team-members" class="arrow-link padding-top">
+        <span class="fa fa-chevron-down fa-2 scroll-arrow"></span>
+      </a>
+    </div>
+  </div>
+  <!-- End New About Section -->
+
+  <div id="team-members" class="section centered blue-divider section--white">
+    <div class="team-members__card">
+      <div class="team-members__image">
+        <img src="../images/team/ewelina.jpg">
+        <div class="team-member__hover">
+          <span class="team-member__hover-text">
+            <h1>
+              <a href="https://www.linkedin.com/pub/ewelina-kieley/51/3b1/b61" target="_blank"><i class="fa fa-linkedin padding-r-md"></i></a>
+              <a href="https://twitter.com/ewelaryba" target="_blank"><i class="fa fa-twitter"></i></a>
+            </h1>
+          </span>
+        </div>
+      </div>
+      <section class="team-members__content">
+        <h1>Ewelina Kieley<span class="blue-slash">\</slash></h1>
+        <p class="grey-text">Business Developer</p>
+        <p>Ewelina is focused on helping entrepreneurs solve their software needs. She also supports the Makapen team in maintaining professional growth and happiness. Her interests span people management, business development, design, and science. She also loves the great outdoors!</p>
+      </section>
+    </div>
+    <div class="team-members__card">
+      <div class="team-members__image">
+        <img src="../images/team/tyler.jpg">
+        <div class="team-member__hover">
+          <span class="team-member__hover-text">
+            <h1>
+              <a href="https://www.linkedin.com/in/tyleriguchi" target="_blank"><i class="fa fa-linkedin padding-r-md"></i></a>
+              <a href="https://twitter.com/tyleriguchi" target="_blank"><i class="fa fa-twitter"></i></a>
+            </h1>
+          </span>
+        </div>
+      </div>
+      <section class="team-members__content">
+        <h1>Tyler Iguchi<span class="blue-slash">\</slash></h1>
+        <p class="grey-text">Full Stack Developer</p>
+        <p>Tyler is a regular open source community contributor and an ember enthusiast. He enjoys writing quality and extendable code. He frequently pushes our team to explore and apply new technologies. In his spare time he likes to climb, ride his vintage motorcycle, and drink craft brews.</p>
+      </section>
+    </div>
+    <div class="team-members__card">
+      <div class="team-members__image">
+        <img src="../images/team/claire.jpg">
+        <div class="team-member__hover">
+          <span class="team-member__hover-text">
+            <h1>
+              <a href="https://www.linkedin.com/in/clairelyles" target="_blank"><i class="fa fa-linkedin padding-r-md"></i></a>
+              <a href="https://twitter.com/clairissima" target="_blank"><i class="fa fa-twitter"></i></a>
+            </h1>
+          </span>
+        </div>
+      </div>
+      <section class="team-members__content">
+        <h1>Claire Lyles<span class="blue-slash">\</slash></h1>
+        <p class="grey-text">Front End Engineer</p>
+        <p>Claire is a design-focused front end engineer. She has a high attention to detail and enjoys delivering intuitive user interfaces both through building rapid prototypes and rich user experiences. When not coding, you can find Claire cantering on horseback through Washington trails.</p>
+      </section>
+    </div>
+  </div>
+
+  <!-- About Message -->
+  <div id="picture-section" class="section blue-divider">
+    <div class="col">
+      <!-- JS Section for type animation -->
+      <!-- <section class="about__content">
         <section class="cd-intro">
-          <h1 class="white-text cd-headline clip is-full-width">
+          <h2 class="white-text cd-headline clip is-full-width">
             <span class="break-line">We are</span>
             <span class="cd-words-wrapper">
               <b class="is-visible">customer focused</b>
@@ -90,61 +157,47 @@
               <b>professional</b>
               <b>innovative</b>
             </span>
-          </h1>
+          </h2>
         </section>
-        <h3 class="white-text" style="line-height:1.5em">We are a full-stack agency specialized in building web applications, rapid prototypes, and custom websites for startups. Our team of technology professionals and engineers work together to deliver quality code, seamless experiences and
-  unparalleled customer service.</h3>
-      </section>
+      </section> -->
     </div>
   </div>
   <!-- END-About-Message -->
 
-  <div id="team-members" class="centered">
-    <div class="team-members__card">
-      <img src="../images/team/ewelina.jpg">
-      <section class="team-members__content">
-        <h3>Ewelina Kieley</h3>
-        <p class="grey-text small-text">BUSINESS DEVELOPER</p>
-        <p class="small-text">Ewelina is focused on helping entrepreneurs make better decisions while developing their software products, and is fostering growth and engagement within the Makapen team. Her interests span people management, business development, design, and science. She also enjoys running, hiking, and Belgian beers.</p>
-      </section>
-    </div>
-    <div class="team-members__card">
-      <img src="../images/team/tyler.jpg">
-      <section class="team-members__content">
-        <h3>Tyler Iguchi</h3>
-        <p class="grey-text small-text">FULL STACK DEVELOPER</p>
-        <p class="small-text">Tyler is a regular open source community contributor and an ember enthusiast. He enjoys writing quality and extendable code. He frequently pushes our team to explore and apply new technologies. In his spare time he likes to climb, draw turnips, drink cold brews, and take long walks on the beach. </p>
-      </section>
-    </div>
-    <div class="team-members__card">
-      <img src="../images/team/claire.jpg">
-      <section class="team-members__content">
-        <h3>Claire Lyles</h3>
-        <p class="grey-text small-text">FRONT END ENGINEER</p>
-        <p class="small-text">Claire is a design-focused front end engineer. She has a high attention to detail and enjoys delivering intuitive user interfaces both through building rapid prototypes or rich user experiences. When not coding, you can find Claire cantering on horseback through Washington trails.</p>
-      </section>
+  <!-- Closing CTA + Footer -->
+  <div id="questions" class="section--blue">
+    <div class="col">
+      <div class="main">
+        <h1>Ready to get started on your MVP?</h1>
+        <p>Tell us about your project and we will provide professional feedback and an architecture outline to help you take the first step.</p>
+        <br>
+        <div class="center-button">
+          <a href="mailto:contact@makapen.co">
+            <button class="button--contact" type="submit">Contact Us</button>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-
   <footer>
     <div class="footer__content">
       <ul class="footer__ul">
-       <li>
+       <li class="padding-r-md">
           <a href="//www.linkedin.com/company/makapen-co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x circle"></i></a>
         </li>
-        <li>
+        <li class="padding-r-md">
           <a href="//www.facebook.com/Makapen.co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x circle"></i></a>
         </li>
-        <li> 
+        <li>
           <a href="//twitter.com/makapen_co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x circle"></i></span></a>
         </li>
       </ul>
-
-      <div class="footer_copyright">
-       <span>Makapen Inc. &copy2015</span>
-      </div>
+    </div>
+    <div class="footer_copyright">
+      <h1>Makapen Inc. <span class="black-slash">\</span> &copy2015</h1>
     </div>
   </footer>
+  <!-- End Closing CTA + Footer -->
 
 
   <!-- build:js(./) scripts/vendor.min.js -->

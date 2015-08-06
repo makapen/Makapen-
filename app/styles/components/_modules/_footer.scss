@@ -9,12 +9,15 @@ footer {
   padding-top: 10px;
   padding-bottom: 20px;
   text-align: center;
+  background-color: #3399cc;
+  color: #fff;
 }
 
 .footer_copyright {
-  width: 50%;
+  h1 {
+    font-size: 12px;
+  }
   text-align: center;
-  border-top: 1px dashed $colorBlue;
   margin: 0 auto;
   padding-top: 17px;
 }
@@ -37,8 +40,6 @@ footer {
     float: left;
     list-style: none;
     margin: auto;
-    padding: 5px;
-    padding-right: 20px;
 
     a {
       -webkit-tap-highlight-color: transparent;

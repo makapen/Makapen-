@@ -1,0 +1,523 @@
+// Css animation
+
+#animation {
+  padding-top: 60px;
+  background-color: #333333;
+  margin-bottom: -8px;
+}
+
+// id svg part
+#makapen_animation {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: black;
+}
+
+// sky
+#sky {
+  opacity: 0;
+  animation: sky-sea_animation 2s linear;
+  animation-fill-mode:forwards;
+}
+
+// sun
+#sun {
+  opacity: 0;
+  transform: scale(1);
+  animation: sun_animation 3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+#spin {
+  transform-origin: 50% 50%;
+  animation: sun_spin 30s linear infinite reverse;
+}
+
+// sea
+#sea {
+  opacity: 0;
+  animation: sky-sea_animation 2s linear;
+  animation-fill-mode:forwards;
+}
+
+// sky wave
+#sky_wave {
+  opacity: 0;
+  animation: sky_waves_animation 1s linear;
+  animation-fill-mode:forwards;
+  animation-delay: 0.5s;
+}
+
+//clouds
+#cloud {
+  opacity: 0;
+  animation: cloud_appear 3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+.cloud_op1 {
+  position: absolute;
+  transform: translateX(-80vw);
+  animation: cloud_1 25s linear infinite;
+}
+
+.cloud_op2 {
+  position: absolute;
+  transform: translateX(-90vw);
+  animation: cloud_2 30s linear infinite;
+}
+
+.cloud_op3 {
+  position: absolute;
+  transform: translate(-20vw);
+  animation: cloud_3 35s linear infinite;
+}
+
+.cloud_op4 {
+  position: absolute;
+  transform: translate(-25vw);
+  animation: cloud_4 45s linear infinite;
+}
+
+.cloud_op5 {
+  position: absolute;
+  transform: translate(-50vw);
+  animation: cloud_5 20s linear infinite;
+}
+
+.cloud_op6 {
+  position: absolute;
+  transform: translate(-70vw);
+  animation: cloud_6 60s linear infinite;
+}
+
+// mountains
+#mountain_plan_1_1 {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_pr 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+#mountain_plan_1_2 {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: main_mountain_pr 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+#mountain_plan_2_1 {
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+
+#mountain_plan_2_2 {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: main_mountain_reflect 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+
+#main_mountain_left {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_first 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3.8s;
+}
+
+#main_mountain_right {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_first 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3.8s;
+}
+
+// boats
+#boats {
+  opacity: 0;
+  animation: boats 3s linear;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#small_boat {
+  transform-origin: 50% 50%;
+  animation: small_boat 5s linear infinite alternate;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+#medium_boat {
+  transform-origin: 50% 50%;
+  animation: medium_boat 6s linear infinite alternate;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+#large_boat {
+  transform-origin: 50% 50%;
+  animation: large_boat 7s linear infinite alternate;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+//homes
+#home_on_the_mountain {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: home_left 1s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#home_cable_way {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: home_left 1s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+// line of cable car
+#cableway_direction {
+  opacity: 0;
+  animation: line 1s linear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+// falls
+#fall {
+  opacity: 0;
+  animation: cloud_appear 2s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#fall_animation {
+  animation: translate_fall 10s linear infinite alternate;
+  animation-delay: 5s;
+}
+
+// cable car
+#vehicule {
+  opacity: 0;
+  animation: cloud_appear 0.2s linear;
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+}
+
+#cable_car {
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: translateX(-360px) translateY(-363px) rotate(16deg);
+}
+
+// hike menu
+#hike_men {
+  transform: translateX(-130px);
+  animation: hike 5s linear;
+  animation-delay: 5.5s;
+}
+
+// victory man
+#victory_men {
+  opacity: 0;
+  animation: cloud_appear 3s linear;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+}
+
+#victory {
+  transform: translateX(-85px);
+  animation: victory 2s linear;
+  animation-delay: 21s;
+  animation-fill-mode: forwards;
+}
+
+// flag
+#flag {
+  transform-origin: 100% 100%;
+  transform: scale(0);
+  animation: flag 2s linear;
+  animation-delay: 21.5s;
+  animation-fill-mode:forwards;
+}
+
+// animation of sun, rotate spin and opacity 0 to 1
+@keyframes sun_animation {
+  from {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sun_spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+// cloud apparition
+@keyframes cloud_appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// cloud mouvement
+@keyframes cloud_1 {
+  from {
+    transform: translateX(-80vw);
+  }
+  to {
+     transform: translate(20vw);
+  }
+}
+
+@keyframes cloud_2 {
+  from {
+     transform: translateX(-90vw);
+  }
+  to {
+     transform: translateX(10vw);
+  }
+}
+
+@keyframes cloud_3 {
+  from {
+    transform: translate(-20vw);
+  }
+  to {
+     transform: translate(80vw);
+  }
+}
+
+@keyframes cloud_4 {
+  from {
+    transform: translate(-25vw);
+  }
+  to {
+     transform: translate(60vw);
+  }
+}
+
+@keyframes cloud_5 {
+  from {
+    transform: translate(-50vw);
+  }
+  to {
+     transform: translate(50vw);
+  }
+}
+
+@keyframes cloud_6 {
+  from {
+    transform: translate(-70vw);
+  }
+  to {
+     transform: translate(25vw);
+  }
+}
+
+// animation for sky and sea
+@keyframes sky-sea_animation {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+// animation for sky wave
+@keyframes sky_waves_animation {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+   opacity: 1;
+  }
+}
+
+//animation for main mountain, and reflect mountain
+@keyframes main_mountain {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  to {
+  opacity: 1;
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_reflect {
+  from {
+    transform: scale(0);
+  }
+  
+  to {
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_pr {
+  from {
+    transform: scale(0);
+  }
+  
+  to {
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_first {
+  from {
+    transform: scale(0);
+  }
+  
+  to {
+  transform: scale(1);
+  }
+}
+
+// animation boats and reflect boats
+@keyframes boats {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+  opacity: 1;
+  }
+}
+
+@keyframes small_boat {
+  from {
+    transform: rotate(-3deg) translateX(6px) translateY(1px);
+  }
+  
+  to {
+    transform: rotate(3deg) translateX(6px) translateY(1px);
+  }
+}
+
+@keyframes medium_boat {
+  from {
+    transform: rotate(-4deg) translateX(8px) translateY(3px);
+  }
+  
+  to {
+    transform: rotate(4deg) translateX(8px) translateY(3px);
+  }
+}
+
+@keyframes large_boat {
+  from {
+    transform: rotate(-5deg) translateX(-10px) translateY(-5px);
+  }
+  
+  to {
+    transform: rotate(5deg) translateX(10px) translateY(5px);
+  }
+}
+
+// animation home left
+@keyframes home_left {
+  from {
+    transform: scale(0);
+  }
+  
+  to {
+    transform: scale(1);
+  }
+}
+
+// animation line of cable car
+@keyframes line {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// animation for falls
+@keyframes translate_fall {
+  from {
+   transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+// animation for cable car mouvement, other part directly in svg part, in index.html
+@keyframes cable_car {
+  0% {
+    transform: translateX(-300px) translateY(55px) rotate(8deg);
+  }
+  
+  100% {
+    transform: translateX(450px) translateY(-180px) rotate(-3deg);
+  }
+}
+
+// animation of hike men
+@keyframes hike {
+  from {
+    transform: translateX(-130px);
+  }
+  
+  to {
+    transform: translateX(235px);
+  }
+}
+
+// animation for victory part
+@keyframes victory {
+  from {
+    transform: translateX(-85px);
+  }
+  
+  to {
+    transform: translateX(0px);
+  }
+}
+
+// animation for flag
+@keyframes flag {
+  from {
+    transform: scale(0);
+  }
+  
+  to {
+    transform: scale(1);
+  }
+}

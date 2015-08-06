@@ -10,7 +10,7 @@
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">
+  <link rel="icon" sizes="196x196" href="../images/touch/chrome-touch-icon-196x196.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,7 +18,7 @@
   <meta name="apple-mobile-web-app-title" content="Makapen">
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileImage" content="../images/touch/ms-touch-icon-144x144-precomposed.png">
   <meta name="msapplication-TileColor" content="#3372DF">
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -27,6 +27,7 @@
     -->
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,200%7CMontserrat:400,700%7CMerriweather:300,700" rel="stylesheet" type="text/css">
   <!-- build:css(.tmp/) styles/main.pawzii.min.css -->
   <link rel="stylesheet" href="styles/h5bp.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -38,14 +39,10 @@
   <nav id="nav-bar">
     <ul class="nav-bar__list">
       <li class='nav-bar__list-icon'><a href="/"><div class='nav-mk__icon--lg'></div></a></li>
-      <li><a href="/#contact">contact</a>
-      </li>
-      <li><a href="team.html">team</a>
-      </li>
-      <li><a href="/#services">services</a>
-      </li>
-      <li><a href="/#process">process</a>
-      </li>
+      <li class='last'><a href="/#contact">CONTACT</a></li>
+      <li><a href="http://blog.makapen.co/" target="_blank">blog</a></li>
+      <li><a href="/team.html">team</a></li>
+      <li><a href="/portfolio.html" class="active-link">portfolio</a></li>
     </ul>
   </nav>
   <!-- END-Navbar -->
@@ -65,68 +62,70 @@
   <!-- Drawer -->
   <div class="nav-drawer">
     <ul class="nav-drawer__list vert-align-text">
-      <li><a href="/#process">PROCESS</a></li>
-      <li><a href="/#services">SERVICES</a></li>
-      <li><a href="team.html">TEAM</a></li>
+      <li><a href="/portfolio.html">PORTFOLIO</a></li>
+      <li><a href="/team.html">TEAM</a></li>
+      <li><a href="http://blog.makapen.co/" target="_blank">BLOG</a></li>
       <li><a href="/#contact">CONTACT</a></li>
     </ul>
   </div>
   <!-- END-Drawer -->
-  <div id="product">
+  <div id="product" class="section section--top section--dark">
     <div class="col">
       <div class="side">
-        <h1>GreenKrate App</h1>
-        <p class="grey-text">GreenKrate is redefining grocery shopping for busy households, urban professionals, and businesses through a mobile-friendly web experience that makes purchasing groceries from multiple stores fast and easy.</p>
-        <div class="tools">
+        <h2>GreenKrate</h2>
+        <p>GreenKrate is redefining grocery shopping for busy households, urban professionals, and businesses through a mobile-friendly web experience that makes purchasing groceries from multiple stores fast and easy.</p>
+        <div class="tools grey-text">
           <p>EmberJS • Firebase • Braintree • Bootstrap • Auth0 • Google Cloud • Heroku • NodeJS • Express</p>
         </div>
         <br>
-        <a href="#client">
-          <button class="button--primary" type="submit">Learn More</button>
+        <a href="#client" class="arrow-link">
+          <span class="fa fa-chevron-down fa-2 scroll-arrow"></span>
         </a>
       </div>
       <div class="main">
-        <div><img src="images/portfolio/desktop/greenkrate.png"></div>
+        <div><img src="../images/portfolio/desktop/greenkrate.png"></div>
       </div>
     </div>
   </div>
 
-  <div id="client">
+  <div id="client" class="section">
     <div class="col">
       <div class="side">
-        <h2 class="white-text">The Client Goal</h2>
+        <h1>The Client Goal<span class="black-slash">\</span></h1>
         <p>When preparing to launch their pilot program, GreenKrate asked Makapen to create an MVP of their ecommerce platform. The goal was to provide an expedient, intuitive, and mobile friendly ordering process for customers, and an administrative dashboard used to manage orders, users, and catalog items.</p>
       </div>
       <div class="main">
-        <img src="images/portfolio/mobile/greenkrate_side.png" alt="3 Devices with GreenKrate App">
+        <img src="../images/portfolio/mobile/greenkrate_side.png" alt="3 Devices with GreenKrate App">
       </div>
     </div>
   </div>
 
-  <div id="platform">
+  <div id="platform" class="section section--white">
     <div class="col">
       <div class="side">
-        <h2><i class="fa fa-cogs fa-3 padding-r"></i> Iterative Delivery</h2>
+        <h1><i class="fa fa-cogs fa-3 padding-r blue-slash"></i> Iterative Delivery</h1>
         <p>We used an iterative approach to incrementally release features to beta users in the pilot program. Our initial sprint tackled the beta invite management via Mailchimp/Mandrill, payments integration with Braintree, and a basic grocery list management using Firebase. By leveraging these services, we were able to deliver a fully functional, revenue-generating core experience all in 2 weeks. Customers were able to submit grocery orders, which the GreenKrate shoppers were able to receive, fulfill and charge for.</p>
-        <h2><i class="fa fa-users fa-3 padding-r"></i> Customer Focused Upgrades</h2>
+        <h1><i class="fa fa-users fa-3 padding-r blue-slash"></i> Customer Focused Upgrades</h1>
         <p>We expanded on this experience in following sprints by adding additional features, such as email notifications, catalog item content, on-sale/featured items, and recently ordered items. By developing fully functional feature sets every two weeks we were able to regularly gather customer feedback, and prioritize feature requests appropriately. The client was able to launch the pilot successfully with a fast and convenient way for users to create their grocery orders, and for the business to efficiently fulfill them.</p>
       </div>
       <div class="main">
-        <img src="images/portfolio/mobile/greenkrate.png" alt="Device with GreenKrate App">
+        <img src="../images/portfolio/mobile/greenkrate_front.png" alt="Device with GreenKrate App">
       </div>
     </div>
   </div>
 
 
-  <div id="questions">
+  <div id="questions" class="section--blue">
     <div class="col">
       <div class="main">
-        <h2 class="white-text">Ready to get started on your MVP?</h2>
+        <h1>Ready to get started on your MVP?</h1>
         <p>Tell us about your project and we will provide professional feedback and an architecture outline to help you take the first step.</p>
         <br>
-        <form action="/#contact">
-          <button class="button--contact" type="submit">Contact Us</button>
-        </form>
+        <div class="center-button">
+          <a href="mailto:contact@makapen.co">
+            <button class="button--contact" type="submit">Contact Us</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -134,20 +133,19 @@
   <footer>
     <div class="footer__content">
       <ul class="footer__ul">
-       <li>
+       <li class="padding-r-md">
           <a href="//www.linkedin.com/company/makapen-co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x circle"></i></a>
         </li>
-        <li>
+        <li class="padding-r-md">
           <a href="//www.facebook.com/Makapen.co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x circle"></i></a>
         </li>
-        <li> 
+        <li>
           <a href="//twitter.com/makapen_co" target="_blank"><span class="fa-stack fa-2x"><i class="fa fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x circle"></i></span></a>
         </li>
       </ul>
-
-      <div class="footer_copyright">
-       <span>Makapen Inc. &copy2015</span>
-      </div>
+    </div>
+    <div class="footer_copyright">
+      <h1>Makapen Inc. <span class="black-slash">\</span> &copy2015</h1>
     </div>
   </footer>
 
