@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="home_x5F_end" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g>
+	<rect id="Blue_wall_1_" x="89" y="74" fill="#394D7B" width="48" height="73"/>
+	<rect id="Black_wall_1_" x="13" y="73" fill="#2C2522" width="76" height="74"/>
+	<rect id="Door_1_" x="105" y="94" fill="#293A60" width="19" height="53"/>
+	<rect id="Blue_separation_Roof_1_" x="8" y="70" fill="#425E95" width="82" height="4"/>
+	<rect id="Light_Blue_separation_Roof_1_" x="90" y="70" fill="#429DC1" width="52" height="4"/>
+	<polygon id="Blue_Roof_1_" fill="#394D7B" points="104.584,20.154 58.035,19.698 89.622,70 141.99,70 	"/>
+	<polygon id="Dark_Blue_Roof_1_" fill="#293A60" points="58.201,20 45.234,20 7.828,70 89.622,70 	"/>
+	<path id="Top_1_" fill="#FFFFFF" d="M58.201,20l46.383,0.47c0,0,0.749-10.335-9.102-11.47H54.212c0,0-7.314,0-8.978,11H58.201z"/>
+	<path id="Shadow_top_1_" fill="#429DC1" d="M58.201,20c0,0-5.652-16-12.967,0H58.201z"/>
+	<polygon id="Fireplace_blue_1_" fill="#394D7B" points="35,19.779 31.39,19.532 31.605,38.202 35,33.63 	"/>
+	<polygon id="Fireplace_Black_1_" fill="#2C2522" points="31.27,20 23,20 23,50.649 31.779,38.437 	"/>
+	<ellipse id="Door_handle_1_" fill="#E1ECF2" cx="108.621" cy="126.057" rx="1.558" ry="3.75"/>
+</g>
+<image overflow="visible" opacity="0.7" width="1461" height="646" id="Home_2_" xlink:href="53107159921560F.png"  transform="matrix(0.0397 0 0 0.0397 24.2422 92.1699)">
+</image>
+</svg>
