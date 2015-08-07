@@ -8,16 +8,20 @@
 
   //Fonts
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
+  @import url(http://fonts.googleapis.com/css?family=Raleway:300italic,400,300,600,700,800);
+  @import url(http://fonts.googleapis.com/css?family=Montserrat:300italic,400,300,600,700,800);
+
 
   // Defining breakpoints
   $small: 480px !default;
   $medium: 620px !default;
   $wide: 800px !default;
   $wider: 1080px !default;
+  $large: 1250px !default;
   $huge: 1600px !default;
   $mediumContainer: 688px !default;
   $wideContainer: 864px !default;
- 
+
   // Defining grid sizes
   $mediumColCount: 3 !default;
   $mediumColWidth: 30.3% !default;
@@ -30,6 +34,9 @@
   $padding-section: 6em;
   $padding-diff-element: 3em;
   $padding-same-element: 1.5em;
+
+  // Default margin
+  $margin-same-element: 1.5em;
 
   // Defining colors
   // Primary accent colors
@@ -46,7 +53,7 @@
 
   $colorGrayBackground: #f0f0f0 !default;
   $colorGrayKeyline: #e0e0e0 !default;
-  $colorGray: #737373 !default;
+  $colorGray: #ABABAB !default;
   $colorGrayLight: #eeeeee !default;
   $colorGrayDark: #404040 !default;
 

@@ -119,16 +119,23 @@ function getUserHome() {
     s3: {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
-        secretAccessKey: "<%= aws.secretAccessKey %>",
-        // this bucket is for production
-        // bucket: "makapen.co",
-        // this bucket is for staging
-        bucket: "makapen",
-        region: 'us-west-2'
+        secretAccessKey: "<%= aws.secretAccessKey %>"
       },
-      build: {
-        cwd: "dist/",
-        src: "**"
+      staging: {
+        options: {
+          bucket: "makapen",
+          region: 'us-west-2'
+        },
+          cwd: "dist/",
+          src: "**"
+      },
+      production: {
+        options: {
+          bucket: "makapen.co",
+          region: 'us-west-2'
+        },
+          cwd: "dist/",
+          src: "**"
       }
     }
   });
@@ -149,7 +156,7 @@ function getUserHome() {
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
   grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
-  grunt.registerTask('publish-staging', ['s3']);
-  //grunt.registerTask('publish-production', ['s3']);
+  grunt.registerTask('publish-staging', ['copy', 'styles:dist', 'build', 's3:staging']);
+  grunt.registerTask('publish-production', ['copy', 'styles:dist', 'build', 's3:production']);
 
 }

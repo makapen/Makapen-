@@ -6,40 +6,46 @@
 
 #services {
   min-width: 100%;
-  padding-top: $padding-section;
-  padding-bottom: $padding-section;
-  h1 {
-    font-weight: 300;
-    text-transform: uppercase;
+  p {
     font-style: italic;
   }
 }
+.services__content-row {
+  visibility: hidden;
+}
 
 .services__content {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
   @include col(1/3);
-  font-size: $fontBase;
-
+  color: $colorBlack;
   text-align: left;
+  padding: 10px 0;
 
-  h3 {
-    border-bottom: 2px solid $colorBlack;
-    font-weight: 300;
-    text-transform: uppercase;
+  p {
+    font-style: italic;
   }
 
   ul {
     list-style: none;
     padding-left: 0;
   }
+  .blue-divider {
+    width: 70px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services__content {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: $medium) {
   .services__content {
     @include stack();
-
-    font-size: $fontBase;
-    text-align: center;
-
+    text-align: left;
     padding-bottom: 30px;
 
     hr {

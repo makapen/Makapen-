@@ -64,6 +64,8 @@ $(document).ready(function() {
           }
         });
       }
+    } else {
+      $nav_ham.parent().parent().css('background-color', '#eee');
     }
   };
 
@@ -93,8 +95,10 @@ $(document).ready(function() {
   // for each new page that has a new element, add a new nav function
   fn.init = function() {
     fn.scroll();
-    fn.nav("#slider");
+    fn.nav("#philosophy");
     fn.nav("#product");
+    fn.nav("#portfolio");
+    fn.nav("#work");
     fn.nav("#about");
     fn.drawer();
     fn.slider();
@@ -104,8 +108,67 @@ $(document).ready(function() {
 
   fn.init();
 
+if (window.innerWidth > 480) {
+  // Portfolio Hover Toggle
+  $('.our-work__content')
+  .mouseenter(function() {
+    $(this).children().children('div').css('opacity','1');
+    $(this).children().children('div').children().css('opacity','1');
+    $(this).children().children('div').children().children('button').css('opacity','1');
+  })
+  .mouseleave(function() {
+    $(this).children().children('div').css('opacity','0');
+    $(this).children().children('div').children().css('opacity','0');
+    $(this).children().children('div').children().children('button').css('opacity','0');
+  });
 
-  // Animate Header w/ animate.css
+  // Display Team Member Social media
+  $('.team-member__hover')
+  .mouseenter(function() {
+    $(this).css('opacity','1');
+  })
+  .mouseleave(function() {
+    $(this).css('opacity','0');
+  })
+
+  // Waypoint to trigger Process animation
+  $('#process').waypoint({
+    offset: function() {
+      return 500;
+    },
+    handler: function() {
+      $('.section--left').css('visibility','visible');
+      $('.section--right').css('visibility','visible');
+      $('.section--left').addClass('animated fadeInLeft');
+      $('.section--right').addClass('animated fadeInRight');
+    }
+  });
+
+  $('#contact').waypoint({
+    offset: function() {
+      return 800;
+    },
+    handler: function() {
+      $('.services__content-row').css('visibility','visible');
+    }
+  });
+  // Waypoint to trigger Services animation
+  $('#services').waypoint({
+    offset: 300,
+    handler: function() {
+      $('.services__content').css('visibility','visible');
+      $('.services__content').addClass('animated fadeInUp');
+    }
+  });
+
+} else {
+  // dont show animation if on mobile screens
+  $('.section--left').css('visibility','visible');
+  $('.section--right').css('visibility','visible');
+  $('.services__content-row').css('visibility','visible');
+};
+
+// Animate Header w/ animate.css
   jQuery(document).ready(function ($) {
     //set animation timing
     var animationDelay = 2500,

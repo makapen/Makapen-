@@ -1,11 +1,21 @@
 #questions {
-  background-color: $colorBlue;
   padding-top: 6em;
-  padding-bottom: 6em;
-  margin-bottom: 6em;
+  padding-bottom: 3em;
   position: relative;
   width: 100%;
   color: $colorWhite;
+
+  a {
+    text-decoration: none;
+  }
+  p {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .center-button {
+    text-align: center;
+  }
   .main {
     @include col(1/1);
     text-align: center;
@@ -18,5 +28,9 @@
   @media (max-width: $screen-xs) {
     padding-top: 4em;
     padding-bottom: 4em;
+    p {
+      max-width: 90%;
+      margin: 0;
+    }
   }
 }
