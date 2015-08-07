@@ -24,6 +24,13 @@
     table-layout: fixed;
   }
 
+  .process__content {
+    @include col(1/3);
+    margin-top: 30px;
+    img {
+     @include center();
+   }
+  }
   .two-cols-description-text {
     vertical-align: middle;
     padding: 130px 100px;
@@ -77,6 +84,7 @@
     float: none !important;
   }
 
+>>>>>>> animation
 
   // Media Query for images and process divs
   @media (max-width: 992px) {

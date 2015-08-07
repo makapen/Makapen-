@@ -3,7 +3,6 @@
 * Main Stylesheet For Visual Style Guide
 *
 **/
-
 @import "_utils";
 @import "_normalize";
 
@@ -21,6 +20,7 @@
 // Modules
 @import "_modules/_logo-header";
 @import "_modules/_navbar";
+@import "_modules/_animation";
 @import "_modules/_about";
 @import "_modules/_process";
 @import "_modules/_footer";

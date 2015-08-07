@@ -49,8 +49,9 @@
     padding: 19px 32px;
     // margin-bottom: 1em;
     border: none;
-    width: 50%;
+    width: 40%;
     display: inline;
+    // float: left;
     background-color: $colorWhite;
     &:focus, &:active {
       outline: none;
@@ -78,8 +79,9 @@
   }
 
   .button--newsletter {
-    padding: 11.7px 32px;
+    padding: 11.5px 32px;
     margin-top: 0px;
+    margin-left: 2em;
     transition: all 0.4s ease;
     font-weight: 300;
     border: none;
@@ -88,6 +90,7 @@
     color: $colorWhite !important;
     box-shadow: none;
     display: inline;
+    // float: left;
     &:focus, &:active, &:hover{
       background-color: $colorWhite;
       border: 3px solid $colorWhite;
