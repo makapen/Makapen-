@@ -2,6 +2,11 @@ module.exports = function (grunt) {
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt, {pattern: ['grunt-contrib-*', 'grunt-*']});
 
+function getUserHome() {
+  return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
+}
+
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -15,7 +20,7 @@ module.exports = function (grunt) {
       dist: {
         expand: true,
         cwd: 'app',
-        src: ['fonts/**/*', 'index.html', 'restrepo.html', 'nextdmedia.html', 'pawzii.html'],
+        src: ['fonts/**/*', '*.html' ],
         dest: 'dist/'
       },
       tmp: {
@@ -53,11 +58,11 @@ module.exports = function (grunt) {
     },
 
     useminPrepare: {
-      html: ['dist/index.html', 'dist/restrepo.html', 'dist/nextdmedia.html', 'dist/pawzii.html']
+      html: ['dist/*.html']
     },
 
     usemin:{
-      html:['dist/index.html', 'dist/restrepo.html', 'dist/nextdmedia.html', 'dist/pawzii.html'],
+      html:['dist/*.html'],
       options: {
         blockReplacements: {
           livereload: function (block) {
@@ -110,13 +115,15 @@ module.exports = function (grunt) {
         }
       },
     },
-
-    aws: grunt.file.readJSON('config/aws_config.json'),
+    aws: grunt.file.readJSON(getUserHome() + '/.makapen/config.json'),
     s3: {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        bucket: "makapen-staging",
+        // this bucket is for production
+        // bucket: "makapen.co",
+        // this bucket is for staging
+        bucket: "makapen",
         region: 'us-west-2'
       },
       build: {
@@ -132,15 +139,17 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'useminPrepare',
     'concat:generated',
-    'cssmin:generated',
     'uglify:generated',
+    'cssmin:generated',
     // 'filerev',
-    'usemin',
-    'imagemin'
+    'imagemin',
+    'usemin'
   ]);
 
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['clean:tmp', 'styles:local', 'connect:local', 'watch']);
   grunt.registerTask('dist', ['clean', 'copy', 'styles:dist', 'build', 'connect:dist', 'watch']);
   grunt.registerTask('publish-staging', ['s3']);
+  //grunt.registerTask('publish-production', ['s3']);
+
 }

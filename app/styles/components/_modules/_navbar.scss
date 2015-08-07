@@ -5,6 +5,9 @@
 **/
 
 #nav-bar {
+  background-color: $colorGrayLight;
+  z-index: 6;
+  padding: 10px 0;
   position: absolute;
   width: 100%;
   top: 0;
@@ -27,20 +30,28 @@
 
 .nav-bar__list  li {
   float: right;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 35px;
   list-style: none;
+  font-weight: 600;
+  font-size: 1em;
   text-transform: uppercase;
-  font-style: italic;
-  color: $colorGray;
+  // font-style: italic;
+  color: $colorBlack;
 
+  a {
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+  }
 
   .last {
     padding-right: 0;
   }
   a, a:visited {
     text-decoration:none;
-    color: $colorGray;
+    color: $colorBlack;
     transition: all 0.2s ease-in-out;
 
     &:focus, &:hover {
@@ -50,11 +61,37 @@
   }
 }
 
+.nav-mk__anchor {
+  text-decoration: none;
+}
+
+.active-link {
+    text-decoration: none;
+    position: relative;
+    color: #3399cc !important;
+}
+.active-link:after {
+    content: 'featured projects';
+    color: transparent;
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    border-color: $colorBlue;
+    border-width: 0 0 2px;
+    border-style: solid;
+}
+
 #nav-dropdown {
-  position: relative;
+  // background-color: #eeeeee;
+  position: fixed;
   top: 0;
   left: 0;
-
+  padding: 30px 0;
+  width: 100%;
+  z-index: 5;
   a{
     @include cf();
   }
@@ -72,7 +109,7 @@
   cursor: pointer;
   z-index: 100;
 
-  background: url('../../images/mklogo-small.png') no-repeat top left;
+  background: url('../../images/logos/mklogo-small.png') no-repeat top left;
   background-size: 70px 30px;
 
   opacity: 0;
@@ -94,7 +131,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  background: url('../../images/mklogo.png') no-repeat top left;
+  background: url('../../images/logos/mklogo.png') no-repeat top left;
   background-size: 150px 30px;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
@@ -166,7 +203,7 @@
 .nav-drawer {
   position: fixed;
   visibility: hidden;
-  z-index: 99;
+  z-index: 1;
   top: 0;
   left: 0;
   opacity: 0;
@@ -185,7 +222,7 @@
 .nav-drawer__list {
   padding: 0;
   margin: auto;
-  font-style: italic;
+  font-weight: 600;
 
   li {
     padding:0;
@@ -226,6 +263,9 @@
 @media only screen and (max-width: $medium) {
   #nav-bar {
     display: none;
+  }
+  #nav-dropdown {
+    background-color: #eee;
   }
   .nav-ham__icon {
     opacity: 1;

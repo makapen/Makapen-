@@ -1,0 +1,52 @@
+
+#client {
+  background-color: $colorBlue;
+  padding-top: 6em;
+  position: relative;
+  width: 100%;
+  .main {
+    @include col(1/2);
+    color: $colorWhite;
+    text-align: center;
+    height: 490px;
+    overflow: hidden;
+    img {
+      width: 65%;
+    }
+
+    @media (max-width: $screen-sm) {
+      height: 100%;
+      padding-bottom: 4em;
+    }
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+      padding-bottom: 0px;
+      text-align: center;
+      img {
+        padding-top: 2em;
+        width: 70%;
+      }
+    }
+  }
+  .side {
+    @include col(1/2);
+    float: right;
+    h1 {
+      color: $colorWhite;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+    p {
+      font-size: $fontBase;
+      color: $colorWhite;
+    }
+
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+    }
+  }
+  @media (max-width: $screen-xs) {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
