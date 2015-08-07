@@ -1,0 +1,70 @@
+#portfolio {
+ a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .our-work__content {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
+    cursor: pointer;
+    cursor: auto;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-right: $margin-same-element;
+  }
+
+  @media (max-width: $medium) {
+    .col .centered {
+      padding: 0;
+    }
+    .our-work__content {
+      width: 275px;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      img {
+        width: 275px;
+      }
+    }
+  }
+
+  @media (max-width: $large) {
+    .our-work__content {
+    }
+  }
+
+  .hover-project {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(51,153,204,.80);
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+  }
+
+  a:hover > .hover-project {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .hover-project-text {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-top: 20%;
+  }
+
+  .button--primary {
+    background: none;
+    border: 2px solid #fff;
+    color: $colorWhite;
+    font-weight: 600;
+  }
+}

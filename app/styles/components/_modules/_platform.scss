@@ -1,0 +1,36 @@
+
+#platform {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  position: relative;
+  width: 100%;
+  .main {
+    @include col(1/2);
+    color: $colorWhite;
+    text-align: center;
+    img {
+      width: 60%;
+    }
+
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+      text-align: center;
+      img {
+        padding-top: 2em;
+        width: 50%;
+      }
+    }
+  }
+  .side {
+    @include col(.45);
+    padding-left: 3%;
+
+    @media (max-width: $screen-xs) {
+      @include col(1/1);
+    }
+  }
+  @media (max-width: $screen-xs) {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}

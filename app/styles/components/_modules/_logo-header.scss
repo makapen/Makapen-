@@ -56,8 +56,13 @@
   max-width: 90%;
   margin-bottom: 6em;
   img {
-    max-width: 70%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .slider__content {
+    h2 {
+      font-weight: 200;
+    }
   }
 }

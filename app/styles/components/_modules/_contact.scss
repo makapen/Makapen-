@@ -6,27 +6,20 @@
 
 #contact {
   overflow: hidden;
-  background: url('../../images/map.png') no-repeat center center;
+  background-color: $colorBlue;
   background-size: cover;
+  color: $colorWhite;
 
-  .black-overlay {
+  .contact_content {
     clear: both;
-    background-color: rgba(60, 60,60, 0.8);
-    padding-top: 6em;
-    padding-bottom: 6em;
+    // padding-top: 3em;
+    padding-bottom: 3em;
   }
   .col {
     margin-bottom: 0;
   }
 
-  h1 {
-    width: 200px;
-    margin: auto;
-    margin-bottom: 1em;
-    color: $colorWhite;
-    letter-spacing: 0.03em;
-    font-weight: 100;
-    text-transform: uppercase;
+  p {
     font-style: italic;
   }
 }
@@ -35,48 +28,206 @@
   opacity: initial;
 }
 
-.contact__form {
-  max-width: 800px;
+.contact_newsletter {
+  background-color: $colorBlue;
   margin: auto;
-  font-size: 1.3em;
+  padding-top: 1em;
+
+.newsletter {
+  color: $colorWhite;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.newsletter_form {
+  margin-bottom: 3em;
+}
 
   input {
-    display: block;
-    color: $colorBlack;
-    padding: 0.3em;
-    margin-bottom: 1em;
+    color: $colorBlue !important;
+    padding: 19px 32px;
+    // margin-bottom: 1em;
     border: none;
+    width: 40%;
+    display: inline;
+    // float: left;
     background-color: $colorWhite;
     &:focus, &:active {
       outline: none;
       border: none;
-
     }
   }
 
-  textarea {
-    box-sizing: border-box;
-    border: none;
-    display: block;
-    background-color: $colorWhite;
-    width: 100%;
-    height: 250px;
-    resize: none;
-    &:focus, &:active {
-      outline: none;
-    }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $colorBlue;
+}
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    $colorBlue;
+   opacity:  1;
+}
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    $colorBlue;
+   opacity:  1;
+}
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    $colorBlue;
+}
+
+  .button--contact {
+    margin-left: 1em;
   }
 
-  .button--primary {
-    font-weight: 400;
+  .button--newsletter {
+    padding: 11.5px 32px;
+    margin-top: 0px;
+    margin-left: 2em;
+    transition: all 0.4s ease;
+    font-weight: 300;
     border: none;
+    background-color: $colorBlue;
+    border: 3px solid $colorWhite;
+    color: $colorWhite !important;
     box-shadow: none;
-    float: right;
+    display: inline;
+    // float: left;
     &:focus, &:active, &:hover{
-      background-color: $colorBlueSecondary;
-      font-weight: 400;
-      box-shadow: none;
-      border: none;
+      background-color: $colorWhite;
+      border: 3px solid $colorWhite;
+      color: $colorBlue !important;
     }
   }
 }
+
+.contact_infos {
+  width: 55%;
+  margin: 0 auto;
+  height: 60px;
+  padding-bottom: 2em;
+}
+
+.contact_mail {
+  display: inline;
+  text-align: center;
+  padding-top: 5%;
+  float: left;
+  // color: $colorBlue;
+  // width: 49%;
+  cursor: pointer;
+}
+
+.contact_mail_a {
+  transition: all 0.4s ease;
+  color: $colorWhite;
+  text-decoration: none;
+}
+
+.contact_mail_a:hover {
+  color: $colorWhite;
+  width: 49%;
+  text-decoration: underline;
+}
+
+.contact_social {
+  // padding-top: 0.5em;
+  // padding-left: .5em;
+  display: inline;
+  text-align: center;
+  float: right;
+  // width: 49%;
+  // border-left: 2px solid $colorWhite;
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+
+.fa-facebook {
+  transition: all 0.4s ease;
+  background: $colorFacebook;
+  color: $colorWhite !important;
+}
+
+.fa-twitter {
+  transition: all 0.4s ease;
+  background: $colorTwitter;
+  color: $colorWhite !important;
+}
+
+.fa-linkedin {
+  transition: all 0.4s ease;
+  background: $colorLinkedin;
+  color: $colorWhite !important;
+}
+
+.fa-facebook:hover {
+  background: $colorWhite;
+  color: $colorFacebook !important;
+}
+
+.fa-twitter:hover {
+  background: $colorWhite;
+  color: $colorTwitter !important;
+}
+
+.fa-linkedin:hover {
+  background: $colorWhite;
+  color: $colorLinkedin !important;
+}
+
+@media (min-width: 1101px) {
+  .submit_text {
+    display: block;
+  }
+
+  .submit_icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact_social {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+  }
+
+  .submit_text {
+    display: none;
+  }
+
+  .submit_icon {
+    display: block;
+  }
+
+  .contact_newsletter {
+    padding-top: 2em;
+}
+
+  .contact_newsletter input {
+    float: none !important;
+    color: #3399CC !important;
+    padding: 19px 32px;
+    margin-bottom: 1em;
+    border: none;
+    width: 40%;
+    display: inline;
+    background-color: #fff;
+}
+
+  .contact_infos {
+    width: 100%;
+  }
+
+  .button--newsletter {
+    margin-left: 0px !important;
+  }
+
+  .contact_mail {
+    display: block;
+    width: 100%;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed $colorBlue;
+  }
+ }
