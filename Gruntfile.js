@@ -141,7 +141,7 @@ function getUserHome() {
   });
 
   grunt.registerTask('styles:local', ['sass:local']);
-  grunt.registerTask('styles:dist', ['sass:dist', 'autoprefixer']);
+  grunt.registerTask('styles:dist', ['sass:dist']);
 
   grunt.registerTask('build', [
     'useminPrepare',
