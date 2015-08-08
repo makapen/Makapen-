@@ -28,11 +28,27 @@
   animation: sun_animation 3s linear;
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
+
+  -webkit-animation: sun_animation 3s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+
+  -moz-animation: sun_animation 3s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2.5s;
+
+  -o-animation: sun_animation 3s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 2.5s;
 }
 
 #spin {
   transform-origin: 50% 50%;
+  -moz-transform-origin: 50vh 50vh;
+
   animation: 30s linear 0s reverse, none infinite running sun_spin;
+  -moz-animation: 30s linear 0s reverse, none infinite running sun_spin;
+
 }
 
 // sea
@@ -40,6 +56,15 @@
   opacity: 0;
   animation: sky-sea_animation 2s linear;
   animation-fill-mode:forwards;
+
+  -webkit-animation: sky-sea_animation 2s linear;
+  -webkit-animation-fill-mode:forwards;
+
+  -moz-animation: sky-sea_animation 2s linear;
+  -moz-animation-fill-mode:forwards;
+
+  -o-animation: sky-sea_animation 2s linear;
+  -o-animation-fill-mode:forwards;
 }
 
 // sky wave
@@ -48,6 +73,18 @@
   animation: sky_waves_animation 1s linear;
   animation-fill-mode:forwards;
   animation-delay: 0.5s;
+
+  -webkit-animation: sky_waves_animation 1s linear;
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-delay: 0.5s;
+
+  -moz-animation: sky_waves_animation 1s linear;
+  -moz-animation-fill-mode:forwards;
+  -moz-animation-delay: 0.5s;
+
+  -o-animation: sky_waves_animation 1s linear;
+  -o-animation-fill-mode:forwards;
+  -o-animation-delay: 0.5s;
 }
 
 //clouds
@@ -56,42 +93,85 @@
   animation: cloud_appear 3s linear;
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
+
+  -webkit-animation: cloud_appear 3s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+
+  -moz-animation: cloud_appear 3s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2.5s;
+
+  -o-animation: cloud_appear 3s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 2.5s;
 }
 
 .cloud_op1 {
   position: absolute;
   transform: translateX(-80vw);
   animation: cloud_1 25s linear infinite;
+  -webkit-animation: cloud_1 25s linear infinite;
+  -moz-animation: cloud_1 25s linear infinite;
+  -o-animation: cloud_1 25s linear infinite;
 }
 
 .cloud_op2 {
   position: absolute;
   transform: translateX(-90vw);
   animation: cloud_2 30s linear infinite;
+  -webkit-animation: cloud_2 30s linear infinite;
+  -moz-animation: cloud_2 30s linear infinite;
+  -o-animation: cloud_2 30s linear infinite;
+
 }
 
 .cloud_op3 {
   position: absolute;
   transform: translate(-20vw);
   animation: cloud_3 35s linear infinite;
+  animation: cloud_3 35s linear infinite;
+  animation: cloud_3 35s linear infinite;
+
+  -webkit-animation: cloud_3 35s linear infinite;
+  -webkit-animation: cloud_3 35s linear infinite;
+  -webkit-animation: cloud_3 35s linear infinite;
+
+  -moz-animation: cloud_3 35s linear infinite;
+  -moz-animation: cloud_3 35s linear infinite;
+  -moz-animation: cloud_3 35s linear infinite;
+
+  -o-animation: cloud_3 35s linear infinite;
+  -o-animation: cloud_3 35s linear infinite;
+  -o-animation: cloud_3 35s linear infinite;
 }
 
 .cloud_op4 {
   position: absolute;
   transform: translate(-25vw);
   animation: cloud_4 45s linear infinite;
+  -webkit-animation: cloud_4 45s linear infinite;
+  -moz-animation: cloud_4 45s linear infinite;
+  -o-animation: cloud_4 45s linear infinite;
 }
 
 .cloud_op5 {
   position: absolute;
   transform: translate(-50vw);
   animation: cloud_5 20s linear infinite;
+  -webkit-animation: cloud_5 20s linear infinite;
+  -moz-animation: cloud_5 20s linear infinite;
+  -o-animation: cloud_5 20s linear infinite;
+
 }
 
 .cloud_op6 {
   position: absolute;
   transform: translate(-70vw);
   animation: cloud_6 60s linear infinite;
+  -webkit-animation: cloud_6 60s linear infinite;
+  -moz-animation: cloud_6 60s linear infinite;
+  -o-animation: cloud_6 60s linear infinite;
 }
 
 // mountains
@@ -99,48 +179,135 @@
   opacity: 1;
   transform: scale(0);
   transform-origin: 50% 100%;
-  animation: 1s linear 2s normal, forwards 1 running main_mountain_pr;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
+
+  animation: main_mountain_pr 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+
+  -webkit-animation: main_mountain_pr 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+
+  -moz-animation: main_mountain_pr 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s;
+
+  -o-animation: main_mountain_pr 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 2s;
 }
 
 #mountain_plan_1_2 {
   transform: scale(0);
   transform-origin: 50% 50%;
+  -moz-transform-origin: 50vh 50vh;
+  -o-transform-origin: 50vh 50vh;
   animation: main_mountain_pr 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 2s;
+
+  -webkit-animation: main_mountain_pr 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+
+  -moz-animation: main_mountain_pr 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s;
+
+  -o-animation: main_mountain_pr 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 2s;
 }
 
 #mountain_plan_2_1 {
   opacity: 0;
   transform: scale(0);
   transform-origin: 50% 100%;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
   animation: main_mountain 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.8s;
+
+  -webkit-animation: main_mountain 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.8s;
+
+  -moz-animation: main_mountain 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 1.8s;
+
+  -o-animation: main_mountain 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 1.8s;
 }
 
 #mountain_plan_2_2 {
   transform: scale(0);
   transform-origin: 50% 50%;
+  -moz-transform-origin: 50vh 50vh;
+  -o-transform-origin: 50vh 50vh;
   animation: main_mountain_reflect 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 1.8s;
+
+  -webkit-animation: main_mountain_reflect 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.8s;
+
+  -moz-animation: main_mountain_reflect 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 1.8s;
+
+  -o-animation: main_mountain_reflect 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 1.8s;
 }
 
 #main_mountain_left {
   transform: scale(0);
   transform-origin: 50% 100%;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
   animation: main_mountain_first 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 3.8s;
+
+  -webkit-animation: main_mountain_first 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.8s;
+
+  -moz-animation: main_mountain_first 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 3.8s;
+
+  -o-animation: main_mountain_first 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 3.8s;
 }
 
 #main_mountain_right {
   transform: scale(0);
   transform-origin: 50% 100%;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
   animation: main_mountain_first 1s linear;
   animation-fill-mode: forwards;
   animation-delay: 3.8s;
+
+  -webkit-animation: main_mountain_first 1s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.8s;
+
+  -moz-animation: main_mountain_first 1s linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 3.8s;
+
+  -o-animation: main_mountain_first 1s linear;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 3.8s;
 }
 
 // boats
@@ -149,6 +316,18 @@
   animation: boats 3s linear;
   animation-delay: 4s;
   animation-fill-mode: forwards;
+
+  -webkit-animation: boats 3s linear;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: boats 3s linear;
+  -moz-animation-delay: 4s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: boats 3s linear;
+  -o-animation-delay: 4s;
+  -o-animation-fill-mode: forwards;
 }
 
 #small_boat {
@@ -156,6 +335,18 @@
   animation: small_boat 5s linear infinite alternate;
   animation-delay: 4.2s;
   animation-fill-mode: forwards;
+
+  -webkit-animation: small_boat 5s linear infinite alternate;
+  -webkit-animation-delay: 4.2s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: small_boat 5s linear infinite alternate;
+  -moz-animation-delay: 4.2s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: small_boat 5s linear infinite alternate;
+  -o-animation-delay: 4.2s;
+  -o-animation-fill-mode: forwards;
 }
 
 #medium_boat {
@@ -163,6 +354,18 @@
   animation: medium_boat 6s linear infinite alternate;
   animation-delay: 4.2s;
   animation-fill-mode: forwards;
+
+  -webkit-animation: medium_boat 6s linear infinite alternate;
+  -webkit-animation-delay: 4.2s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: medium_boat 6s linear infinite alternate;
+  -moz-animation-delay: 4.2s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: medium_boat 6s linear infinite alternate;
+  -o-animation-delay: 4.2s;
+  -o-animation-fill-mode: forwards;
 }
 
 #large_boat {
@@ -170,20 +373,48 @@
   animation: large_boat 7s linear infinite alternate;
   animation-delay: 4.2s;
   animation-fill-mode: forwards;
+
+  -webkit-animation: large_boat 7s linear infinite alternate;
+  -webkit-animation-delay: 4.2s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: large_boat 7s linear infinite alternate;
+  -moz-animation-delay: 4.2s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: large_boat 7s linear infinite alternate;
+  -o-animation-delay: 4.2s;
+  -o-animation-fill-mode: forwards;
 }
 
 //homes
 #home_on_the_mountain {
   transform: scale(0);
   transform-origin: 50% 100%;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
   animation: home_left 1s linear;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+
+  -webkit-animation: home_left 1s linear;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: home_left 1s linear;
+  -moz-animation-delay: 5s;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation: home_left 1s linear;
+  -o-animation-delay: 5s;
+  -o-animation-fill-mode: forwards;
 }
 
 #home_cable_way {
   transform: scale(0);
   transform-origin: 50% 100%;
+  -moz-transform-origin: 50vh 100vh;
+  -o-transform-origin: 50vh 100vh;
   animation: home_left 1s linear;
   animation-delay: 5s;
   animation-fill-mode: forwards;
@@ -221,6 +452,8 @@
 #cable_car {
   position: absolute;
   transform-origin: 50% 50%;
+  -moz-transform-origin: 27vw 33vw;
+  -o-transform-origin: 50vh 100vh;
   transform: translateX(-360px) translateY(-363px) rotate(16deg);
 }
 
@@ -249,6 +482,8 @@
 // flag
 #flag {
   transform-origin: 100% 100%;
+  -moz-transform-origin: 100vh 100vh;
+  -o-transform-origin: 100vh 100vh;
   transform: scale(0);
   animation: flag 2s linear;
   animation-delay: 20.5s;
@@ -271,6 +506,7 @@
 @keyframes sun_spin {
   100% {
     transform:rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
 
@@ -387,12 +623,16 @@
 @keyframes main_mountain_pr {
   from {
     transform: scale(0);
+    -webkit-transform: scale(0);
     -moz-transform: scale(0);
+    -o-transform: scale(0);
   }
 
   to {
     transform: scale(1);
+    -webkit-transform: scale(1);
     -moz-transform: scale(1);
+    -o-transform: scale(1);
   }
 }
 
