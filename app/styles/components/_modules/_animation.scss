@@ -6,6 +6,17 @@
   margin-bottom: -8px;
 }
 
+#static_animation {
+  overflow: hidden;
+  background: url("/images/animation/animation_screenshot.jpg") no-repeat center;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  height: 100%;
+  padding-top: 60px;
+}
+
 // id svg part
 #makapen_animation {
   width: 100%;

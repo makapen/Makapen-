@@ -9,9 +9,9 @@ $(document).ready(function() {
         M= M? [M[1], M[2]]: [N, navigator.appVersion,'-?'];
         console.log(M[0]);
         if (M[0] === "Chrome") {
-          console.log('display animation');
+          $('#animation').removeClass('hide');
         } else {
-          console.log('display static image');
+          $('#static_animation').removeClass('hide');
         }
     }
 
