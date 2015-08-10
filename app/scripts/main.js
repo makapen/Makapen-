@@ -12,6 +12,7 @@ $(document).ready(function() {
           $('#animation').removeClass('hide');
         } else {
           $('#static_animation').removeClass('hide');
+          $('#static_animation').children().removeClass('hide');
         }
     }
 
