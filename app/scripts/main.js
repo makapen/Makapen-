@@ -1,6 +1,22 @@
 $(document).ready(function() {
   'use strict';
 
+    // Checking which browser type for displaing SVG
+    function BrowserCheck() {
+        var N= navigator.appName, ua= navigator.userAgent, tem;
+        var M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\/?\s*(\.?\d+(\.\d+)*)/i);
+        if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) {M[2]=tem[1];}
+        M= M? [M[1], M[2]]: [N, navigator.appVersion,'-?'];
+        console.log(M[0]);
+        if (M[0] === "Chrome") {
+          console.log('display animation');
+        } else {
+          console.log('display static image');
+        }
+    }
+
+    BrowserCheck();
+
   var fn = fn || {};
 
   fn.scroll = function() {
