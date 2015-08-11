@@ -147,7 +147,7 @@ function getUserHome() {
     'useminPrepare',
     'concat:generated',
     'uglify:generated',
-    // 'cssmin:generated',
+    'cssmin:generated',
     // 'filerev',
     'imagemin',
     'usemin'
