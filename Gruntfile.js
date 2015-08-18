@@ -20,7 +20,7 @@ function getUserHome() {
       dist: {
         expand: true,
         cwd: 'app',
-        src: ['fonts/**/*', '*.html' ],
+        src: ['fonts/**/*', '*.html'],
         dest: 'dist/'
       },
       tmp: {
@@ -80,7 +80,7 @@ function getUserHome() {
         files: [{
           expand: true,
           cwd: '.tmp/images',
-          src: ['**/*.{png,jpg,gif}'],
+          src: ['**/*.{png,jpg,gif,ico}'],
           dest: 'dist/images'
         }]
       }
