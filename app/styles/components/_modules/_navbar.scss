@@ -115,7 +115,7 @@
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 
-  @media (max-width: 736px) {
+  @media (max-width: $navbar-break) {
     height: 30px;
     width: 70px;
     background-size: 70px 30px;
@@ -260,7 +260,7 @@
   visibility: hidden;
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: $navbar-break) {
   #nav-bar {
     display: none;
   }

@@ -1,9 +1,24 @@
 // Css animation
 
+
+// hide a 1px border that occasionally appears
+.svg-cover {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  background-color: #333;
+}
+
 #animation {
-  padding-top: 60px;
+  position: relative;
+  padding-top: 80px;
   background-color: #eee;
-  margin-bottom: -8px;
+
+  @media (max-width: $navbar-break) {
+    padding-top: 60px;
+  }
 }
 
 #static_animation {
@@ -29,7 +44,6 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-color: black;
 }
 
 // sky
@@ -240,8 +254,8 @@
 
 #cable_car {
   position: absolute;
-  transform-origin: 50% 50%;
-  transform: translateX(-360px) translateY(-363px) rotate(16deg);
+  transform-origin: top left;
+  transform: translateX(-400%) translateY(-375%) rotate(16deg);
 }
 
 // hike menu
