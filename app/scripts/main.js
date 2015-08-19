@@ -10,7 +10,7 @@ $(document).ready(function() {
         console.log(M[0]);
         if (M[0] == "Chrome") {
           $('#animation').removeClass('hide');
-          $('.mission_header').removeClass('hide');
+          $('#philosophy').removeClass('hide');
         } else {
           $('#static_animation').removeClass('hide');
           $('#static_animation').children().removeClass('hide');
