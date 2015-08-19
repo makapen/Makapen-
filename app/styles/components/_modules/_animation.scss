@@ -8,7 +8,16 @@
 
 #static_animation {
   padding-top: 60px;
+  padding-bottom: 0px;
 }
+.static_content {
+  text-align: center;
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
 .static_animation_image {
   width: 100%;
   height: auto;
