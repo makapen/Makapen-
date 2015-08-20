@@ -1,0 +1,47 @@
+// Css animation
+
+// hide a 1px border that occasionally appears
+.svg-cover {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  background-color: #333;
+}
+
+#animation {
+  position: relative;
+  padding-top: 80px;
+  background-color: #eee;
+
+  @media (max-width: $navbar-break) {
+    padding-top: 60px;
+  }
+}
+
+#static_animation {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.static_content {
+  text-align: center;
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+.static_animation_image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+// id svg part
+#makapen_animation {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
