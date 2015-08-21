@@ -1,0 +1,102 @@
+//clouds
+#cloud {
+  opacity: 0;
+  animation: cloud_appear 3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+.cloud_op1 {
+  position: absolute;
+  animation: cloud_1 35s linear infinite;
+}
+
+.cloud_op2 {
+  position: absolute;
+  animation: cloud_2 32s linear infinite;
+}
+
+.cloud_op3 {
+  position: absolute;
+  animation: cloud_3 45s linear infinite;
+}
+
+.cloud_op4 {
+  position: absolute;
+  animation: cloud_4 55s linear infinite;
+}
+
+.cloud_op5 {
+  position: absolute;
+  animation: cloud_5 68s linear infinite;
+}
+
+.cloud_op6 {
+  position: absolute;
+  animation: cloud_6 60s linear infinite;
+}
+
+// cloud apparition
+@keyframes cloud_appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// cloud mouvement
+@keyframes cloud_1 {
+  from {
+    transform: translateX(-110vw);
+  }
+  to {
+     transform: translate(20vw);
+  }
+}
+
+@keyframes cloud_2 {
+  from {
+     transform: translateX(-110vw);
+  }
+  to {
+     transform: translateX(10vw);
+  }
+}
+
+@keyframes cloud_3 {
+  from {
+    transform: translate(-20vw);
+  }
+  to {
+     transform: translate(120vw);
+  }
+}
+
+@keyframes cloud_4 {
+  from {
+    transform: translate(-25vw);
+  }
+  to {
+     transform: translate(70vw);
+  }
+}
+
+@keyframes cloud_5 {
+  from {
+    transform: translate(-100vw);
+  }
+  to {
+     transform: translate(120vw);
+  }
+}
+
+@keyframes cloud_6 {
+  from {
+    transform: translate(-90vw);
+  }
+  to {
+     transform: translate(40vw);
+  }
+}
