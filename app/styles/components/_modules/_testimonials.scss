@@ -5,14 +5,26 @@
     overflow: hidden;
     display: inline-block;
     position: relative;
-    width: 35%;
+    width: 27%;
     margin-left: 25px;
     margin-right: 25px;
-    img {
+    #hp__img {
+      padding-top: 5px;
+      width: 50%;
+      opacity: .5;
+      margin-bottom: 3em;
+    }
+    #gk__img {
       width: 60%;
       opacity: .5;
       margin-bottom: 3em;
     }
+    #pawzii__img {
+      width: 40%;
+      opacity: .5;
+      margin-bottom: 4em;
+    }
+
   }
   .testimonial__quote{
     font-size: 150px;
@@ -51,11 +63,18 @@
     padding: 0px;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1200px) {
     .testimonial__section {
       width: 60%;
+      #hp__img,
+      #pawzii__img {
+        width: 30%;
+      }
+      #gk__img {
+        width: 40%;
+      }
     }
-    .hype-park {
+    .margin-b-lg {
       margin-bottom: 6em;
     }
     .margin-r-lg {
