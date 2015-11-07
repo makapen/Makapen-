@@ -58,9 +58,18 @@
       .feature__visual {
         text-align: center;
       }
+      .plus-sign h1{
+        padding-top: 60%;
+        font-size: 120px;
+      }
       .contain-to-grid,
       .contain-to-grid .top-bar {
         background-color: #eee;
+      }
+      @media only screen and (max-width: 1020px) {
+        .plus-sign h1 {
+          display: none !important;
+        }
       }
       @media only screen and (min-width: 64.0625em) {
         .signup-form--home, .header, .text-page__header {
@@ -141,7 +150,7 @@
             </div>
             <div class="header__schema">
                 <div class="row collapse">
-                    <div class="columns large-6 small-centered medium-uncentered large-uncentered text-center collapse schema--section">
+                    <div class="columns large-5 small-centered medium-uncentered large-uncentered text-center collapse schema--section">
                         <h2>We have the tools <br />& components</h2>
                         <div class="row collapse">
                             <i class="fa fa-cogs"></i>
@@ -153,10 +162,13 @@
                             </ul>
                         </div>
                         <fieldset class="hide-for-large-up line-separator">
-                            <legend>vs</legend>
+                            <legend>+</legend>
                         </fieldset>
                     </div>
-                    <div class="columns large-6 small-centered medium-uncentered large-uncentered text-center collapse schema--section">
+                    <div class="columns plus-sign large-2 small-centered medium-uncentered large-uncentered text-center collapse schema--section">
+                    <h1>+</h1>
+                    </div>
+                    <div class="columns large-5 small-centered medium-uncentered large-uncentered text-center collapse schema--section">
                       <h2>You have the domain <br />knowledge</h2>
                         <div class="row collapse">
                             <i class="fa fa-lightbulb-o"></i>
