@@ -1,0 +1,27 @@
+//homes
+#home_on_the_mountain {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: home_left 1s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#home_cable_way {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: home_left 1s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+// animation home left
+@keyframes home_left {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

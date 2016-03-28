@@ -4,6 +4,16 @@
   padding-top: 6em;
   position: relative;
   width: 100%;
+
+  .mediarails-client {
+    @include col(1/2);
+    color: $colorWhite;
+    text-align: center;
+    overflow: hidden;
+    img {
+      width: 65%;
+    }
+  }
   .main {
     @include col(1/2);
     color: $colorWhite;

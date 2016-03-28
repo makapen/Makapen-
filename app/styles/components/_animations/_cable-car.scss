@@ -1,0 +1,66 @@
+// line of cable car
+#cableway_direction {
+  opacity: 0;
+  animation: line 1s linear;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+// falls
+#fall {
+  opacity: 0;
+  animation: to_opaque 2s linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#fall_animation {
+  animation: translate_fall 10s linear infinite alternate;
+  animation-delay: 5s;
+}
+
+
+// cable car
+#vehicule {
+  opacity: 0;
+  animation: to_opaque 0.2s linear;
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+}
+
+#cable_car {
+  position: absolute;
+  transform-origin: top left;
+  transform: translateX(-400%) translateY(-375%) rotate(16deg);
+}
+
+// animation for falls
+@keyframes translate_fall {
+  from {
+   transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+// animation line of cable car
+@keyframes line {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// animation for cable car mouvement, other part directly in svg part, in index.html
+@keyframes cable_car {
+  0% {
+    transform: translateX(-300px) translateY(55px) rotate(8deg);
+  }
+
+  100% {
+    transform: translateX(450px) translateY(-180px) rotate(-3deg);
+  }
+}

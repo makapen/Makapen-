@@ -1,0 +1,93 @@
+// mountains
+#mountain_plan_1_1 {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_pr 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+#mountain_plan_1_2 {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: main_mountain_pr 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+#mountain_plan_2_1 {
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+
+#mountain_plan_2_2 {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: main_mountain_reflect 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+
+#main_mountain_left {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_first 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3.8s;
+}
+
+#main_mountain_right {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: main_mountain_first 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3.8s;
+}
+
+//animation for main mountain, and reflect mountain
+@keyframes main_mountain {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+  opacity: 1;
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_reflect {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_pr {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+  transform: scale(1);
+  }
+}
+
+@keyframes main_mountain_first {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+  transform: scale(1);
+  }
+}

@@ -14,7 +14,16 @@
     overflow: hidden;
     display: inline-block;
     margin-bottom: 2em;
-    margin-right: $margin-same-element;
+    // margin-right: $margin-same-element;
+    margin-right: 2em;
+    height: 270px;
+    width: 270px;
+  }
+
+  @media (max-width: 1423px) {
+    .hidden-line-break {
+      display: block;
+    }
   }
 
   @media (max-width: $medium) {
@@ -22,9 +31,8 @@
       padding: 0;
     }
     .our-work__content {
-      width: 275px;
-      margin: 0 auto;
-      margin-bottom: 2em;
+      width: 270px;
+      margin: 0 0 6em 0;
       img {
         width: 275px;
       }
@@ -58,7 +66,7 @@
   .hover-project-text {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    padding-top: 20%;
+    padding-top: 15%;
   }
 
   .button--primary {

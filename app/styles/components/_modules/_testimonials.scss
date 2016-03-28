@@ -1,0 +1,92 @@
+#testimonials {
+  .testimonial__section {
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    width: 27%;
+    margin-left: 25px;
+    margin-right: 25px;
+    #hp__img {
+      padding-top: 15px;
+      width: 50%;
+      opacity: .5;
+      margin-bottom: 2.8em;
+    }
+    #gk__img {
+      width: 60%;
+      opacity: .5;
+      margin-bottom: 3em;
+    }
+    #pawzii__img {
+      padding-top: 15px;
+      width: 40%;
+      opacity: .5;
+      margin-bottom: 3.2em;
+    }
+
+  }
+  .testimonial__quote{
+    font-size: 150px;
+    color: #3399cc;
+  }
+  .two-cols-description-row {
+    // display: none;
+    display: table;
+    table-layout: fixed;
+  }
+  .two-cols-description-text {
+    vertical-align: middle;
+    padding: 130px 100px;
+    width: 50%;
+    display: table-cell;
+    float: none !important;
+  }
+
+  .two-cols-description-image {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    display: table-cell;
+    float: none !important;
+  }
+
+  .gk-image {
+    background: url('../images/process/process_one.png') center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .testimonial-content {
+    padding: 0px;
+  }
+
+  @media (max-width: 1200px) {
+    .testimonial__section {
+      width: 60%;
+      #hp__img,
+      #pawzii__img {
+        width: 30%;
+      }
+      #gk__img {
+        width: 40%;
+        margin-bottom: 2em;
+      }
+    }
+    .margin-b-lg {
+      margin-bottom: 6em;
+    }
+    .margin-r-lg {
+      margin-right: 15px !important;
+    }
+  }
+  @media (max-width: 500px) {
+    .testimonial__section {
+      width: 90%;
+    }
+  }
+
+}
